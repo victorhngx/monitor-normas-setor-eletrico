@@ -3,7 +3,7 @@
 | Fase | Entrega | Status |
 |---|---|---|
 | 0. Fundação | Repo público, README, docs/, testes (pytest), estilo (ruff), trava de privacidade (gitleaks + bloqueio de PDF/HTML brutos), proteção do main, merge automático | Concluída |
-| 1. Catálogo | `catalogo.yaml` (norma, link, fonte, formato, metadados) → lista de links | Planejada |
+| 1. Catálogo | `catalogo.toml` (norma, link, fonte, formato, se está ativa) → lista de links | Concluída |
 | 2. Captura | Baixar REN 1.000 do leis.org; impressão digital (hash) para detectar mudança | Planejada |
 | 3. Canônico + Markdown RAG | Texto canônico (JSON por dispositivo, com redações e vigência) → Markdown vigente | Planejada |
 | 4. Diff | Comparação entre versões do canônico; relatório por dispositivo (alterado/incluído/revogado) | Planejada |
