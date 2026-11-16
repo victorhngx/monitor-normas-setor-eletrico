@@ -6,10 +6,11 @@
 
 ## Onde estamos
 Fase 0 (Fundação), em andamento.
-- Repositório criado com README, `.gitignore` e a documentação de planejamento em `docs/`.
+- Repositório criado com `.gitignore` e a documentação de planejamento em `docs/`.
+- Issue #1 "Escrever o README": apresentação do projeto, fontes e funcionamento.
 
 ## Próximo passo
-Restante da Fase 0: testes (pytest), estilo (ruff), trava de privacidade, proteção do main e merge automático.
+Restante da Fase 0, nesta ordem: base Python com testes (pytest) e estilo (ruff); trava de privacidade (gitleaks + bloqueio de PDF/HTML/DOCX); checagem automática nos PRs (GitHub Actions); proteção do main e merge automático.
 
 ## Pendências / em aberto
 - Aprovar padrão de identificadores de dispositivos (proposta: estilo LexML — ver `padrao-markdown-rag.md`).
