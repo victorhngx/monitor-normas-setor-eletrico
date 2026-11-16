@@ -1,0 +1,29 @@
+# --- Python ---
+__pycache__/
+.venv/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# --- Segredos (senhas, chaves, tokens) ---
+.env
+*.env
+*.key
+*.pem
+
+# --- Dados brutos (PDF/HTML/DOCX das fontes nunca entram no repo, ver D004) ---
+dados/brutos/
+*.pdf
+*.docx
+# HTML é ignorado em todo lugar, exceto dentro de site/ (página do GitHub Pages)
+*.html
+!site/**/*.html
+
+# --- Arquivos do sistema ---
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# --- Editores ---
+.vscode/
+.idea/
