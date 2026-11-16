@@ -1,0 +1,19 @@
+# Catálogo de normas monitoradas. Cada norma é um bloco [[normas]].
+#
+# Campos:
+#   id       identificador curto, só letras minúsculas, números e hífens
+#   titulo   nome da norma
+#   fonte    "leis.org" (normas ANEEL) ou "aneel-git" (PRODIST/PRORET, git.aneel.gov.br)
+#   url      link https da norma na fonte
+#   formato  "html" ou "pdf"
+#   ativa    true para monitorar, false para manter no catálogo sem monitorar
+#
+# Para validar e listar: python -m monitor_normas.catalogo
+
+[[normas]]
+id = "ren-1000-2021"
+titulo = "Resolução Normativa ANEEL nº 1.000/2021"
+fonte = "leis.org"
+url = "https://leis.org/aneel/lei/resolucao-normativa/2021/1000/resolucao-normativa-n-1000-2021-estabelece-as-regras-de-prestacao-do-servico-publico-de-distribuicao-de-energia-eletrica-revoga-as-resolucoes-normativas-aneel-n-414-de-9-de-setembro-de-2010-n-470-de-13-de-dezembro-de-2011-n-901-de-8-de-dezembro-de-2020-e-da-outras/"
+formato = "html"
+ativa = true

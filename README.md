@@ -12,7 +12,13 @@ Projeto em construção: ainda não há código. O planejamento está em [`docs/
 | PRODIST | [git.aneel.gov.br/publico/centralconteudo](https://git.aneel.gov.br/publico/centralconteudo/-/tree/main/procreg) (pasta procreg) |
 | PRORET | idem |
 
-A lista completa e o status de cada norma estão em [`docs/catalogo-normas.md`](docs/catalogo-normas.md).
+As normas monitoradas ficam em [`catalogo.toml`](catalogo.toml). Para validar o catálogo e listar os links das normas ativas:
+
+```powershell
+.venv\Scripts\python -m monitor_normas.catalogo
+```
+
+O planejamento das próximas normas está em [`docs/catalogo-normas.md`](docs/catalogo-normas.md).
 
 ## Como funciona
 
