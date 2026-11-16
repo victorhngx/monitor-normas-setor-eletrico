@@ -33,7 +33,7 @@ python -m venv .venv
 .venv\Scripts\python -m pip install -e ".[dev]"
 ```
 
-Verificações (as mesmas que serão exigidas nos pull requests):
+Verificações (as mesmas que o GitHub Actions roda em cada pull request, junto com o gitleaks):
 
 ```powershell
 .venv\Scripts\python -m pytest            # testes
