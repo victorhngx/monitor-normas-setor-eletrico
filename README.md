@@ -24,6 +24,23 @@ As diferenças entre versões são calculadas sobre o texto canônico. Assim, um
 
 Uma rotina diária no GitHub Actions vai verificar as fontes e abrir uma issue quando houver alteração. Uma página no GitHub Pages vai reunir as normas, os downloads e as últimas mudanças.
 
+## Desenvolvimento
+
+Requer Python 3.12 ou mais recente. No Windows (PowerShell):
+
+```powershell
+python -m venv .venv
+.venv\Scripts\python -m pip install -e ".[dev]"
+```
+
+Verificações (as mesmas que serão exigidas nos pull requests):
+
+```powershell
+.venv\Scripts\python -m pytest            # testes
+.venv\Scripts\python -m ruff check .      # erros e estilo
+.venv\Scripts\python -m ruff format --check .   # formatação
+```
+
 ## Documentação
 
 - [`docs/status.md`](docs/status.md): onde o projeto está e próximos passos

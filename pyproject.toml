@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "monitor-normas-setor-eletrico"
+version = "0.1.0"
+description = "Monitoramento de normas do setor elétrico, com conversão para Markdown e comparação entre versões."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.2",
+    # versão fixa: novas versões do ruff mudam regras e quebrariam a checagem sem aviso
+    "ruff==0.17.5",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+# E/W: estilo (PEP 8), F: erros comuns, I: ordem dos imports,
+# UP: sintaxe moderna do Python, B: armadilhas frequentes
+select = ["E", "W", "F", "I", "UP", "B"]
