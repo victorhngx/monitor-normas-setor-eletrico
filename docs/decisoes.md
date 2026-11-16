@@ -15,3 +15,4 @@ Formato: ID | data | decisão | motivo. Decisões não são apagadas; se mudarem
 | D009 | 16/11/2026 | Markdown registra a versão do padrão no cabeçalho (`padrao: x.y`). Mudança de padrão = PR próprio regenerando tudo. | Rastreabilidade. |
 | D010 | 16/11/2026 | Desenvolvimento no computador local, com git e gh pelo terminal. | Usa o Git/gh já instalados e logados. |
 | D011 | 16/11/2026 | Documentação de planejamento (status, roadmap, decisões, catálogo, padrão) vive em `docs/` no repositório, como fonte única. | Evitar duas versões desencontradas; histórico no Git. |
+| D012 | 16/11/2026 | Base Python: versão mínima 3.12; pacote `monitor_normas` em `src/`; configuração no `pyproject.toml`; testes com pytest; estilo com ruff (versão fixa). Ambiente local em `.venv`. | Estrutura padrão e simples; versão fixa do ruff evita que regras novas quebrem a checagem sem aviso. |
