@@ -39,7 +39,10 @@ Verificações (as mesmas que serão exigidas nos pull requests):
 .venv\Scripts\python -m pytest            # testes
 .venv\Scripts\python -m ruff check .      # erros e estilo
 .venv\Scripts\python -m ruff format --check .   # formatação
+.venv\Scripts\python -m monitor_normas.trava_privacidade   # arquivos proibidos
 ```
+
+A trava de privacidade recusa documentos brutos (PDF, DOC/DOCX, HTML fora de `site/`), qualquer arquivo em `dados/brutos/` e arquivos de segredo (`.env`, `.key`, `.pem`).
 
 ## Documentação
 
