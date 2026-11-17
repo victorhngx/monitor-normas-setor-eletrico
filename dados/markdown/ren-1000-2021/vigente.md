@@ -2,9 +2,9 @@
 norma: ren-1000-2021
 titulo: "RESOLUÇÃO NORMATIVA ANEEL Nº 1.000, DE 7 DE DEZEMBRO DE 2021"
 fonte_url: https://leis.org/aneel/lei/resolucao-normativa/2021/1000/resolucao-normativa-n-1000-2021-estabelece-as-regras-de-prestacao-do-servico-publico-de-distribuicao-de-energia-eletrica-revoga-as-resolucoes-normativas-aneel-n-414-de-9-de-setembro-de-2010-n-470-de-13-de-dezembro-de-2011-n-901-de-8-de-dezembro-de-2020-e-da-outras/
-data_captura: 2026-11-17T09:36:44
-padrao: "0.1"
-hash_canonico: d0e10ff117b662070556bc9015180ebcf6d11d69ba6095a51a99069ccd7b6762
+data_captura: 2026-11-17T09:56:43
+padrao: "0.2"
+hash_canonico: c008feeb9125e029582314ba5ac06043f4b299d69def8fd47c59383474f4c22b
 ---
 
 # RESOLUÇÃO NORMATIVA ANEEL Nº 1.000, DE 7 DE DEZEMBRO DE 2021
@@ -73,27 +73,27 @@ Para os fins e efeitos desta Resolução, são adotadas as seguintes definiçõe
 
 <a id="art2_inc1"></a>I - área urbana: parcela do território, contínua ou não, incluída no perímetro urbano pelo Plano Diretor ou por lei municipal específica;
 
-<a id="art2_inc1_2"></a>I- A - autoconsumo remoto: modalidade de participação no SCEE caracterizada por:
+<a id="art2_inc1-A"></a>I-A - autoconsumo remoto: modalidade de participação no SCEE caracterizada por:
 
-<a id="art2_inc1_alia"></a>a) unidades consumidoras de titularidade de uma mesma pessoa física ou jurídica, incluídas matriz e filial;
+<a id="art2_inc1-A_alia"></a>a) unidades consumidoras de titularidade de uma mesma pessoa física ou jurídica, incluídas matriz e filial;
 
-<a id="art2_inc1_alib"></a>b) possuir unidade consumidora com microgeração ou minigeração distribuída em local diferente das unidades consumidoras que recebem excedentes de energia; e
+<a id="art2_inc1-A_alib"></a>b) possuir unidade consumidora com microgeração ou minigeração distribuída em local diferente das unidades consumidoras que recebem excedentes de energia; e
 
-<a id="art2_inc1_alic"></a>c) atendimento de todas as unidades consumidoras pela mesma distribuidora.
+<a id="art2_inc1-A_alic"></a>c) atendimento de todas as unidades consumidoras pela mesma distribuidora.
 
 > Redação acrescida pela Resolução Normativa nº 1059/2023
 
-<a id="art2_inc1_3"></a>I- B - autoconsumo local: modalidade de participação no SCEE caracterizada por:
+<a id="art2_inc1-B"></a>I-B - autoconsumo local: modalidade de participação no SCEE caracterizada por:
 
-<a id="art2_inc1_alia_2"></a>a) titularidade de uma pessoa física ou jurídica;
+<a id="art2_inc1-B_alia"></a>a) titularidade de uma pessoa física ou jurídica;
 
-<a id="art2_inc1_alib_2"></a>b) microgeração ou minigeração distribuída eletricamente junto à carga; e
+<a id="art2_inc1-B_alib"></a>b) microgeração ou minigeração distribuída eletricamente junto à carga; e
 
-<a id="art2_inc1_alic_2"></a>c) o excedente e o crédito de energia elétrica gerados por unidade consumidora são integralmente compensados pela mesma unidade consumidora.
+<a id="art2_inc1-B_alic"></a>c) o excedente e o crédito de energia elétrica gerados por unidade consumidora são integralmente compensados pela mesma unidade consumidora.
 
 > Redação acrescida pela Resolução Normativa nº 1098/2024
 
-<a id="art2_inc1_4"></a>I - C - armazenador autônomo: agente autorizado ou registrado titular de SAE Autônomo;
+<a id="art2_inc1-C"></a>I - C - armazenador autônomo: agente autorizado ou registrado titular de SAE Autônomo;
 
 > Redação acrescida pela Resolução Normativa nº 1162/2026
 
@@ -103,13 +103,13 @@ Para os fins e efeitos desta Resolução, são adotadas as seguintes definiçõe
 
 <a id="art2_inc4"></a>IV - central geradora: agente concessionário, autorizado ou registrado de geração de energia elétrica;
 
-<a id="art2_inc4_2"></a>IV- A - central geradora de fonte despachável: central geradora que pode ser despachada por meio de um controlador local ou remoto, com as seguintes características:
+<a id="art2_inc4-A"></a>IV-A - central geradora de fonte despachável: central geradora que pode ser despachada por meio de um controlador local ou remoto, com as seguintes características:
 
-<a id="art2_inc4_alia"></a>a) hidrelétrica de até 5 MW de potência instalada, incluídas aquelas a fio d`água que possuam viabilidade de controle variável de sua geração de energia;
+<a id="art2_inc4-A_alia"></a>a) hidrelétrica de até 5 MW de potência instalada, incluídas aquelas a fio d`água que possuam viabilidade de controle variável de sua geração de energia;
 
-<a id="art2_inc4_alib"></a>b) termelétrica de até 5 MW de potência instalada, classificadas como cogeração qualificada, ou movida à biomassa ou biogás; ou
+<a id="art2_inc4-A_alib"></a>b) termelétrica de até 5 MW de potência instalada, classificadas como cogeração qualificada, ou movida à biomassa ou biogás; ou
 
-<a id="art2_inc4_alic"></a>c) fotovoltaica de até 3 MW de potência instalada, que apresentem capacidade de modulação de geração por meio de armazenamento de energia em baterias, em quantidade de, pelo menos, 20% da capacidade de geração mensal das unidades de geração fotovoltaicas, nos termos do art. 655-B;
+<a id="art2_inc4-A_alic"></a>c) fotovoltaica de até 3 MW de potência instalada, que apresentem capacidade de modulação de geração por meio de armazenamento de energia em baterias, em quantidade de, pelo menos, 20% da capacidade de geração mensal das unidades de geração fotovoltaicas, nos termos do art. 655-B;
 
 > Redação acrescida pela Resolução Normativa nº 1059/2023
 
@@ -125,7 +125,7 @@ Para os fins e efeitos desta Resolução, são adotadas as seguintes definiçõe
 
 <a id="art2_inc10"></a>X - consumidor potencialmente livre: consumidor que cumpre as condições estabelecidas para tornar-se livre, mas é atendido de forma regulada;
 
-<a id="art2_inc10_2"></a>X- A - crédito de energia: excedente de energia não utilizado no ciclo de faturamento em que foi injetado e que não tenha sido objeto de compra pela distribuidora na forma prevista no art. 24 da Lei nº 14.300/2022;
+<a id="art2_inc10-A"></a>X-A - crédito de energia: excedente de energia não utilizado no ciclo de faturamento em que foi injetado e que não tenha sido objeto de compra pela distribuidora na forma prevista no art. 24 da Lei nº 14.300/2022;
 
 > Redação acrescida pela Resolução Normativa nº 1059/2023
 
@@ -137,13 +137,13 @@ Para os fins e efeitos desta Resolução, são adotadas as seguintes definiçõe
 
 <a id="art2_inc14"></a>XIV - distribuidora: agente titular de concessão ou permissão federal para prestar o serviço público de distribuição de energia elétrica;
 
-<a id="art2_inc14_2"></a>XIV- A - empreendimento com múltiplas unidades consumidoras com microgeração ou minigeração distribuída: conjunto de unidades consumidoras caracterizado por:
+<a id="art2_inc14-A"></a>XIV-A - empreendimento com múltiplas unidades consumidoras com microgeração ou minigeração distribuída: conjunto de unidades consumidoras caracterizado por:
 
-<a id="art2_inc14_alia"></a>a) localização das unidades consumidoras em uma mesma propriedade ou em propriedades contíguas, sem separação por vias públicas, passagem aérea ou subterrânea, ou por propriedades de terceiros não integrantes do empreendimento;
+<a id="art2_inc14-A_alia"></a>a) localização das unidades consumidoras em uma mesma propriedade ou em propriedades contíguas, sem separação por vias públicas, passagem aérea ou subterrânea, ou por propriedades de terceiros não integrantes do empreendimento;
 
-<a id="art2_inc14_alib"></a>b) conexão da microgeração ou minigeração distribuída na unidade consumidora de atendimento das áreas comuns, distinta das demais, com a utilização da energia elétrica de forma independente; e
+<a id="art2_inc14-A_alib"></a>b) conexão da microgeração ou minigeração distribuída na unidade consumidora de atendimento das áreas comuns, distinta das demais, com a utilização da energia elétrica de forma independente; e
 
-<a id="art2_inc14_alic"></a>c) responsabilidade do condomínio, da administração ou do proprietário do empreendimento pela unidade consumidora em que se conecta a microgeração ou minigeração distribuída;
+<a id="art2_inc14-A_alic"></a>c) responsabilidade do condomínio, da administração ou do proprietário do empreendimento pela unidade consumidora em que se conecta a microgeração ou minigeração distribuída;
 
 > Redação acrescida pela Resolução Normativa nº 1059/2023
 
@@ -151,13 +151,13 @@ Para os fins e efeitos desta Resolução, são adotadas as seguintes definiçõe
 
 <a id="art2_inc16"></a>XVI - energia elétrica ativa: aquela que pode ser convertida em outra forma de energia, em kWh (quilowatts-hora);
 
-<a id="art2_inc16_2"></a>XVI- A - energia compensada: energia elétrica ativa consumida da rede e compensada pela energia elétrica ativa injetada, pelo excedente de energia e pelo crédito de energia utilizados no faturamento de unidade consumidora participante do Sistema de Compensação de Energia Elétrica, limitada ao montante de energia consumida da rede no ciclo de faturamento;
+<a id="art2_inc16-A"></a>XVI-A - energia compensada: energia elétrica ativa consumida da rede e compensada pela energia elétrica ativa injetada, pelo excedente de energia e pelo crédito de energia utilizados no faturamento de unidade consumidora participante do Sistema de Compensação de Energia Elétrica, limitada ao montante de energia consumida da rede no ciclo de faturamento;
 
 > Redação acrescida pela Resolução Normativa nº 1059/2023
 
 <a id="art2_inc17"></a>XVII - energia elétrica reativa: aquela que circula entre os diversos campos elétricos e magnéticos de um sistema de corrente alternada sem produzir trabalho, em kvarh (quilovolt-ampère-reativo-hora);
 
-<a id="art2_inc17_2"></a>XVII- A - excedente de energia: diferença positiva entre a energia elétrica ativa injetada e a energia elétrica ativa consumida por unidade consumidora com microgeração ou minigeração distribuída, apurada por posto tarifário a cada ciclo de faturamento, exceto para o caso de empreendimento com múltiplas unidades consumidoras com microgeração ou minigeração distribuída ou geração compartilhada, em que o excedente de energia pode ser toda a energia gerada ou a injetada na rede de distribuição pela unidade consumidora, a critério do titular da unidade consumidora com microgeração ou minigeração distribuída;
+<a id="art2_inc17-A"></a>XVII-A - excedente de energia: diferença positiva entre a energia elétrica ativa injetada e a energia elétrica ativa consumida por unidade consumidora com microgeração ou minigeração distribuída, apurada por posto tarifário a cada ciclo de faturamento, exceto para o caso de empreendimento com múltiplas unidades consumidoras com microgeração ou minigeração distribuída ou geração compartilhada, em que o excedente de energia pode ser toda a energia gerada ou a injetada na rede de distribuição pela unidade consumidora, a critério do titular da unidade consumidora com microgeração ou minigeração distribuída;
 
 > Redação acrescida pela Resolução Normativa nº 1059/2023
 
@@ -171,7 +171,7 @@ Para os fins e efeitos desta Resolução, são adotadas as seguintes definiçõe
 
 <a id="art2_inc22"></a>XXII - fatura: documento emitido pela distribuidora com a quantia monetária total a ser paga pelo consumidor e demais usuários pela prestação do serviço público de distribuição de energia elétrica e por outros serviços e atividades, função que pode ser cumprida pelo documento fiscal denominado "Nota Fiscal/Conta de Energia Elétrica";
 
-<a id="art2_inc22_2"></a>XXII- A - geração compartilhada: modalidade de participação no SCEE caracterizada pela reunião de consumidores, por meio de consórcio, cooperativa, condomínio civil voluntário ou edilício, ou qualquer outra forma de associação civil instituída para esse fim, composta por pessoas físicas ou jurídicas que possuam unidade consumidora com microgeração ou minigeração distribuída;
+<a id="art2_inc22-A"></a>XXII-A - geração compartilhada: modalidade de participação no SCEE caracterizada pela reunião de consumidores, por meio de consórcio, cooperativa, condomínio civil voluntário ou edilício, ou qualquer outra forma de associação civil instituída para esse fim, composta por pessoas físicas ou jurídicas que possuam unidade consumidora com microgeração ou minigeração distribuída;
 
 > Redação acrescida pela Resolução Normativa nº 1059/2023
 
@@ -215,17 +215,17 @@ Para os fins e efeitos desta Resolução, são adotadas as seguintes definiçõe
 
 > Redação dada pela Resolução Normativa nº 1162/2026
 
-<a id="art2_inc29_2"></a>XXIX- A - microgeração distribuída: central geradora de energia elétrica que utilize fontes renováveis ou, conforme Resolução Normativa nº 1.031, de 26 de julho de 2022, de cogeração qualificada, conectada à rede de distribuição de energia elétrica por meio de unidade consumidora, da qual é considerada parte, que possua potência instalada em corrente alternada menor ou igual a 75 kW;
+<a id="art2_inc29-A"></a>XXIX-A - microgeração distribuída: central geradora de energia elétrica que utilize fontes renováveis ou, conforme Resolução Normativa nº 1.031, de 26 de julho de 2022, de cogeração qualificada, conectada à rede de distribuição de energia elétrica por meio de unidade consumidora, da qual é considerada parte, que possua potência instalada em corrente alternada menor ou igual a 75 kW;
 
 > Redação acrescida pela Resolução Normativa nº 1059/2023
 
-<a id="art2_inc29_3"></a>XXIX- B - minigeração distribuída: central geradora de energia elétrica que utilize fontes renováveis ou, conforme Resolução Normativa nº 1.031, de 26 de julho de 2022, de cogeração qualificada, conectada à rede de distribuição de energia elétrica por meio de unidade consumidora, da qual é considerada parte, que possua potência instalada em corrente alternada maior que 75 kW e menor ou igual a:
+<a id="art2_inc29-B"></a>XXIX-B - minigeração distribuída: central geradora de energia elétrica que utilize fontes renováveis ou, conforme Resolução Normativa nº 1.031, de 26 de julho de 2022, de cogeração qualificada, conectada à rede de distribuição de energia elétrica por meio de unidade consumidora, da qual é considerada parte, que possua potência instalada em corrente alternada maior que 75 kW e menor ou igual a:
 
-<a id="art2_inc29_alia"></a>a) 5 MW para as centrais geradoras de fontes despacháveis;
+<a id="art2_inc29-B_alia"></a>a) 5 MW para as centrais geradoras de fontes despacháveis;
 
-<a id="art2_inc29_alib"></a>b) 3 MW para as demais fontes não enquadradas como centrais geradoras de fontes despacháveis; ou
+<a id="art2_inc29-B_alib"></a>b) 3 MW para as demais fontes não enquadradas como centrais geradoras de fontes despacháveis; ou
 
-<a id="art2_inc29_alic"></a>c) 5 MW para unidades consumidoras já conectadas em 7 de janeiro de 2022 ou que protocolarem solicitação de orçamento de conexão, nos termos da Seção IX do Capítulo II do Título I, até 7 de janeiro de 2023, independentemente do enquadramento como centrais geradoras de fontes despacháveis.
+<a id="art2_inc29-B_alic"></a>c) 5 MW para unidades consumidoras já conectadas em 7 de janeiro de 2022 ou que protocolarem solicitação de orçamento de conexão, nos termos da Seção IX do Capítulo II do Título I, até 7 de janeiro de 2023, independentemente do enquadramento como centrais geradoras de fontes despacháveis.
 
 > Redação acrescida pela Resolução Normativa nº 1059/2023
 
@@ -299,25 +299,25 @@ Para os fins e efeitos desta Resolução, são adotadas as seguintes definiçõe
 
 <a id="art2_inc45"></a>XLV - serviços auxiliares: sistemas projetados para garantir a continuidade operativa de instalações em regime de operação normal ou de emergência;
 
-<a id="art2_inc45_2"></a>XLV- A - Sistema de Compensação de Energia Elétrica - SCEE: sistema no qual a energia elétrica ativa é injetada por unidade consumidora com microgeração ou minigeração distribuída na rede da distribuidora local, cedida a título de empréstimo gratuito e posteriormente utilizada para compensar o consumo de energia elétrica ativa ou contabilizada como crédito de energia de unidades consumidoras participantes do sistema.
+<a id="art2_inc45-A"></a>XLV-A - Sistema de Compensação de Energia Elétrica - SCEE: sistema no qual a energia elétrica ativa é injetada por unidade consumidora com microgeração ou minigeração distribuída na rede da distribuidora local, cedida a título de empréstimo gratuito e posteriormente utilizada para compensar o consumo de energia elétrica ativa ou contabilizada como crédito de energia de unidades consumidoras participantes do sistema.
 
 > Redação acrescida pela Resolução Normativa nº 1059/2023
 
-<a id="art2_inc45_3"></a>XLV - B - sistema de armazenamento de energia elétrica - SAE: conjunto de equipamentos, dispositivos e tecnologias que utilizam energia elétrica para armazenamento de energia em qualquer meio, para posterior consumo, injeção na rede de distribuição ou prestação de serviços ao sistema elétrico;
+<a id="art2_inc45-B"></a>XLV - B - sistema de armazenamento de energia elétrica - SAE: conjunto de equipamentos, dispositivos e tecnologias que utilizam energia elétrica para armazenamento de energia em qualquer meio, para posterior consumo, injeção na rede de distribuição ou prestação de serviços ao sistema elétrico;
 
 > Redação acrescida pela Resolução Normativa nº 1162/2026
 
-<a id="art2_inc45_4"></a>XLV - C - sistema de armazenamento de energia elétrica autônomo - SAE autônomo: sistema de armazenamento de energia elétrica que absorve potência elétrica integralmente da rede para posterior injeção ou prestação de serviços ao sistema elétrico;
+<a id="art2_inc45-C"></a>XLV - C - sistema de armazenamento de energia elétrica autônomo - SAE autônomo: sistema de armazenamento de energia elétrica que absorve potência elétrica integralmente da rede para posterior injeção ou prestação de serviços ao sistema elétrico;
 
 > Redação acrescida pela Resolução Normativa nº 1162/2026
 
-<a id="art2_inc45_5"></a>XLV - D - sistema de armazenamento de energia elétrica colocalizado - SAE colocalizado: sistema de armazenamento de energia elétrica conectado à rede de distribuição por meio de:
+<a id="art2_inc45-D"></a>XLV - D - sistema de armazenamento de energia elétrica colocalizado - SAE colocalizado: sistema de armazenamento de energia elétrica conectado à rede de distribuição por meio de:
 
-<a id="art2_inc45_alia"></a>a) central geradora, caso em que o sistema de armazenamento absorve potência elétrica da rede ou da própria central geradora para posterior injeção, consumo interno ou prestação de serviços elétricos;
+<a id="art2_inc45-D_alia"></a>a) central geradora, caso em que o sistema de armazenamento absorve potência elétrica da rede ou da própria central geradora para posterior injeção, consumo interno ou prestação de serviços elétricos;
 
-<a id="art2_inc45_alib"></a>b) unidade consumidora sem microgeração ou minigeração distribuída, caso em que o sistema de armazenamento absorve potência elétrica da rede para posterior consumo na própria unidade consumidora, sem possibilidade de injeção na rede; ou
+<a id="art2_inc45-D_alib"></a>b) unidade consumidora sem microgeração ou minigeração distribuída, caso em que o sistema de armazenamento absorve potência elétrica da rede para posterior consumo na própria unidade consumidora, sem possibilidade de injeção na rede; ou
 
-<a id="art2_inc45_alic"></a>c) unidade consumidora com microgeração ou minigeração distribuída, caso em que o sistema de armazenamento absorve potência elétrica da rede ou da central de microgeração ou minigeração distribuída, para posterior consumo na própria unidade consumidora ou injeção na rede.
+<a id="art2_inc45-D_alic"></a>c) unidade consumidora com microgeração ou minigeração distribuída, caso em que o sistema de armazenamento absorve potência elétrica da rede ou da central de microgeração ou minigeração distribuída, para posterior consumo na própria unidade consumidora ou injeção na rede.
 
 > Redação acrescida pela Resolução Normativa nº 1162/2026
 
@@ -803,11 +803,7 @@ O projeto e a execução das instalações elétricas de responsabilidade do con
 
 <a id="art34_inc2"></a>II - se for indispensável à prestação adequada do serviço público de distribuição de energia elétrica.
 
-###### <a id="art35"></a>Art. 35
-
-São consideradas instalações de responsabilidade da central geradora, do importador ou do exportador:
-
-###### <a id="art35_2"></a>Art. 35.
+###### <a id="art35"></a>Art. 35.
 
 Art. 35. São consideradas instalações de responsabilidade do responsável pela central geradora, pelo SAE autônomo, do importador ou do exportador:
 
@@ -845,11 +841,7 @@ Art. 35. São consideradas instalações de responsabilidade do responsável pel
 
 A distribuidora deve verificar a conformidade, analisar e aprovar projetos e especificações das instalações que irá incorporar, além de supervisionar a vistoria e o comissionamento.
 
-###### <a id="art37"></a>Art. 37
-
-Se a conexão ocorrer por meio de instalações de interesse restrito, as centrais geradoras, os importadores e os exportadores de energia devem:
-
-###### <a id="art37_2"></a>Art. 37.
+###### <a id="art37"></a>Art. 37.
 
 Se a conexão ocorrer por meio de instalações de interesse restrito, o usuário deve:
 
@@ -1987,11 +1979,7 @@ A distribuidora pode oferecer ao consumidor e demais usuários, de forma gratuit
 
 <a id="art95_par3"></a>§ 3º Quando o consumidor e demais usuários optarem pela vistoria por meio eletrônico, a contagem dos prazos que trata o art. 91 deve ser suspensa enquanto houver pendência de envio de informações para a realização deste tipo de vistoria.
 
-###### <a id="art96"></a>Art. 96
-
-No caso de conexão de outra distribuidora ou de unidade consumidora livre ou especial, a distribuidora é responsável por realizar o projeto, a montagem e o comissionamento do sistema de medição, observadas as seguintes disposições:
-
-###### <a id="art96_2"></a>Art. 96.
+###### <a id="art96"></a>Art. 96.
 
 No caso de conexão de outra distribuidora ou de unidade consumidora livre ou especial, que não utilize o processo simplificado da CCEE previsto nos Procedimentos de Comercialização, a distribuidora é responsável por realizar o projeto, a montagem e o comissionamento do sistema de medição, observadas as seguintes disposições:
 
@@ -2049,11 +2037,7 @@ No caso de migração para o ACL pelo modelo simplificado para comercialização
 
 > Redação acrescida pela Resolução Normativa nº 1110/2024
 
-###### <a id="art97"></a>Art. 97
-
-No caso de central geradora, importador e exportador de energia, o usuário é responsável por realizar o projeto, a montagem e o comissionamento do sistema de medição para faturamento e seu relatório, observadas as seguintes disposições:
-
-###### <a id="art97_2"></a>Art. 97.
+###### <a id="art97"></a>Art. 97.
 
 No caso de central geradora, SAE autônomo e instalações de importador ou exportador de energia, o usuário é responsável por realizar o projeto, a montagem e o comissionamento do sistema de medição para faturamento e seu relatório, observadas as seguintes disposições:
 
@@ -2141,11 +2125,7 @@ A distribuidora deve incluir em seu orçamento os custos de remanejamento ou sub
 
 <a id="art101_parunico"></a>Parágrafo único. A distribuidora deve observar as disposições do Decreto nº 10.480, de 1º de setembro de 2020, na aplicação deste artigo para infraestrutura de redes de telecomunicações, não incluindo no orçamento os custos atribuíveis ao detentor da infraestrutura.
 
-###### <a id="art102"></a>Art. 102
-
-Na utilização de instalações de uso restrito de central geradora para a conexão de unidade consumidora ou para expansão do sistema para atendimento de mercado, a distribuidora deve:
-
-###### <a id="art102_2"></a>Art. 102.
+###### <a id="art102"></a>Art. 102.
 
 Na utilização de instalações de uso restrito para a conexão de unidade consumidora ou para expansão do sistema para atendimento de mercado, a distribuidora deve:
 
@@ -2267,7 +2247,7 @@ O pagamento da participação financeira pode ser parcelado no caso de solicita�
 
 A participação financeira do consumidor é a diferença positiva entre o orçamento da obra de mínimo custo global, proporcionalizado nos termos deste artigo, e o encargo de responsabilidade da distribuidora.
 
-<a id="art108_par1_2"></a>§ 1º A distribuidora deve proporcionalizar o orçamento da obra de mínimo custo global considerando a relação entre a maior demanda de carga ou geração a ser atendida ou acrescida e a máxima demanda disponibilizada pelo orçamento no ponto de conexão, com aplicação obrigatória do art. 100.
+<a id="art108_par1"></a>§ 1º A distribuidora deve proporcionalizar o orçamento da obra de mínimo custo global considerando a relação entre a maior demanda de carga ou geração a ser atendida ou acrescida e a máxima demanda disponibilizada pelo orçamento no ponto de conexão, com aplicação obrigatória do art. 100.
 
 > Redação dada pela Resolução Normativa nº 1059/2023
 
@@ -2643,7 +2623,7 @@ Os contratos devem observar os seguintes prazos de vigência e condições de pr
 
 <a id="art133_par3_inc2_alib"></a>b) se menor que 180 dias: a vigência será a segunda data de aniversário do contrato subsequente à data de solicitação.
 
-<a id="art133_par4_inc2"></a>II - (Revogado pela Resolução Normativa nº 1174/2026)
+<a id="art133_par4"></a>§ 4º (Revogado pela Resolução Normativa nº 1174/2026)
 
 <a id="art133_par5"></a>§ 5º (Revogado pela Resolução Normativa nº 1174/2026)
 
@@ -2827,11 +2807,11 @@ O encerramento contratual antecipado implica cobrança dos seguintes valores:
 
 <a id="art142_inc1_alib"></a>b) o correspondente ao faturamento do montante mínimo disposto no art. 148 pelos meses que faltam para o término da vigência do contrato além do período cobrado na alínea "a" do inciso I, sendo que para a modalidade tarifária horária azul a cobrança deve ser realizada apenas para o posto tarifário fora de ponta;
 
-<a id="art142_inc2_2"></a>II - no caso do CCER com vigência por prazo determinado, o valor correspondente ao faturamento dos meses que faltam para o término da vigência do contrato, limitado a 12 meses, deve ser calculado considerando a tarifa de energia e a bandeira tarifária vigentes na data de solicitação do encerramento, e os seguintes valores:
+<a id="art142_inc2"></a>II - no caso do CCER com vigência por prazo determinado, o valor correspondente ao faturamento dos meses que faltam para o término da vigência do contrato, limitado a 12 meses, deve ser calculado considerando a tarifa de energia e a bandeira tarifária vigentes na data de solicitação do encerramento, e os seguintes valores:
 
-<a id="art142_inc2_alia_2"></a>a) montantes médios contratados, para o consumidor livre e especial;
+<a id="art142_inc2_alia"></a>a) montantes médios contratados, para o consumidor livre e especial;
 
-<a id="art142_inc2_alib_2"></a>b) média dos consumos de energia elétrica disponíveis anteriores ao encerramento, limitada aos 12 últimos ciclos, para os demais consumidores.
+<a id="art142_inc2_alib"></a>b) média dos consumos de energia elétrica disponíveis anteriores ao encerramento, limitada aos 12 últimos ciclos, para os demais consumidores.
 
 > Redação dada pela Resolução Normativa nº 1081/2023
 
@@ -2907,11 +2887,7 @@ No caso de encerramento contratual de instalação para a qual foi realizado inv
 
 #### Seção VIII - Da Ausência de Contrato
 
-###### <a id="art144"></a>Art. 144
-
-Quando houver recusa injustificada do consumidor em celebrar os contratos e aditivos pertinentes, a distribuidora deve adotar os seguintes procedimentos:
-
-###### <a id="art144_2"></a>Art. 144.
+###### <a id="art144"></a>Art. 144.
 
 Quando houver recusa do consumidor em celebrar os contratos e aditivos pertinentes, informar ou atualizar o número de CPF ou do CNPJ, a distribuidora deve adotar os seguintes procedimentos:
 
@@ -3145,15 +3121,7 @@ A distribuidora deve atender à solicitação de redução da demanda contratada
 
 No caso de alteração da demanda contratada por distribuidora suprida, os novos valores devem ser informados à distribuidora supridora com antecedência de pelo menos 15 dias em relação à data limite para revisão do Montante de Uso do Sistema de Transmissão - MUST contratado pela supridora junto ao Operador Nacional do Sistema Elétrico - ONS.
 
-###### <a id="art157"></a>Art. 157
-
-No caso de conexão de central geradora, outra distribuidora, agente exportador e agente importador, a distribuidora deve prorrogar as datas contidas no CUSD nas seguintes situações:
-
-###### <a id="art157_2"></a>Art. 157
-
-No caso de conexão de unidade consumidora com microgeração ou minigeração distribuída, central geradora, outra distribuidora, agente exportador e agente importador, a distribuidora deve prorrogar as datas contidas no CUSD nas seguintes situações: (Redação dada pela Resolução Normativa nº 1059/2023)
-
-###### <a id="art157_3"></a>Art. 157.
+###### <a id="art157"></a>Art. 157.
 
 No caso de conexão de unidade consumidora com microgeração ou minigeração distribuída, central geradora, SAE autônomo, outra distribuidora, agente exportador e agente importador, a distribuidora deve prorrogar as datas contidas no CUSD nas seguintes situações:
 
@@ -3243,21 +3211,7 @@ A CCEE deve elaborar e executar, de forma contínua e atualizada, plano de comun
 
 #### Seção II - Do Enquadramento Como Consumidor Livre
 
-###### <a id="art160"></a>Art. 160
-
-O consumidor atendido em qualquer tensão pode optar pela compra de energia elétrica no ACL, desde que a contratação da demanda observe, no mínimo, o seguinte valor em um dos postos tarifários, conforme disposto na Portaria MME nº 514, de 27 de dezembro de 2018:
-
-<a id="art160_inc1"></a>I - a partir de 1º de julho de 2019: 2.500 kW;
-
-<a id="art160_inc2"></a>II - a partir de 1º de janeiro de 2020: 2.000 kW;
-
-<a id="art160_inc3"></a>III - a partir de 1º de janeiro de 2021: 1.500 kW;
-
-<a id="art160_inc4"></a>IV - a partir de 1º de janeiro de 2022: 1.000 kW; e
-
-<a id="art160_inc5"></a>V - a partir de 1º de janeiro de 2023: 500 kW.
-
-###### <a id="art160_2"></a>Art. 160.
+###### <a id="art160"></a>Art. 160.
 
 O consumidor do grupo A atendido em qualquer tensão pode optar pela compra de energia elétrica no ACL.
 
@@ -3281,7 +3235,7 @@ O consumidor do grupo A atendido em qualquer tensão pode optar pela compra de e
 
 > Redação dada pela Resolução Normativa nº 1174/2026
 
-<a id="art160_par5_inc2"></a>II - (Revogado pela Resolução Normativa nº 1174/2026)
+<a id="art160_par5"></a>§ 5º (Revogado pela Resolução Normativa nº 1174/2026)
 
 <a id="art160_par6"></a>§ 6º Não compete às agências estaduais conveniadas, à ANEEL nem à CCEE manifestarem-se sobre a conveniência, oportunidade ou obrigatoriedade do exercício da opção disposta nesse artigo para o consumidor submetido à Lei de Licitações e Contratos, nem emitir declaração de qualquer espécie sobre a exclusividade de venda de energia por determinado agente ou sobre a dispensa de licitação.
 
@@ -3303,11 +3257,7 @@ O consumidor especial deve comprovar a instituição da comunhão de fato ou de 
 
 O CCER deve conter as cláusulas gerais do art. 145 e, caso aplicáveis, as do art. 132, além de outras consideradas essenciais, observando as demais disposições deste Capítulo.
 
-###### <a id="art163"></a>Art. 163
-
-O montante de energia elétrica contratado por meio do CCER deve ser definido por meio de um dos seguintes critérios:
-
-###### <a id="art163_2"></a>Art. 163.
+###### <a id="art163"></a>Art. 163.
 
 O montante de energia elétrica contratado por meio do CCER para consumidor potencialmente livre deve ser definido conforme o montante de energia elétrica medido.
 
@@ -3319,77 +3269,33 @@ O montante de energia elétrica contratado por meio do CCER para consumidor pote
 
 <a id="art163_parunico"></a>Parágrafo único. (Revogado pela Resolução Normativa nº 1174/2026)
 
-###### <a id="art164"></a>Art. 164
+###### <a id="art164"></a>Art. 164 (Revogado pela Resolução Normativa nº 1174/2026)
 
-A solicitação de redução do montante de energia elétrica contratado por consumidor livre e especial, com aplicação a partir do início da vigência subsequente, deve ser realizada com a antecedência em relação ao término da vigência contratual de pelo menos:
+#### Seção IV - Do Consumidor Parcialmente Livre (revogada pela Resolução Normativa nº 1174/2026)
 
-<a id="art164_inc1"></a>I - 90 dias: para o consumidor do subgrupo AS ou A4; ou
-
-<a id="art164_inc2"></a>II - (Revogado pela Resolução Normativa nº 1174/2026)
-
-#### Seção IV - Do Consumidor Parcialmente Livre - (revogada pela Resolução Normativa nº - 1174 - /2026)
-
-###### <a id="art165"></a>Art. 165
-
-Considera-se consumidor parcialmente livre o consumidor livre que exerce a opção de contratar parte das necessidades de energia das unidades consumidoras de sua responsabilidade com a distribuidora.
-
-<a id="art165_par1"></a>§ 1º O CCER celebrado entre o consumidor parcialmente livre e a distribuidora deve dispor sobre o montante de energia elétrica contratado, discriminado em períodos mensais para todo o período do contrato.
-
-<a id="art165_par2"></a>§ 2º No caso de período do CCER ser maior que 12 meses, deve ser permitida a revisão dos valores mensais de energia elétrica contratada a cada período de 12 meses, observadas as Regras e Procedimentos de Comercialização aplicáveis ao registro desses valores.
-
-<a id="art165_par3"></a>§ 3º A modulação da energia elétrica associada ao CCER deve ser realizada segundo o perfil de carga da unidade consumidora, observadas as Regras e Procedimentos de Comercialização aplicáveis ao registro desses valores.
-
-<a id="art165_par4"></a>§ 4º O critério de faturamento do CCER celebrado com consumidor parcialmente livre deve ser a energia medida da unidade consumidora, limitada ao montante de energia elétrica contratada.
-
-<a id="art165_par5"></a>§ 5º A solicitação de acréscimo do montante de energia elétrica associado ao CCER por consumidor parcialmente livre deve ter prazos para atendimento e demais condições semelhantes aos casos de retorno de consumidor livre ao ACR.
-
-<a id="art165_par6"></a>§ 6º A solicitação de redução do montante de energia elétrica associado ao CCER por consumidor parcialmente livre deve ter prazos para atendimento e demais condições semelhantes aos casos de migração de consumidor potencialmente livre para o ACL.
-
-<a id="art165_par7"></a>§ 7º Os montantes de energia elétrica contratada nos termos do CCER, observados os valores de energia medida, deverão ser registrados na CCEE conforme Procedimentos de Comercialização, sendo esses montantes tratados como carga da distribuidora para fins de contabilização das operações de compra e venda de energia elétrica realizadas no mercado de curto prazo.
-
-<a id="art165_par8"></a>§ 8º (Revogado pela Resolução Normativa nº 1174/2026)
+###### <a id="art165"></a>Art. 165 (Revogado pela Resolução Normativa nº 1174/2026)
 
 #### Seção V - Da Migração do Consumidor Potencialmente Livre
 
-###### <a id="art166"></a>Art. 166
-
-O consumidor potencialmente livre, inclusive especial, que satisfaz os requisitos para aquisição de energia no ACL e deseje exercer a opção de adquirir energia elétrica com outro fornecedor, deve comunicar formalmente à distribuidora o seu interesse:
-
-<a id="art166_inc1"></a>I - pela não prorrogação total ou parcial do CCER, respeitadas as disposições contratuais; ou
-
-<a id="art166_inc1_2"></a>I - pela denúncia total ou parcial do CCER, respeitadas as disposições contratuais e dos art. 133 e 142;
-
-> Redação dada pela Resolução Normativa nº 1081/2023
-
-<a id="art166_inc2"></a>II - pelo encerramento antecipado do CCER, sujeitando-se às disposições aplicáveis à rescisão contratual.
-
-<a id="art166_par1"></a>§ 1º Ao comunicar a opção, o consumidor potencialmente livre deve informar à distribuidora se a migração é total ou parcial.
-
-<a id="art166_par1_2"></a>§ 1º Ao comunicar a opção, o consumidor potencialmente livre deve informar à distribuidora, observado o §6º:
-
-<a id="art166_par1_inc1"></a>I - se a migração é total ou parcial;
-
-<a id="art166_par1_inc2"></a>II - no caso de consumidor com demanda contratada maior ou igual a 500 kW:
-
-<a id="art166_par1_inc2_alia"></a>a) se fará adesão à CCEE; ou
-
-<a id="art166_par1_inc2_alib"></a>b) se será representado por agente varejista, bem como a opção pelo enquadramento no modelo simplificado para comercialização varejista. (Redação dada pela Resolução Normativa nº 1110/2024)
-
-###### <a id="art166_2"></a>Art. 166.
+###### <a id="art166"></a>Art. 166.
 
 O consumidor potencialmente livre, que satisfaz os requisitos para aquisição de energia no ACL e deseje exercer a opção de adquirir energia elétrica com outro fornecedor para sua unidade consumidora, deve:
 
-<a id="art166_inc1_3"></a>I - comunicar formalmente à distribuidora a sua opção, por meio dos canais de atendimento disponibilizados, inclusive da interface padronizada do § 1º; ou
+<a id="art166_inc1"></a>I - comunicar formalmente à distribuidora a sua opção, por meio dos canais de atendimento disponibilizados, inclusive da interface padronizada do § 1º; ou
 
-<a id="art166_inc2_2"></a>II - celebrar o Contrato para Comercialização Varejista (CCV) com o agente varejista, que deve solicitar a habilitação por meio do sistema da CCEE para que a distribuidora seja notificada, desde que se enquadre no procedimento de migração no modelo simplificado previsto no Submódulo 1.8 dos Procedimentos de Comercialização.
+<a id="art166_inc2"></a>II - celebrar o Contrato para Comercialização Varejista (CCV) com o agente varejista, que deve solicitar a habilitação por meio do sistema da CCEE para que a distribuidora seja notificada, desde que se enquadre no procedimento de migração no modelo simplificado previsto no Submódulo 1.8 dos Procedimentos de Comercialização.
 
-<a id="art166_par1_3"></a>§ 1º A distribuidora deve disponibilizar no espaço reservado para atendimento na internet, conforme instruções da ANEEL, interface padronizada para o consumidor exercer a opção prevista no inciso I do caput .
+<a id="art166_par1"></a>§ 1º A distribuidora deve disponibilizar no espaço reservado para atendimento na internet, conforme instruções da ANEEL, interface padronizada para o consumidor exercer a opção prevista no inciso I do caput .
 
-<a id="art166_par2_2"></a>§ 2º No caso do inciso II do caput , a comunicação à distribuidora da opção do consumidor e as demais comunicações previstas no Submódulo 1.8 dos Procedimentos de Comercialização serão realizadas por meio do sistema da CCEE.
+<a id="art166_par2"></a>§ 2º No caso do inciso II do caput , a comunicação à distribuidora da opção do consumidor e as demais comunicações previstas no Submódulo 1.8 dos Procedimentos de Comercialização serão realizadas por meio do sistema da CCEE.
 
-<a id="art166_par3_2"></a>§ 3º A distribuidora deve fornecer protocolo quando receber a comunicação da opção do consumidor de que trata o caput .
+<a id="art166_par3"></a>§ 3º A distribuidora deve fornecer protocolo quando receber a comunicação da opção do consumidor de que trata o caput .
 
-<a id="art166_par4_2"></a>§ 4º Ao exercer a opção e solicitar a migração ao ACL, o consumidor potencialmente livre deve:
+<a id="art166_par4"></a>§ 4º Ao exercer a opção e solicitar a migração ao ACL, o consumidor potencialmente livre deve:
+
+<a id="art166_par5"></a>§ 5º Na modalidade regular, a migração ocorre no mês imediatamente subsequente ao do vencimento dos seguintes prazos, sem incidência de cobrança pelo encerramento do CCER:
+
+<a id="art166_par6"></a>§ 6º A distribuidora pode praticar prazos menores dos que os dispostos no § 5º, desde que por período preestabelecido, observado o art. 663 e as seguintes condições:
 
 <a id="art166_par4_inc1"></a>I - informar a modalidade pretendida para migração, dentre as seguintes opções: regular ou antecipada;
 
@@ -3401,13 +3307,9 @@ O consumidor potencialmente livre, que satisfaz os requisitos para aquisição d
 
 <a id="art166_par4_inc3_alib"></a>b) se será representado por agente varejista, bem como a opção pelo enquadramento no modelo simplificado para comercialização varejista.
 
-<a id="art166_par5_2"></a>§ 5º Na modalidade regular, a migração ocorre no mês imediatamente subsequente ao do vencimento dos seguintes prazos, sem incidência de cobrança pelo encerramento do CCER:
-
 <a id="art166_par5_alia"></a>a) 90 dias: para unidade consumidora do subgrupo AS ou A4 que se enquadre no modelo simplificado previsto no Submódulo 1.8 dos Procedimentos de Comercialização; ou
 
 <a id="art166_par5_alib"></a>b) 180 dias: para os demais.
-
-<a id="art166_par6_2"></a>§ 6º A distribuidora pode praticar prazos menores dos que os dispostos no § 5º, desde que por período preestabelecido, observado o art. 663 e as seguintes condições:
 
 <a id="art166_par6_inc1"></a>I - a redução do prazo deve ser realizada com isonomia, vedada a aplicação individual ou a grupo que atenda determinadas condições; e
 
@@ -3479,15 +3381,7 @@ A distribuidora tem o prazo de até 5 dias úteis, contados a partir do recebime
 
 > Redação acrescida pela Resolução Normativa nº 1174/2026
 
-###### <a id="art167"></a>Art. 167
-
-Durante o período compreendido entre a formalização da denúncia do CCER e a efetiva migração para o ACL, o consumidor potencialmente livre deve solicitar a adesão à CCEE nos termos da Convenção de Comercialização, observados os prazos e as condições estabelecidos nos Procedimentos de Comercialização.
-
-###### <a id="art167_2"></a>Art. 167
-
-Durante o período compreendido entre a formalização da denúncia do CCER e a efetiva migração para o ACL, o consumidor potencialmente livre deve solicitar a adesão à CCEE ou a representação por agente varejista nos termos da regulamentação vigente, observados os prazos e as condições estabelecidos nos Procedimentos de Comercialização. (Redação dada pela Resolução Normativa nº 1081/2023)
-
-###### <a id="art167_3"></a>Art. 167.
+###### <a id="art167"></a>Art. 167.
 
 Após o deferimento da migração pela distribuidora, o consumidor potencialmente livre deve solicitar a adesão à CCEE ou a representação por agente varejista nos termos da regulamentação vigente, observados os prazos e as condições estabelecidos nos Procedimentos de Comercialização.
 
@@ -3539,11 +3433,7 @@ Caso o processo de migração do consumidor potencialmente livre para o ACL não
 
 > Redação acrescida pela Resolução Normativa nº 1174/2026
 
-###### <a id="art168"></a>Art. 168
-
-Caso o processo de migração do consumidor potencialmente livre para o ACL não se conclua por motivo não atribuível à distribuidora, devem ser observadas as seguintes disposições:
-
-###### <a id="art168_2"></a>Art. 168.
+###### <a id="art168"></a>Art. 168.
 
 Caso o consumidor esteja descontratado no ACR e no ACL, por motivo atribuível ao consumidor e/ou ao agente varejista, ou nos casos de atraso tratados no art. 167-B, devem ser observadas as seguintes disposições:
 
@@ -3573,19 +3463,11 @@ Caso o consumidor esteja descontratado no ACR e no ACL, por motivo atribuível a
 
 > Redação acrescida pela Resolução Normativa nº 1174/2026
 
-###### <a id="art169"></a>Art. 169
-
-Nos casos de inadimplência de consumidor potencialmente livre, caracterizada pelo não pagamento integral de mais de uma fatura mensal em um período de 12 meses, a distribuidora pode, nos termos do art. 24 da Lei nº 10.848, de 15 de março de 2004, vincular a prestação dos serviços de uso do sistema de distribuição à apresentação de contrato de compra de energia elétrica celebrado com agente vendedor e à adesão do consumidor à CCEE.
-
-###### <a id="art169_2"></a>Art. 169 (Revogado pela Resolução Normativa nº 1174/2026)
+###### <a id="art169"></a>Art. 169 (Revogado pela Resolução Normativa nº 1174/2026)
 
 #### Seção VI - Da Retorno do Consumidor ao Ambiente de Contratação Regulada
 
-###### <a id="art170"></a>Art. 170
-
-O consumidor livre ou especial deve formalizar junto à distribuidora, com antecedência mínima de 5 anos, seu interesse em adquirir energia elétrica da distribuidora para cobertura, total ou parcial, das necessidades de energia e potência das unidades consumidoras de sua responsabilidade.
-
-###### <a id="art170_2"></a>Art. 170.
+###### <a id="art170"></a>Art. 170.
 
 O consumidor livre ou especial deve formalizar junto à distribuidora, com antecedência mínima de 5 anos, seu interesse em adquirir energia elétrica da distribuidora para cobertura das necessidades de energia e potência das unidades consumidoras de sua responsabilidade.
 
@@ -3765,11 +3647,7 @@ Os benefícios tarifários concedidos aos consumidores do ACR, inclusive a Tarif
 
 #### Seção III - Da Classe Residencial e da Tarifa Social de Energia Elétrica
 
-###### <a id="art176"></a>Art. 176
-
-Deve ser classificada na classe residencial a unidade consumidora em imóvel utilizado para fins de moradia, com exceção da subclasse residencial rural, considerando-se as seguintes subclasses:
-
-###### <a id="art176_2"></a>Art. 176.
+###### <a id="art176"></a>Art. 176.
 
 Deve ser classificada na classe residencial a unidade consumidora em imóvel utilizado para fins de moradia, considerando-se as seguintes subclasses:
 
@@ -3911,11 +3789,7 @@ Para a classificação na subclasse residencial desconto social, com fundamento 
 
 > Redação acrescida pela Resolução Normativa nº 1147/2025
 
-###### <a id="art179"></a>Art. 179
-
-Para a subclasse residencial aplicam-se as tarifas das modalidades do subgrupo B1, enquanto para as subclasses residencial baixa renda aplicam-se as tarifas das modalidades do subgrupo B1, subclasse baixa renda.
-
-###### <a id="art179_2"></a>Art. 179.
+###### <a id="art179"></a>Art. 179.
 
 Para a classe residencial aplicam-se as tarifas do subgrupo B1.
 
@@ -3937,7 +3811,7 @@ Para a classe residencial aplicam-se as tarifas do subgrupo B1.
 
 <a id="art179_par1_inc4"></a>IV - (Revogado pela Resolução Normativa nº 1147/2025)
 
-<a id="art179_par2_inc4"></a>IV - (Revogado pela Resolução Normativa nº 1147/2025)
+<a id="art179_par2"></a>§ 2º (Revogado pela Resolução Normativa nº 1147/2025)
 
 <a id="art179_par3"></a>§ 3º Em habitações multifamiliares, caracterizadas pela existência de um único medidor de energia e mais de uma família, a redução tarifária deve ser aplicada multiplicando-se cada limite das parcelas de consumo dos incisos do § 1º ou, quando for o caso, do § 2º, pelo número de famílias que atendam aos critérios de classificação.
 
@@ -4049,11 +3923,7 @@ Deve ser classificada na classe rural, com fundamento na Lei nº 10.438, de 2002
 
 Para a unidade consumidora classificada na classe rural aplicam-se as tarifas homologadas para o grupo A, e, para o grupo B, as tarifas homologadas do subgrupo B2.
 
-###### <a id="art186"></a>Art. 186
-
-A unidade consumidora da classe rural tem direito, conforme disposições da Portaria MINFRA nº 45, de 20 de março de 1992, da Lei nº 10.438, de 2002 e do Decreto nº 7.891, de 2013, ao benefício tarifário de redução nas tarifas aplicáveis ao consumo (TUSD em R$/MWh e TE em R$/MWh) destinado às atividades de irrigação e de aquicultura desenvolvidas em um período diário contínuo de 8 horas e 30 minutos, de acordo com os seguintes percentuais:
-
-###### <a id="art186_2"></a>Art. 186.
+###### <a id="art186"></a>Art. 186.
 
 A unidade consumidora da classe rural tem direito, conforme disposições da Portaria MINFRA nº 45, de 20 de março de 1992, da Lei nº 10.438, de 2002 e do Decreto nº 7.891, de 2013, ao benefício tarifário de redução nas tarifas de energia elétrica aplicáveis ao consumo que se verifique nas atividades de irrigação e aquicultura desenvolvidas em um período diário de 8 horas e 30 minutos de duração, de acordo com os seguintes percentuais:
 
@@ -4341,11 +4211,7 @@ A distribuidora deve verificar o não atendimento aos critérios exigíveis para
 
 Para fins do processo de repercussão da tarifa social, a distribuidora deve enviar os dados provenientes do sistema de faturamento das unidades consumidoras classificadas nas subclasses residencial baixa renda de acordo com as instruções e periodicidade definidas pela ANEEL.
 
-###### <a id="art207"></a>Art. 207
-
-A distribuidora deve realizar a revisão cadastral disposta no inciso III do art. 205 a cada 3 anos, contados da data de concessão do benefício ou da última atualização, observadas as seguintes disposições:
-
-###### <a id="art207_2"></a>Art. 207.
+###### <a id="art207"></a>Art. 207.
 
 A distribuidora deve realizar a revisão cadastral disposta no inciso III do art. 205 a cada 3 anos, contados da data ou do ano de concessão do benefício ou da última atualização, observadas as seguintes disposições:
 
@@ -4595,11 +4461,7 @@ O consumidor pode optar pela instalação de sistema de medição com funcionali
 
 ###### <a id="art232"></a>Art. 232 (Revogado pela Resolução Normativa nº 1174/2026)
 
-###### <a id="art233"></a>Art. 233
-
-Central geradora, importador e exportador de energia elétrica são responsáveis técnica e financeiramente por instalar, operar e manter o sistema de medição para faturamento, com o acompanhamento e aprovação da distribuidora.
-
-###### <a id="art233_2"></a>Art. 233.
+###### <a id="art233"></a>Art. 233.
 
 Gerador, armazenador autônomo, importador e exportador de energia elétrica são responsáveis técnica e financeiramente por instalar, operar e manter o sistema de medição para faturamento, com o acompanhamento e aprovação da distribuidora.
 
@@ -4925,11 +4787,7 @@ Para o grupo A, a leitura deve possibilitar o faturamento correspondente ao cons
 
 <a id="art261_parunico_inc3"></a>III - alteração na tensão de conexão.
 
-###### <a id="art262"></a>Art. 262
-
-A leitura do sistema de medição utilizado para faturamento de energia contabilizada na CCEE de central geradora, agente exportador e agente importador deve observar as disposições do Módulo 5 do PRODIST.
-
-###### <a id="art262_2"></a>Art. 262.
+###### <a id="art262"></a>Art. 262.
 
 A leitura do sistema de medição utilizado para faturamento de energia contabilizada na CCEE de central geradora, SAE autônomo, instalações de agente exportador e agente importador deve observar as disposições do Módulo 5 do PRODIST.
 
@@ -5489,11 +5347,7 @@ A distribuidora deve considerar as bandeiras tarifárias vigentes em cada ciclo 
 
 #### Seção XI - Do Período de Testes e Ajustes
 
-###### <a id="art311"></a>Art. 311
-
-A distribuidora deve aplicar o período de testes para unidade consumidora para permitir a adequação da demanda contratada e a escolha da modalidade tarifária, nas seguintes situações:
-
-###### <a id="art311_2"></a>Art. 311.
+###### <a id="art311"></a>Art. 311.
 
 A distribuidora deve aplicar o período de testes para unidade consumidora para permitir a adequação da demanda contratada de consumo e a escolha da modalidade tarifária, nas seguintes situações:
 
@@ -5753,7 +5607,7 @@ A distribuidora deve compensar o faturamento quando houver diferença a cobrar o
 
 <a id="art325_par1_inc3"></a>III - no caso de levantamento periódico de iluminação pública, os itens do § 5º do art. 463; e
 
-<a id="art325_par1_inc3_2"></a>III- A - no caso de recebimento irregular de benefício associado ao SCEE, descrição da irregularidade e os indícios associados, bem como dos valores a serem refaturados; e
+<a id="art325_par1_inc3-A"></a>III-A - no caso de recebimento irregular de benefício associado ao SCEE, descrição da irregularidade e os indícios associados, bem como dos valores a serem refaturados; e
 
 > Redação acrescida pela Resolução Normativa nº 1059/2023
 
@@ -5989,7 +5843,7 @@ Constatada a duplicidade no pagamento de faturas, a distribuidora deve devolver 
 
 <a id="art342_par5"></a>§ 5º Caso haja alteração de titularidade, o valor deve ser devolvido ao titular à época da duplicidade no pagamento.
 
-#### Seção VII - Da Fatura no Caso de Migração ao Acl (Redação acrescida pela Resolução Normativa nº - 1174 - /2026)
+#### Seção VII - Da Fatura no Caso de Migração ao Acl (Redação acrescida pela Resolução Normativa nº 1174/2026)
 
 ###### <a id="art342-A"></a>Art. 342-A
 
@@ -6177,11 +6031,7 @@ A distribuidora deve suspender imediatamente o fornecimento de energia elétrica
 
 #### Seção III - Da Suspensão Por Desligamento na Ccee
 
-###### <a id="art354"></a>Art. 354
-
-A distribuidora deve suspender o fornecimento de todas as unidades consumidoras modeladas na CCEE de titularidade de consumidor livre e especial desligados da CCEE.
-
-###### <a id="art354_2"></a>Art. 354.
+###### <a id="art354"></a>Art. 354.
 
 A distribuidora deve suspender o fornecimento de todas as unidades consumidoras modeladas na CCEE de titularidade de consumidor livre e especial desligados da CCEE, ou daquelas cuja representação por agente varejista tenha sido extinta.
 
@@ -6283,7 +6133,7 @@ A suspensão do fornecimento de energia elétrica é considerada indevida se:
 
 <a id="art361_inc1"></a>I - o pagamento da fatura tiver sido realizado até a data limite contida na notificação para suspensão do fornecimento; ou
 
-<a id="art361_inc1_2"></a>I- A - o pagamento da fatura tiver sido realizado por meio de código de resposta rápida do PIX antes da execução da suspensão do fornecimento; ou
+<a id="art361_inc1-A"></a>I-A - o pagamento da fatura tiver sido realizado por meio de código de resposta rápida do PIX antes da execução da suspensão do fornecimento; ou
 
 > Redação acrescida pela Resolução Normativa nº 1057/2023
 
@@ -6481,11 +6331,7 @@ A distribuidora deve estabelecer canais adicionais de comunicação exclusivos a
 
 Os canais disponibilizados pela distribuidora devem ser integrados.
 
-###### <a id="art373"></a>Art. 373
-
-Os números para atendimento telefônico e os canais específicos de atendimento às pessoas com deficiência devem constar, de forma clara e objetiva:
-
-###### <a id="art373_2"></a>Art. 373.
+###### <a id="art373"></a>Art. 373.
 
 Os números para atendimento telefônico, os canais específicos de atendimento às pessoas com deficiência e as demais opções de acesso ao serviço de atendimento devem constar, de forma clara e objetiva:
 
@@ -6867,11 +6713,7 @@ A distribuidora deve disponibilizar na sua página na internet, no mínimo, as s
 
 #### Seção V - Das Demandas Dos Consumidores e Demais Usuários
 
-###### <a id="art399"></a>Art. 399
-
-O consumidor e demais usuários podem requerer informações, solicitar serviços e encaminhar reclamações, elogios, sugestões e denúncias nos canais de atendimento disponibilizados pela distribuidora.
-
-###### <a id="art399_2"></a>Art. 399.
+###### <a id="art399"></a>Art. 399.
 
 O consumidor e demais usuários podem requerer informações, solicitar e cancelar serviços, encaminhar reclamações, elogios, sugestões, denúncias e solicitar o encerramento contratual nos canais de atendimento disponibilizados pela distribuidora.
 
@@ -7255,11 +7097,7 @@ O consumidor e demais usuários tem o direito de receber da distribuidora, no pr
 
 <a id="art435_inc3"></a>III - as datas e horários de início e fim das interrupções ocorridas em suas instalações, detalhando as que foram expurgadas.
 
-###### <a id="art436"></a>Art. 436
-
-O consumidor e as centrais geradoras têm o direito de serem avisados sobre a data e os horários de início e término das interrupções programadas que afetem suas instalações, observados os seguintes prazos de antecedência em relação ao início da interrupção:
-
-###### <a id="art436_2"></a>Art. 436.
+###### <a id="art436"></a>Art. 436.
 
 O consumidor e os demais usuários têm o direito de serem avisados sobre a data e os horários de início e término das interrupções programadas que afetem suas instalações, observados os seguintes prazos de antecedência em relação ao início da interrupção:
 
@@ -7413,11 +7251,11 @@ Para o cálculo da compensação ao consumidor e demais usuários nos casos de d
 
 <a id="art443_inc4"></a>IV - no caso de consumidor ou demais usuários inadimplentes, podem ser deduzidos da compensação os débitos vencidos do consumidor ou dos demais usuários a favor da distribuidora, que não sejam objeto de contestação administrativa ou judicial;
 
-<a id="art443_inc5_2"></a>V - se a compensação for maior que o valor a ser faturado, devem ser observadas as seguintes disposições:
+<a id="art443_inc5"></a>V - se a compensação for maior que o valor a ser faturado, devem ser observadas as seguintes disposições:
 
-<a id="art443_inc5_alia_2"></a>a) para unidades consumidoras das subclasses residencial baixa renda: realizar o pagamento do crédito restante por meio de PIX, utilizando como chave única o CPF do titular do contrato da unidade consumidora, previamente cadastrada; e
+<a id="art443_inc5_alia"></a>a) para unidades consumidoras das subclasses residencial baixa renda: realizar o pagamento do crédito restante por meio de PIX, utilizando como chave única o CPF do titular do contrato da unidade consumidora, previamente cadastrada; e
 
-<a id="art443_inc5_alib_2"></a>b) não sendo possível aplicar a alínea "a": realizar o pagamento do crédito restante nos ciclos de faturamento subsequentes, sempre considerando o máximo crédito possível em cada ciclo, ou pagar por meio de crédito na conta corrente indicada pelo consumidor ou pelos demais usuários, cheque nominal ou ordem de pagamento;
+<a id="art443_inc5_alib"></a>b) não sendo possível aplicar a alínea "a": realizar o pagamento do crédito restante nos ciclos de faturamento subsequentes, sempre considerando o máximo crédito possível em cada ciclo, ou pagar por meio de crédito na conta corrente indicada pelo consumidor ou pelos demais usuários, cheque nominal ou ordem de pagamento;
 
 > Redação dada pela Resolução Normativa nº 1147/2025
 
@@ -7813,13 +7651,9 @@ A contratação do serviço de distribuição de energia elétrica pelo poder p�
 
 <a id="art475_par2"></a>§ 2º A contratação do serviço de distribuição de energia elétrica pode ser celebrada por quem receber a delegação do poder público municipal para a prestação do serviço público de iluminação pública, devendo a distribuidora proceder a alteração da titularidade nos casos de solicitação.
 
-#### Seção VII - Da Arrecadação da Contribuição Para o Custeio, a Expansão e a Melhoria do Serviço de Iluminação Pública e de Sistemas de Monitoramento Para Segurança e Preservação de Logradouros Públicos (Redação dada pela Resolução Normativa nº - 1115 - /2025)
+#### Seção VII - Da Arrecadação da Contribuição Para o Custeio, a Expansão e a Melhoria do Serviço de Iluminação Pública e de Sistemas de Monitoramento Para Segurança e Preservação de Logradouros Públicos (Redação dada pela Resolução Normativa nº 1115/2025)
 
-###### <a id="art476"></a>Art. 476
-
-A contribuição para o custeio do serviço de iluminação pública, instituída pela legislação do poder municipal, deve ser cobrada pela distribuidora nas faturas de energia elétrica nas condições estabelecidas nessa legislação e demais atos normativos desses poderes.
-
-###### <a id="art476_2"></a>Art. 476.
+###### <a id="art476"></a>Art. 476.
 
 A contribuição para o custeio, a expansão e a melhoria do serviço de iluminação pública e de sistemas de monitoramento para segurança e preservação de logradouros públicos, instituída pela legislação do poder municipal, deve ser cobrada pela distribuidora nas faturas de energia elétrica nas condições estabelecidas nessa legislação e demais atos normativos desses poderes.
 
@@ -7841,11 +7675,7 @@ A contribuição para o custeio, a expansão e a melhoria do serviço de ilumina
 
 > Redação acrescida pela Resolução Normativa nº 1174/2026
 
-###### <a id="art477"></a>Art. 477
-
-A distribuidora deve fornecer ao poder público municipal as informações necessárias para gestão tributária e operacionalização da cobrança da contribuição para o custeio do serviço de iluminação pública na fatura de energia.
-
-###### <a id="art477_2"></a>Art. 477.
+###### <a id="art477"></a>Art. 477.
 
 A distribuidora deve fornecer ao poder público municipal as informações necessárias para gestão tributária e operacionalização da cobrança da contribuição para o custeio, a expansão e a melhoria do serviço de iluminação pública e de sistemas de monitoramento para segurança e preservação de logradouros públicos na fatura de energia.
 
@@ -8003,101 +7833,9 @@ Nos casos de regularização fundiária urbana de interesse social - Reurb-S, de
 
 <a id="art485_par12"></a>§ 12 Aplica-se o disposto neste artigo aos imóveis localizados em área rural, desde que a unidade imobiliária tenha área menor que a fração mínima de parcelamento estabelecida no art. 8º. da Lei nº 5.868, de 12 de dezembro de 1972.
 
-#### Seção IV - Do Programa Minha Casa, Minha Vida (Redação dada pela Resolução Normativa nº - 1098 - /2024)
+#### Seção IV - Do Programa Minha Casa, Minha Vida (Redação dada pela Resolução Normativa nº 1098/2024)
 
-###### <a id="art486"></a>Art. 486
-
-Nos empreendimentos do Programa Casa Verde e Amarela, de que trata a Lei nº 14.118, de 12 de janeiro de 2021, operacionalizados com recursos do Fundo de Arrendamento Residencial - FAR ou do Fundo de Desenvolvimento Social (FDS), devem ser observadas as seguintes disposições:
-
-<a id="art486_inc1"></a>I - a responsabilidade pelo custeio da infraestrutura básica de redes de distribuição de energia elétrica internas ao empreendimento, inclusive postos de transformação, será, sucessivamente:
-
-<a id="art486_inc1_alia"></a>a) do Programa Casa Verde e Amarela, por meio de composição do valor das obras no valor do investimento da operação;
-
-<a id="art486_inc1_alib"></a>b) do poder público local; ou
-
-<a id="art486_inc1_alic"></a>c) da distribuidora;
-
-<a id="art486_inc2"></a>II - a distribuidora é responsável pelo custeio e execução das obras externas ao empreendimento para conexão à rede de distribuição.
-
-<a id="art486_par1"></a>§ 1º A execução das obras do inciso I do caput deve ser realizada pelo empreendedor, com posterior restituição, observadas as condições do § 10.
-
-<a id="art486_par2"></a>§ 2º Não é de responsabilidade da distribuidora a implantação de itens que não são objeto do seu contrato de concessão ou de permissão, a exemplo das instalações internas da unidade consumidora e das instalações relacionadas ao serviço público de iluminação pública ou de iluminação de vias internas.
-
-<a id="art486_par3"></a>§ 3º O poder público local, caso não custeie as obras do inciso I do caput , deve notificar formalmente e justificadamente a distribuidora de que não realizará o custeio, e que a restituição deve ser realizada ao empreendedor, ressalvados os casos em que o custo da infraestrutura básica incide sobre o valor de investimento das operações.
-
-<a id="art486_par4"></a>§ 4º O empreendedor deve solicitar a conexão do empreendimento à rede de distribuição, encaminhando à distribuidora as seguintes informações:
-
-<a id="art486_par4_inc1"></a>I - razão social, CNPJ e endereço;
-
-<a id="art486_par4_inc2"></a>II - localização e endereço do empreendimento;
-
-<a id="art486_par4_inc3"></a>III - levantamento planialtimétrico e cadastral, com georreferenciamento, em arquivo em formato digital, subscrito por profissional competente, acompanhado de anotação de responsabilidade técnica - ART ou registro de responsabilidade técnica - RRT, contendo as unidades, as construções, o sistema viário, as áreas públicas, os acidentes geográficos e os demais elementos caracterizadores;
-
-<a id="art486_par4_inc4"></a>IV - projetos de arquitetura, incluindo urbanístico, de acessibilidade e de paisagismo aprovados;
-
-<a id="art486_par4_inc5"></a>V - licenciamentos requeridos pelas instâncias locais;
-
-<a id="art486_par4_inc6"></a>VI - projeto da infraestrutura interna relacionada das redes de distribuição de energia elétrica, observadas as normas e padrões disponibilizados pela distribuidora e as normas dos órgãos oficiais competentes; e
-
-<a id="art486_par4_inc7"></a>VII - cronograma de entrega do empreendimento, com o detalhamento das etapas, se houver.
-
-<a id="art486_par5"></a>§ 5º Para o enquadramento na alínea "c" do inciso I do caput , o empreendedor deve encaminhar à distribuidora:
-
-<a id="art486_par5_inc1"></a>I - comprovação de que o empreendimento utiliza recursos do Fundo de Arrendamento Residencial - FAR ou do Fundo de Desenvolvimento Social - FDS;
-
-<a id="art486_par5_inc2"></a>II - instrumento legal ou jurídico que comprove a adesão do poder público local ao Programa Casa Verde e Amarela;
-
-<a id="art486_par5_inc3"></a>III - termo de compromisso do poder público local indicando os equipamentos públicos a serem implantados;
-
-<a id="art486_par5_inc4"></a>IV - planilha com o detalhamento de todos os itens que compõem o valor do investimento das operações do empreendimento; e
-
-<a id="art486_par5_inc5"></a>V - declaração de órgão competente de que o custeio da infraestrutura básica interna ao empreendimento de redes de distribuição de energia elétrica não incide sobre o valor de investimento das operações.
-
-<a id="art486_par6"></a>§ 6º A distribuidora pode dispensar itens do § 4º, desde que não sejam necessários para sua análise.
-
-<a id="art486_par7"></a>§ 7º A distribuidora deve encaminhar ao empreendedor, no prazo de até 60 dias após a apresentação ou reapresentação das informações do § 4º e, quando for o caso, do § 5º:
-
-<a id="art486_par7_inc1"></a>I - o resultado da análise do projeto da infraestrutura interna, com eventuais ressalvas se houverem, e, ocorrendo reprovação, os motivos e as providências corretivas necessárias;
-
-<a id="art486_par7_inc2"></a>II - para os casos de enquadramento na alínea "c" do inciso I do caput , o orçamento das obras de infraestrutura interna, discriminando o valor e o prazo de eventual restituição;
-
-<a id="art486_par7_inc3"></a>III - a forma de conexão do empreendimento, incluindo informações relacionadas ao nível de tensão, subestação e circuitos que serão utilizados para a conexão;
-
-<a id="art486_par7_inc4"></a>IV - a avaliação de capacidade da rede de distribuição existente e demais equipamentos, indicando a obra de conexão necessária para viabilizar o atendimento da nova demanda, se necessária;
-
-<a id="art486_par7_inc5"></a>V - o orçamento das obras de conexão necessárias, considerando o critério de mínimo custo global;
-
-<a id="art486_par7_inc6"></a>VI - o prazo para execução das obras de conexão; e
-
-<a id="art486_par7_inc7"></a>VII - outras informações julgadas necessárias.
-
-<a id="art486_par8"></a>§ 8º A contagem do prazo para a implementação das obras de responsabilidade da distribuidora somente se iniciará após a apresentação, pelo empreendedor, de cópia do instrumento que assegure que a contratação do empreendimento foi realizada, observados os demais prazos e condições dispostos nesta Resolução.
-
-<a id="art486_par9"></a>§ 9º A distribuidora pode ser contratada para construir as obras de infraestrutura interna de redes de distribuição de energia elétrica do empreendimento, desde que tal serviço seja oferecido nos termos do Capítulo IX do Título II.
-
-<a id="art486_par10"></a>§ 10 Para a restituição das obras de infraestrutura interna de redes de distribuição de energia elétrica enquadradas na alínea "c" do inciso I do caput , devem ser observadas as seguintes disposições:
-
-<a id="art486_par10_inc1"></a>I - ocorrendo o custeio pelo poder público local, ou caso o custo componha o valor do investimento das operações do empreendimento, não haverá restituição pela distribuidora;
-
-<a id="art486_par10_inc2"></a>II - caso o empreendedor execute a obra sem observar os procedimentos dispostos neste artigo, não haverá restituição pela distribuidora;
-
-<a id="art486_par10_inc3"></a>III - a restituição é limitada ao menor valor entre o orçamento da distribuidora e o valor comprovadamente gasto pelo empreendedor, o que deve ser feito pela apresentação de notas fiscais;
-
-<a id="art486_par10_inc4"></a>IV - a restituição deve ser atualizada pelo Índice Nacional de Preços ao Consumidor Amplo - IPCA, da data da comprovação feita à distribuidora até o efetivo pagamento;
-
-<a id="art486_par10_inc5"></a>V - o prazo de restituição é de até 90 dias após a data em que a conexão do empreendimento foi realizada, e depende da entrega da documentação comprobatória do inciso III e da notificação do § 3º;
-
-<a id="art486_par10_inc6"></a>VI - não ocorrendo a restituição por motivo que não seja de responsabilidade da distribuidora, a atualização monetária do inciso IV deve ser suspensa; e
-
-<a id="art486_par10_inc7"></a>VII - ocorrendo atraso na restituição por responsabilidade da distribuidora, deve ser acrescentado ao valor do inciso IV os juros de mora de 1% ao mês calculados pro rata die e multa de 5% sobre o montante final em atraso.
-
-<a id="art486_par11"></a>§ 11 Havendo incompatibilidade entre o cronograma elaborado pela distribuidora para a execução da obra de conexão e o cronograma de entrega do empreendimento, o empreendedor pode optar pela execução direta da obra de conexão, observados os procedimentos dispostos no art. 111 e seguintes.
-
-<a id="art486_par12"></a>§ 12 A implementação das obras de responsabilidade da distribuidora pode ser suspensa nos casos dispostos no art. 89.
-
-<a id="art486_par13"></a>§ 13 Após a implementação das obras e incorporação da rede de distribuição na forma disposta no art. 487 e seguintes, a distribuidora deve arcar com os custos de sua manutenção.
-
-<a id="art486_par14"></a>§ 14 (Revogado pela Resolução Normativa nº 1098/2024)
+###### <a id="art486"></a>Art. 486 (Revogado pela Resolução Normativa nº 1098/2024)
 
 ###### <a id="art486-A"></a>Art. 486-A
 
@@ -8493,7 +8231,15 @@ O fornecimento de energia elétrica por meio de MIGDI ou SIGFI deve ser realizad
 
 ###### <a id="art519"></a>Art. 519.
 
-Os sistemas do tipo MIGDI ou SIGFI devem garantir pelo menos a disponibilização de energia e demais características da tabela a seguir, por unidade consumidora e de acordo com o porte do sistema: Disponibilidade mensal garantida (kWh/ mês /UC)Consumo de referência (Wh/dia/UC)Potência mínima (W/UC)451.500700602.0001.000802.6501.2501204.0001.5001806.0001.800
+Os sistemas do tipo MIGDI ou SIGFI devem garantir pelo menos a disponibilização de energia e demais características da tabela a seguir, por unidade consumidora e de acordo com o porte do sistema:
+
+| Disponibilidade mensal garantida (kWh/ mês /UC) | Consumo de referência (Wh/dia/UC) | Potência mínima (W/UC) |
+|---|---|---|
+| 45 | 1.500 | 700 |
+| 60 | 2.000 | 1.000 |
+| 80 | 2.650 | 1.250 |
+| 120 | 4.000 | 1.500 |
+| 180 | 6.000 | 1.800 |
 
 ###### <a id="art520"></a>Art. 520.
 
@@ -9887,11 +9633,7 @@ A distribuidora não pode prestar atividades atípicas, sendo permitida somente 
 
 <a id="art631_parunico"></a>Parágrafo único. A distribuidora deve ter norma interna com critérios objetivos e isonômicos para a arrecadação de valores e para a propaganda ou publicidade em fatura de energia elétrica ou página na internet.
 
-###### <a id="art632"></a>Art. 632
-
-Não se enquadra como atividade acessória ou atípica a arrecadação da contribuição para o custeio do serviço de iluminação pública, que deve observar o disposto no art. 476.
-
-###### <a id="art632_2"></a>Art. 632.
+###### <a id="art632"></a>Art. 632.
 
 Não se enquadra como atividade acessória ou atípica:
 
@@ -10143,9 +9885,9 @@ No caso de redes instaladas e que obtiverem autorização do poder concedente, o
 
 Compete ao detentor de redes particulares, quando solicitado, a comprovação documental, junto à distribuidora, da propriedade dos ativos envolvidos e do ato autorizativo do poder concedente.
 
-### CAPÍTULO XI - DA MICROGERAÇÃO E MINIGERAÇÃO DISTRIBUÍDA E DO SISTEMA DE COMPENSAÇÃO DE ENERGIA ELÉTRICA (SCEE) (Redação acrescida pela Resolução Normativa nº - 1059 - /2023)
+### CAPÍTULO XI - DA MICROGERAÇÃO E MINIGERAÇÃO DISTRIBUÍDA E DO SISTEMA DE COMPENSAÇÃO DE ENERGIA ELÉTRICA (SCEE) (Redação acrescida pela Resolução Normativa nº 1059/2023)
 
-#### Seção I - Da Conexão de Microgeração e Minigeração Distribuída (Redação acrescida pela Resolução Normativa nº - 1059 - /2023)
+#### Seção I - Da Conexão de Microgeração e Minigeração Distribuída (Redação acrescida pela Resolução Normativa nº 1059/2023)
 
 ###### <a id="art655-A"></a>Art. 655-A
 
@@ -10245,7 +9987,7 @@ Percentual = 2,5%, caso a potência a ser conectada seja superior a 500 kW e inf
 
 > Redação acrescida pela Resolução Normativa nº 1059/2023
 
-#### Seção II - Dos Critérios Para Participação e Permanência no Scee (Redação acrescida pela Resolução Normativa nº - 1059 - /2023)
+#### Seção II - Dos Critérios Para Participação e Permanência no Scee (Redação acrescida pela Resolução Normativa nº 1059/2023)
 
 ###### <a id="art655-D"></a>Art. 655-D
 
@@ -10331,7 +10073,7 @@ Na ocorrência de indício de recebimento irregular de benefício associado ao S
 
 > Redação acrescida pela Resolução Normativa nº 1059/2023
 
-#### Seção III - Do Faturamento de Unidades Consumidoras do Scee (Redação acrescida pela Resolução Normativa nº - 1059 - /2023)
+#### Seção III - Do Faturamento de Unidades Consumidoras do Scee (Redação acrescida pela Resolução Normativa nº 1059/2023)
 
 ###### <a id="art655-G"></a>Art. 655-G
 
@@ -10531,7 +10273,7 @@ No caso de unidade consumidora com microgeração ou minigeração distribuída 
 
 > Redação acrescida pela Resolução Normativa nº 1059/2023
 
-#### Seção IV - Do Faturamento no Período de Transição Instituído Pela Lei nº - 14.300 - /2022 (Redação acrescida pela Resolução Normativa nº - 1059 - /2023)
+#### Seção IV - Do Faturamento no Período de Transição Instituído Pela Lei nº 14.300/2022 (Redação acrescida pela Resolução Normativa nº 1059/2023)
 
 ###### <a id="art655-O"></a>Art. 655-O
 
@@ -10665,7 +10407,7 @@ No caso de reclassificação de GD II para GD III ou de GD III para GD II, aplic
 
 > Redação acrescida pela Resolução Normativa nº 1059/2023
 
-#### Seção V - Das Não Conformidades em Unidades Consumidoras Participantes do Scee (Redação acrescida pela Resolução Normativa nº - 1059 - /2023)
+#### Seção V - Das Não Conformidades em Unidades Consumidoras Participantes do Scee (Redação acrescida pela Resolução Normativa nº 1059/2023)
 
 ###### <a id="art655-T"></a>Art. 655-T
 
@@ -10685,7 +10427,7 @@ Comprovado o procedimento irregular nos termos do art. 590, a energia ativa inje
 
 > Redação acrescida pela Resolução Normativa nº 1059/2023
 
-#### Seção VI - Do Envio de Dados Sobre Mmgd à Aneel (Redação acrescida pela Resolução Normativa nº - 1059 - /2023)
+#### Seção VI - Do Envio de Dados Sobre Mmgd à Aneel (Redação acrescida pela Resolução Normativa nº 1059/2023)
 
 ###### <a id="art655-W"></a>Art. 655-W
 
@@ -10697,7 +10439,7 @@ A distribuidora deve coletar as informações das unidades consumidoras particip
 
 > Redação acrescida pela Resolução Normativa nº 1059/2023
 
-#### Seção VII - Da Comercialização de Excedente de Energia (Redação acrescida pela Resolução Normativa nº - 1098 - /2024)
+#### Seção VII - Da Comercialização de Excedente de Energia (Redação acrescida pela Resolução Normativa nº 1098/2024)
 
 ###### <a id="art655-X"></a>Art. 655-X
 
@@ -10747,7 +10489,7 @@ A comercialização de excedente de energia de microgeração ou minigeração d
 
 > Redação acrescida pela Resolução Normativa nº 1098/2024
 
-#### Seção VIII - Da Migração ao Acl (Redação acrescida pela Resolução Normativa nº - 1174 - /2026)
+#### Seção VIII - Da Migração ao Acl (Redação acrescida pela Resolução Normativa nº 1174/2026)
 
 ###### <a id="art655-Y"></a>Art. 655-Y
 
@@ -11075,11 +10817,11 @@ A distribuidora deve adequar os seus procedimentos às alterações promovidas p
 
 <a id="art668_inc2_alit"></a>t) novo relatório de atendimentos realizados nos postos de atendimento presencial do Módulo 8 do PRODIST;
 
-<a id="art668_inc2_2"></a>II- A: até 30 de setembro de 2022, para:
+<a id="art668_inc2-A"></a>II-A: até 30 de setembro de 2022, para:
 
-<a id="art668_inc2_alia_2"></a>a) art. 257: que trata da instrução de processo no caso de defeito na medição, com exceção do §5º do art. 257, que deve observar o prazo da alínea "f" do inciso II; e
+<a id="art668_inc2-A_alia"></a>a) art. 257: que trata da instrução de processo no caso de defeito na medição, com exceção do §5º do art. 257, que deve observar o prazo da alínea "f" do inciso II; e
 
-<a id="art668_inc2_alib_2"></a>b) art. 598: que trata da instrução de processo no caso de irregularidade, com exceção do §5º do art. 598, que deve observar o prazo da alínea "f" do inciso II;
+<a id="art668_inc2-A_alib"></a>b) art. 598: que trata da instrução de processo no caso de irregularidade, com exceção do §5º do art. 598, que deve observar o prazo da alínea "f" do inciso II;
 
 > Redação acrescida pela Resolução Normativa nº 1025/2022
 
@@ -11223,47 +10965,17 @@ A regra disposta no §2º do art. 655-I deve ser aplicada nos ciclos de faturame
 
 ### Seção VIII - Disposições Finais
 
-###### <a id="art672"></a>Art. 672
-
-A Resolução Normativa nº 482, de 17 de abril de 2012, passa a vigorar com as seguintes alterações:
-
-"Art. 3º Na solicitação de fornecimento inicial ou aumento de potência disponibilizada de unidade consumidora com microgeração ou minigeração distribuída aplicam-se os procedimentos, prazos e condições estabelecidos nas Regras de Prestação do Serviço Público de Distribuição de Energia Elétrica e no Módulo 3 do PRODIST." (NR)
-
-"Art. 4º - A É vedada a divisão de central geradora em unidades de menor porte para se enquadrar nos limites de potência para microgeração ou minigeração distribuída, devendo a distribuidora identificar esses casos, solicitar a readequação da instalação e, caso não atendido, negar a adesão ao Sistema de Compensação de Energia Elétrica." (NR)
-
-"Art. 7º.. ...........
-
-<a id="art672_inc14"></a>XIV - adicionalmente às informações obrigatórias, a fatura dos consumidores que possuem microgeração ou minigeração distribuída deve conter, a cada ciclo de faturamento:
-
-...........
-
-<a id="art672_inc17"></a>XVII - para as unidades consumidoras atendidas em tensão primária com equipamentos de medição instalados no secundário dos transformadores deve ser deduzida a perda por transformação da energia injetada por essa unidade consumidora, conforme Regras de Prestação do Serviço Público de Distribuição de Energia Elétrica;
-
-...........
-
-<a id="art672_inc19"></a>XIX - para unidades consumidoras classificados na subclasse residencial baixa renda deve-se, primeiramente, aplicar as regras de faturamento previstas neste artigo e, em seguida, conceder os descontos conforme Regras de Prestação do Serviço Público de Distribuição de Energia Elétrica.
-
-.." (NR)
-
-"Art. 10. A distribuidora deverá iniciar o sistema de compensação de energia elétrica após realizar a vistoria e instalar ou adequar o sistema de medição, conforme procedimentos e prazos estabelecidos nas Regras de Prestação do Serviço Público de Distribuição de Energia Elétrica." (NR)
-
-"Art. 11. A distribuidora deve exigir do consumidor o ressarcimento de indenizações no caso de danos ao sistema elétrico de distribuição e danos a equipamentos elétricos de outros consumidores comprovadamente ocasionado por microgeração ou minigeração distribuída, conforme Regras de Prestação do Serviço Público de Distribuição de Energia Elétrica." (NR)
-
-"Art. 12. A distribuidora deve suspender imediatamente o fornecimento no caso de o consumidor gerar energia elétrica na sua unidade consumidora sem observar as normas e padrões da distribuidora local, conforme Regras de Prestação do Serviço Público de Distribuição de Energia Elétrica. .... " (NR)
-
-"Art. 13-B. Aplicam-se às unidades consumidoras participantes do sistema de compensação de energia, de forma complementar, as disposições das Regras de Prestação do Serviço Público de Distribuição de Energia Elétrica e do PRODIST. " (NR) (Revogado pela Resolução Normativa nº 1059/2023)
-
 ###### <a id="art673"></a>Art. 673.
 
 A Resolução Normativa nº 583, de 22 de outubro de 2013, passa a vigorar com as seguintes alterações:
 
 "Art. 4º.. ...........
 
-<a id="art673_inc3"></a>III - declaração emitida pelo agente de distribuição a cujo sistema estiver conectado, atestando o atendimento aos requisitos para operação em teste ou informando a inexistência de relacionamento." (NR)
+III - declaração emitida pelo agente de distribuição a cujo sistema estiver conectado, atestando o atendimento aos requisitos para operação em teste ou informando a inexistência de relacionamento." (NR)
 
 "Art. 5º.. ...........
 
-<a id="art673_inc3_2"></a>III - declaração emitida pelo agente de distribuição a cujo sistema estiver conectado, atestando o atendimento aos requisitos para operação comercial e a capacidade de escoamento da potência instalada total ou máxima que será incrementada ao sistema com a inserção de cada unidade geradora, exceto nos casos em que foi declarada inexistência de relacionamento.
+III - declaração emitida pelo agente de distribuição a cujo sistema estiver conectado, atestando o atendimento aos requisitos para operação comercial e a capacidade de escoamento da potência instalada total ou máxima que será incrementada ao sistema com a inserção de cada unidade geradora, exceto nos casos em que foi declarada inexistência de relacionamento.
 
 .." (NR)
 
@@ -11273,7 +10985,7 @@ A Resolução Normativa nº 875, de 10 de março de 2020, passa a vigorar com as
 
 "ANEXO IV ... ...........
 
-<a id="art674_item8"></a>8. Informação de Acesso emitida pela concessionária de transmissão de energia elétrica ou pelo Operador Nacional do Sistema Elétrico - ONS, a respeito da viabilidade e do ponto de conexão do empreendimento hidrelétrico e, no caso de acesso às instalações de distribuição, o Contrato de Uso do Sistema de Distribuição - CUSD celebrado com a concessionária ou permissionária de distribuição de energia elétrica.
+8. Informação de Acesso emitida pela concessionária de transmissão de energia elétrica ou pelo Operador Nacional do Sistema Elétrico - ONS, a respeito da viabilidade e do ponto de conexão do empreendimento hidrelétrico e, no caso de acesso às instalações de distribuição, o Contrato de Uso do Sistema de Distribuição - CUSD celebrado com a concessionária ou permissionária de distribuição de energia elétrica.
 
 .." (NR)
 
@@ -11283,11 +10995,11 @@ A Resolução Normativa nº 876, de 10 de março de 2020, passa a vigorar com as
 
 "Art. 6º.. ...........
 
-<a id="art675_par1"></a>§ 1º O DRO a que se refere o caput terá como finalidade, dentre outras, facilitar a obtenção de eventuais pedidos de informação de acesso pela concessionária de transmissão de energia elétrica ou pelo Operador Nacional do Sistema Elétrico - ONS e facilitar a obtenção de licenças e/ou autorizações dos órgãos responsáveis pelo licenciamento ambiental ou de outros órgãos públicos federais, estaduais, municipais ou do Distrito Federal. .." (NR)
+§ 1º O DRO a que se refere o caput terá como finalidade, dentre outras, facilitar a obtenção de eventuais pedidos de informação de acesso pela concessionária de transmissão de energia elétrica ou pelo Operador Nacional do Sistema Elétrico - ONS e facilitar a obtenção de licenças e/ou autorizações dos órgãos responsáveis pelo licenciamento ambiental ou de outros órgãos públicos federais, estaduais, municipais ou do Distrito Federal. .." (NR)
 
 "ANEXO II ... ...........
 
-<a id="art675_par1_item2"></a>2. Informação de Acesso, emitida pelo Operador Nacional do Sistema Elétrico - ONS, ou ainda, excepcionalmente, pela Empresa de Pesquisa Energética - EPE, a respeito da viabilidade da conexão do empreendimento e, no caso de acesso às instalações de distribuição, o Contrato de Uso do Sistema de Distribuição - CUSD celebrado com a concessionária ou permissionária de distribuição de energia elétrica.
+2. Informação de Acesso, emitida pelo Operador Nacional do Sistema Elétrico - ONS, ou ainda, excepcionalmente, pela Empresa de Pesquisa Energética - EPE, a respeito da viabilidade da conexão do empreendimento e, no caso de acesso às instalações de distribuição, o Contrato de Uso do Sistema de Distribuição - CUSD celebrado com a concessionária ou permissionária de distribuição de energia elétrica.
 
 ........... 2.2. A Informação de Acesso de que trata o item 2 deve ser apresentada à ANEEL em até 60 dias após sua emissão. .." (NR)
 
@@ -11297,7 +11009,7 @@ A Resolução Normativa nº 846, de 11 de junho de 2019, passa a vigorar com as 
 
 "Art. 11. ...
 
-<a id="art676_inc10"></a>X - deixar de cumprir ao disposto nas Condições Gerais de Fornecimento de Energia Elétrica e nas Regras de Prestação do Serviço Público de Distribuição de Energia Elétrica;"(NR)
+X - deixar de cumprir ao disposto nas Condições Gerais de Fornecimento de Energia Elétrica e nas Regras de Prestação do Serviço Público de Distribuição de Energia Elétrica;"(NR)
 
 ###### <a id="art677"></a>Art. 677.
 
@@ -11445,290 +11157,350 @@ Este texto não substitui o republicado no D.O. de 21.01.2022, seção 1, p. 74,
 
 (*) Republicado em razão de incorreções no original publicado no DOU de 20/12/2021, edição 238, seção 1, página 206.
 
-## ANEXO I - CONTRATO DE ADESÃO - GRUPO B
+## <a id="anexo1"></a>ANEXO I - CONTRATO DE ADESÃO - GRUPO B
 
-CONTRATO DE PRESTAÇÃO DE SERVIÇO PÚBLICO DE DISTRIBUIÇAO DE ENERGIA ELÉTRICA
+<a id="anexo1_texto1"></a> CONTRATO DE PRESTAÇÃO DE SERVIÇO PÚBLICO DE DISTRIBUIÇAO DE ENERGIA ELÉTRICA
 
-A (nome da DISTRIBUIDORA), CNPJ no (00.000.000/0000-00), com sede (endereço completo), doravante denominada DISTRIBUIDORA, e (nome do CONSUMIDOR), (documento de identificação e número), ( CPF ou CNPJ), doravante denominado CONSUMIDOR, responsável pela unidade consumidora nº (número de referência), situada na (endereço completo da unidade consumidora), aderem, de forma integral, a este Contrato de Prestação de Serviço Público de Energia Elétrica para unidade consumidora do grupo B.
+<a id="anexo1_texto2"></a> A (nome da DISTRIBUIDORA), CNPJ (00.000.000/0000-00), com sede (endereço completo), doravante denominada DISTRIBUIDORA, e (nome do CONSUMIDOR), (documento de identificação e número), (CPF ou CNPJ), doravante denominado CONSUMIDOR, responsável pela unidade consumidora nº (número de identificação da unidade consumidora), situada na (endereço completo da unidade consumidora), aderem, de forma integral, a este Contrato de Prestação de Serviço Público de Energia Elétrica para unidade consumidora do grupo B.
 
-A (nome da DISTRIBUIDORA), CNPJ (00.000.000/0000-00), com sede (endereço completo), doravante denominada DISTRIBUIDORA, e (nome do CONSUMIDOR), (documento de identificação e número), (CPF ou CNPJ), doravante denominado CONSUMIDOR, responsável pela unidade consumidora nº (número de identificação da unidade consumidora), situada na (endereço completo da unidade consumidora), aderem, de forma integral, a este Contrato de Prestação de Serviço Público de Energia Elétrica para unidade consumidora do grupo B. (Redação dada pela Resolução Normativa nº 1095/2024)
+> Redação dada pela Resolução Normativa nº 1095/2024
 
-CLÁUSULA PRIMEIRA: DO OBJETO
+### <a id="anexo1_cl1"></a>CLÁUSULA PRIMEIRA: DO OBJETO
 
-1.1. Este contrato tem por objeto a prestação pela DISTRIBUIDORA do serviço público de distribuição de energia elétrica ao CONSUMIDOR.
+<a id="anexo1_it1.1"></a>1.1. Este contrato tem por objeto a prestação pela DISTRIBUIDORA do serviço público de distribuição de energia elétrica ao CONSUMIDOR.
 
-1.2. Este contrato contém as principais condições da prestação e utilização do serviço, sem prejuízo do contido nas Regras de Prestação do Serviço Público de Distribuição de Energia Elétrica e demais regulamentos expedidos pela Agência Nacional de Energia Elétrica - ANEEL.
+<a id="anexo1_it1.2"></a>1.2. Este contrato contém as principais condições da prestação e utilização do serviço, sem prejuízo do contido nas Regras de Prestação do Serviço Público de Distribuição de Energia Elétrica e demais regulamentos expedidos pela Agência Nacional de Energia Elétrica - ANEEL.
 
-CLÁUSULA SEGUNDA: DA VIGÊNCIA
+### <a id="anexo1_cl2"></a>CLÁUSULA SEGUNDA: DA VIGÊNCIA
 
-2.1. O presente contrato vigorará por prazo indeterminado, observadas, caso aplicável, as disposições da Lei nº 14.133, de 2021.
+<a id="anexo1_it2.1"></a>2.1. O presente contrato vigorará por prazo indeterminado, observadas, caso aplicável, as disposições da Lei nº 14.133, de 2021.
 
-CLÁUSULA TERCEIRA: DA TARIFA
+### <a id="anexo1_cl3"></a>CLÁUSULA TERCEIRA: DA TARIFA
 
-3.1. A DISTRIBUIDORA deve cobrar as tarifas homologadas pela ANEEL pela prestação do serviço público de distribuição de energia elétrica.
+<a id="anexo1_it3.1"></a>3.1. A DISTRIBUIDORA deve cobrar as tarifas homologadas pela ANEEL pela prestação do serviço público de distribuição de energia elétrica.
 
-3.2. A DISTRIBUIDORA deve aplicar os descontos na tarifa estabelecidos na legislação, bem como, se quiser, conceder descontos de forma voluntária.
+<a id="anexo1_it3.2"></a>3.2. A DISTRIBUIDORA deve aplicar os descontos na tarifa estabelecidos na legislação, bem como, se quiser, conceder descontos de forma voluntária.
 
-3.2.1. A DISTRIBUIDORA deve informar ao CONSUMIDOR sobre o direito de receber a tarifa social de energia elétrica.
+<a id="anexo1_it3.2.1"></a>3.2.1. A DISTRIBUIDORA deve informar ao CONSUMIDOR sobre o direito de receber a tarifa social de energia elétrica.
 
-3.3. A DISTRIBUIDORA deve aplicar o adicional de bandeira tarifária, de acordo com a regulação.
+<a id="anexo1_it3.3"></a>3.3. A DISTRIBUIDORA deve aplicar o adicional de bandeira tarifária, de acordo com a regulação.
 
-3.4. Os valores das tarifas serão reajustados e/ou revisados anualmente.
+<a id="anexo1_it3.4"></a>3.4. Os valores das tarifas serão reajustados e/ou revisados anualmente.
 
-3.4.1. A DISTRIBUIDORA deve informar ao CONSUMIDOR o percentual de alteração da tarifa de energia elétrica e a data de início de sua vigência.
+<a id="anexo1_it3.4.1"></a>3.4.1. A DISTRIBUIDORA deve informar ao CONSUMIDOR o percentual de alteração da tarifa de energia elétrica e a data de início de sua vigência.
 
-CLÁUSULA QUARTA: DOS DIREITOS DO CONSUMIDOR
+### <a id="anexo1_cl4"></a>CLÁUSULA QUARTA: DOS DIREITOS DO CONSUMIDOR
 
-4.1. São os principais direitos do CONSUMIDOR:
+<a id="anexo1_it4.1"></a>4.1. São os principais direitos do CONSUMIDOR:
 
-4.1.1. ser orientado sobre a segurança e eficiência na utilização da energia elétrica;
+<a id="anexo1_it4.1.1"></a>4.1.1. ser orientado sobre a segurança e eficiência na utilização da energia elétrica;
 
-4.1.2. receber um serviço adequado, que satisfaça as condições de regularidade, continuidade, eficiência, segurança, atualidade, generalidade, cortesia na sua prestação e modicidade das tarifas;
+<a id="anexo1_it4.1.2"></a>4.1.2. receber um serviço adequado, que satisfaça as condições de regularidade, continuidade, eficiência, segurança, atualidade, generalidade, cortesia na sua prestação e modicidade das tarifas;
 
-4.1.3. receber compensação monetária se houver descumprimento da DISTRIBUIDORA, dos padrões de qualidade estabelecidos pela ANEEL;
+<a id="anexo1_it4.1.3"></a>4.1.3. receber compensação monetária se houver descumprimento da DISTRIBUIDORA, dos padrões de qualidade estabelecidos pela ANEEL;
 
-4.1.4. ter gratuidade para o aumento de carga, desde que a carga instalada não ultrapasse 50 kW;
+<a id="anexo1_it4.1.4"></a>4.1.4. ter gratuidade para o aumento de carga, desde que a carga instalada não ultrapasse 50 kW;
 
-4.1.4.1. a gratuidade não se aplica para iluminação pública, obras com acréscimo de fases de rede em tensão maior ou igual a 2,3 kV e atendimento por sistemas isolados, que devem observar a regulação da ANEEL;
+<a id="anexo1_it4.1.4.1"></a>4.1.4.1. a gratuidade não se aplica para iluminação pública, obras com acréscimo de fases de rede em tensão maior ou igual a 2,3 kV e atendimento por sistemas isolados, que devem observar a regulação da ANEEL;
 
-4.1.5. alterar a modalidade tarifária, desde que previsto na regulação da ANEEL, no prazo de até 30 dias;
+<a id="anexo1_it4.1.5"></a>4.1.5. alterar a modalidade tarifária, desde que previsto na regulação da ANEEL, no prazo de até 30 dias;
 
-4.1.6. solicitar a inspeção do sistema de medição de faturamento, para verificação do correto funcionamento dos equipamentos;
+<a id="anexo1_it4.1.6"></a>4.1.6. solicitar a inspeção do sistema de medição de faturamento, para verificação do correto funcionamento dos equipamentos;
 
-4.1.7. responder apenas por débitos relativos à unidade consumidora de sua titularidade ou vinculados à sua pessoa, não sendo obrigado a assinar termo relacionado à débitos de terceiros;
+<a id="anexo1_it4.1.7"></a>4.1.7. responder apenas por débitos relativos à unidade consumidora de sua titularidade ou vinculados à sua pessoa, não sendo obrigado a assinar termo relacionado à débitos de terceiros;
 
-4.1.8. não ser cobrado pelo consumo de energia elétrica reativa excedente;
+<a id="anexo1_it4.1.8"></a>4.1.8. não ser cobrado pelo consumo de energia elétrica reativa excedente;
 
-4.1.9. ter a devolução em dobro dos pagamentos de valores cobrados indevidamente, acrescidos de atualização monetária e juros, salvo hipótese de erro atribuível ao CONSUMIDOR e fato de terceiro;
+<a id="anexo1_it4.1.9"></a>4.1.9. ter a devolução em dobro dos pagamentos de valores cobrados indevidamente, acrescidos de atualização monetária e juros, salvo hipótese de erro atribuível ao CONSUMIDOR e fato de terceiro;
 
-4.1.10. escolher a data para o vencimento da fatura, dentre as seis datas, no mínimo, disponibilizadas pela DISTRIBUIDORA, exceto na modalidade de pré-pagamento;
+<a id="anexo1_it4.1.10"></a>4.1.10. escolher a data para o vencimento da fatura, dentre as seis datas, no mínimo, disponibilizadas pela DISTRIBUIDORA, exceto na modalidade de pré-pagamento;
 
-4.1.11. receber, até o mês de maio do ano corrente, declaração de quitação anual de débitos do ano anterior.
+<a id="anexo1_it4.1.11"></a>4.1.11. receber, até o mês de maio do ano corrente, declaração de quitação anual de débitos do ano anterior.
 
-4.2. São direitos do CONSUMIDOR na modalidade tarifária convencional e branca:
+<a id="anexo1_it4.2"></a>4.2. São direitos do CONSUMIDOR na modalidade tarifária convencional e branca:
 
-4.2.1. receber a fatura com periodicidade mensal, considerando as leituras do sistema de medição ou, caso aplicável, o valor por estimativa;
+<a id="anexo1_it4.2.1"></a>4.2.1. receber a fatura com periodicidade mensal, considerando as leituras do sistema de medição ou, caso aplicável, o valor por estimativa;
 
-4.2.1.1. A fatura deve ser entregue, conforme opção do CONSUMIDOR, em versão impressa ou eletrônica, com antecedência do vencimento de pelo menos:
+<a id="anexo1_it4.2.1.1"></a>4.2.1.1. A fatura deve ser entregue, conforme opção do CONSUMIDOR, em versão impressa ou eletrônica, com antecedência do vencimento de pelo menos: - 10 dias úteis, para classe poder público, Iluminação Pública e Serviço Público; - 5 dias úteis, para demais classes.
 
-- 10 dias úteis, para classe poder público, Iluminação Pública e Serviço Público; - 5 dias úteis, para demais classes.
+<a id="anexo1_it4.2.2"></a>4.2.2. receber gratuitamente o código de pagamento ou outro meio que viabilize o pagamento da fatura, de forma alternativa à emissão da segunda via; e
 
-4.2.2. receber gratuitamente o código de pagamento ou outro meio que viabilize o pagamento da fatura, de forma alternativa à emissão da segunda via; e
+<a id="anexo1_it4.2.3"></a>4.2.3. ser informado, na fatura, sobre a existência de faturas não pagas;
 
-4.2.3. ser informado, na fatura, sobre a existência de faturas não pagas;
+<a id="anexo1_it4.3"></a>4.3. São direitos do CONSUMIDOR na modalidade tarifária de pré-pagamento:
 
-4.3. São direitos do CONSUMIDOR na modalidade tarifária de pré-pagamento:
+<a id="anexo1_it4.3.1"></a>4.3.1. ser informado dos locais para aquisição de créditos e horários de funcionamento;
 
-4.3.1. ser informado dos locais para aquisição de créditos e horários de funcionamento;
+<a id="anexo1_it4.3.2"></a>4.3.2. receber comprovante no ato da compra de créditos;
 
-4.3.2. receber comprovante no ato da compra de créditos;
+<a id="anexo1_it4.3.3"></a>4.3.3. ter a sua disposição as informações necessárias à realização da recarga de créditos no caso de perda ou extravio de comprovante de compra não utilizado;
 
-4.3.3. ter a sua disposição as informações necessárias à realização da recarga de créditos no caso de perda ou extravio de comprovante de compra não utilizado;
+<a id="anexo1_it4.3.4"></a>4.3.4. ser informado sobre a quantidade de créditos disponíveis e avisado da proximidade dos créditos acabarem;
 
-4.3.4. ser informado sobre a quantidade de créditos disponíveis e avisado da proximidade dos créditos acabarem;
+<a id="anexo1_it4.3.5"></a>4.3.5. poder solicitar crédito de emergência, em qualquer dia da semana e horário;
 
-4.3.5. poder solicitar crédito de emergência, em qualquer dia da semana e horário;
+<a id="anexo1_it4.3.6"></a>4.3.6. receber, sempre que solicitado, demonstrativo de faturamento com informações consolidadas do valor total comprado, quantidade de créditos, datas e os valores das compras realizadas no mês de referência;
 
-4.3.6. receber, sempre que solicitado, demonstrativo de faturamento com informações consolidadas do valor total comprado, quantidade de créditos, datas e os valores das compras realizadas no mês de referência;
+<a id="anexo1_it4.3.7"></a>4.3.7. ter os créditos transferidos para outra unidade consumidora de sua titularidade ou a devolução desses créditos por meio de crédito em conta corrente ou ordem de pagamento nos casos de encerramento contratual.
 
-4.3.7. ter os créditos transferidos para outra unidade consumidora de sua titularidade ou a devolução desses créditos por meio de crédito em conta corrente ou ordem de pagamento nos casos de encerramento contratual.
+<a id="anexo1_it4.4"></a>4.4. O CONSUMIDOR na modalidade de PRÉ-PAGAMENTO e de PÓS-PAGAMENTO ELETRÔNICO deve:
 
-4.4. O CONSUMIDOR na modalidade de PRÉ-PAGAMENTO e de PÓS-PAGAMENTO ELETRÔNICO deve:
+<a id="anexo1_it4.4.1"></a>4.4.1. ser orientado sobre a correta operação do sistema e da modalidade;
 
-4.4.1. ser orientado sobre a correta operação do sistema e da modalidade;
+<a id="anexo1_it4.4.2"></a>4.4.2. ter o medidor e demais equipamentos verificados e regularizados sem custos em casos de defeitos no prazo de até: - 6 horas, no meio urbano; - 24 horas, no meio rural; e - 72 horas, no atendimento por sistema isolado SIGFI ou MIGDI.
 
-4.4.2. ter o medidor e demais equipamentos verificados e regularizados sem custos em casos de defeitos no prazo de até:
+### <a id="anexo1_cl5"></a>CLÁUSULA QUINTA: DOS DEVERES DO CONSUMIDOR
 
-- 6 horas, no meio urbano; - 24 horas, no meio rural; e - 72 horas, no atendimento por sistema isolado SIGFI ou MIGDI.
+<a id="anexo1_it5.1"></a>5.1. São os principais deveres do CONSUMIDOR:
 
-CLÁUSULA QUINTA: DOS DEVERES DO CONSUMIDOR
+<a id="anexo1_it5.1.1"></a>5.1.1. manter os dados cadastrais e de atividade exercida atualizados junto à DISTRIBUIDORA e solicitar as alterações quando necessário, em especial os dados de contato como telefone e endereço eletrônico;
 
-5.1. São os principais deveres do CONSUMIDOR:
+<a id="anexo1_it5.1.2"></a>5.1.2. informar à DISTRIBUIDORA sobre a existência de pessoa residente que use equipamentos elétricos indispensáveis à vida;
 
-5.1.1. manter os dados cadastrais e de atividade exercida atualizados junto à DISTRIBUIDORA e solicitar as alterações quando necessário, em especial os dados de contato como telefone e endereço eletrônico;
+<a id="anexo1_it5.1.3"></a>5.1.3. manter a adequação técnica e a segurança das instalações elétricas da unidade consumidora, de acordo com as normas oficiais brasileiras;
 
-5.1.2. informar à DISTRIBUIDORA sobre a existência de pessoa residente que use equipamentos elétricos indispensáveis à vida;
+<a id="anexo1_it5.1.4"></a>5.1.4. consultar a DISTRIBUIDORA quando o aumento de carga instalada da unidade consumidora exigir a elevação da potência disponibilizada;
 
-5.1.3. manter a adequação técnica e a segurança das instalações elétricas da unidade consumidora, de acordo com as normas oficiais brasileiras;
+<a id="anexo1_it5.1.5"></a>5.1.5. responder pela guarda e integridade dos equipamentos de medição quando instalados no interior de seu imóvel;
 
-5.1.4. consultar a DISTRIBUIDORA quando o aumento de carga instalada da unidade consumidora exigir a elevação da potência disponibilizada;
+<a id="anexo1_it5.1.6"></a>5.1.6. manter livre à DISTRIBUIDORA, para fins de inspeção e leitura, o acesso às instalações da unidade consumidora relacionadas com a medição e proteção;
 
-5.1.5. responder pela guarda e integridade dos equipamentos de medição quando instalados no interior de seu imóvel;
+<a id="anexo1_it5.2"></a>5.2. São deveres do CONSUMIDOR nas modalidades tarifárias convencional, branca e pós-pagamento eletrônico:
 
-5.1.6. manter livre à DISTRIBUIDORA, para fins de inspeção e leitura, o acesso às instalações da unidade consumidora relacionadas com a medição e proteção;
+<a id="anexo1_it5.2.1"></a>5.2.1. pagar a fatura de energia elétrica ou o consumo até a data do vencimento, sujeitando-se, em caso de atraso, à atualização monetária pelo IPCA, juros de mora de 1% ao mês calculados pro rata die e multa de até 2%.
 
-5.2. São deveres do CONSUMIDOR nas modalidades tarifárias convencional, branca e pós-pagamento eletrônico:
+### <a id="anexo1_cl6"></a>CLÁUSULA SEXTA: DA INTERRUPÇÃO DO SERVIÇO
 
-5.2.1. pagar a fatura de energia elétrica ou o consumo até a data do vencimento, sujeitando-se, em caso de atraso, à atualização monetária pelo IPCA, juros de mora de 1% ao mês calculados pro rata die e multa de até 2%.
+<a id="anexo1_it6.1"></a>6.1. A DISTRIBUIDORA pode suspender o fornecimento de energia elétrica, sem aviso prévio ao CONSUMIDOR, quando for constatado:
 
-CLÁUSULA SEXTA: DA INTERRUPÇÃO DO SERVIÇO
+<a id="anexo1_it6.1.1"></a>6.1.1. deficiência técnica ou de segurança em instalações da unidade consumidora, que causem risco iminente de danos a pessoas, bens ou ao sistema elétrico;
 
-6.1. A DISTRIBUIDORA pode suspender o fornecimento de energia elétrica, sem aviso prévio ao CONSUMIDOR, quando for constatado:
+<a id="anexo1_it6.1.2"></a>6.1.2. fornecimento de energia elétrica a terceiros.
 
-6.1.1. deficiência técnica ou de segurança em instalações da unidade consumidora, que causem risco iminente de danos a pessoas, bens ou ao sistema elétrico;
+<a id="anexo1_it6.2"></a>6.2. A DISTRIBUIDORA pode suspender o fornecimento de energia elétrica, com aviso prévio ao CONSUMIDOR, quando for constatado:
 
-6.1.2. fornecimento de energia elétrica a terceiros.
+<a id="anexo1_it6.2.1"></a>6.2.1. falta de pagamento da fatura ou do consumo de energia elétrica;
 
-6.2. A DISTRIBUIDORA pode suspender o fornecimento de energia elétrica, com aviso prévio ao CONSUMIDOR, quando for constatado:
+<a id="anexo1_it6.2.2"></a>6.2.2. impedimento do acesso à DISTRIBUIDORA para leitura, substituição de medidor e inspeções necessárias;
 
-6.2.1. falta de pagamento da fatura ou do consumo de energia elétrica;
+<a id="anexo1_it6.2.3"></a>6.2.3. razões de ordem técnica.
 
-6.2.2. impedimento do acesso à DISTRIBUIDORA para leitura, substituição de medidor e inspeções necessárias;
+<a id="anexo1_it6.3"></a>6.3. A notificação da suspensão deve ser escrita, específica e com entrega comprovada ou, alternativamente, impressa em destaque na fatura, com antecedência mínima de: - 3 dias úteis, por razões de ordem técnica ou de segurança; ou - 15 dias, nos casos de inadimplemento.
 
-6.2.3. razões de ordem técnica.
+<a id="anexo1_it6.4"></a>6.4. A execução da suspensão do fornecimento somente poderá ser realizada no horário das 8h às 18h, em dias úteis, sendo vedada às sextas-feiras e nas vésperas de feriado.
 
-6.3. A notificação da suspensão deve ser escrita, específica e com entrega comprovada ou, alternativamente, impressa em destaque na fatura, com antecedência mínima de:
+<a id="anexo1_it6.5"></a>6.5. A DISTRIBUIDORA não pode suspender o fornecimento após o decurso do prazo de 90 dias, contado da data da fatura vencida e não paga, exceto se comprovar que não suspendeu por determinação judicial ou outro motivo justificável.
 
-- 3 dias úteis, por razões de ordem técnica ou de segurança; ou - 15 dias, nos casos de inadimplemento.
+<a id="anexo1_it6.6"></a>6.6. O CONSUMIDOR deve ter a energia elétrica religada, a partir da constatação da DISTRIBUIDORA ou da solicitação do CONSUMIDOR, nos seguintes prazos: - até 4h, em caso de suspensão indevida, sem custo; - até 24h, para a área urbana; - até 48h para a área rural;
 
-6.4. A execução da suspensão do fornecimento somente poderá ser realizada no horário das 8h às 18h, em dias úteis, sendo vedada às sextas-feiras e nas vésperas de feriado.
+<a id="anexo1_it6.6.1"></a>6.6.1. No caso do atendimento ser por meio de sistema individual de geração de energia elétrica com fonte intermitente - SIGFI ou de microssistema isolado de geração e distribuição de energia elétrica - MIGDI, os prazos de religação são: - 72h, em caso de suspensão indevida, sem custo; - 120h, nas demais situações;
 
-6.5. A DISTRIBUIDORA não pode suspender o fornecimento após o decurso do prazo de 90 dias, contado da data da fatura vencida e não paga, exceto se comprovar que não suspendeu por determinação judicial ou outro motivo justificável.
+<a id="anexo1_it6.7"></a>6.7. Em caso de suspensão indevida do fornecimento de energia elétrica, o CONSUMIDOR deve receber a compensação estabelecida pela ANEEL.
 
-6.6. O CONSUMIDOR deve ter a energia elétrica religada, a partir da constatação da DISTRIBUIDORA ou da solicitação do CONSUMIDOR, nos seguintes prazos:
+<a id="anexo1_it6.8"></a>6.8. A DISTRIBUIDORA deve informar os desligamentos programados com antecedência de pelo menos: - 5 dias úteis, por documento escrito e individual, no caso de unidades consumidoras que prestem serviço essencial ou de pessoa cadastrada usuária de equipamentos de autonomia limitada, vitais à preservação da vida humana e dependentes de energia elétrica; - 72h, por meio da página da distribuidora na internet e por outros meios que permitam a adequada divulgação, nas demais situações.
 
-- até 4h, em caso de suspensão indevida, sem custo; - até 24h, para a área urbana; - até 48h para a área rural;
+### <a id="anexo1_cl7"></a>CLÁUSULA SÉTIMA: DE OUTROS SERVIÇOS
 
-6.6.1. No caso do atendimento ser por meio de sistema individual de geração de energia elétrica com fonte intermitente - SIGFI ou de microssistema isolado de geração e distribuição de energia elétrica - MIGDI, os prazos de religação são:
+<a id="anexo1_it7.1"></a>7.1. A DISTRIBUIDORA pode executar serviços vinculados à prestação do serviço público, desde que o CONSUMIDOR, por sua livre escolha, opte por contratar.
 
-- 72h, em caso de suspensão indevida, sem custo; - 120h, nas demais situações;
+<a id="anexo1_it7.2"></a>7.2. A DISTRIBUIDORA pode incluir na fatura ou, quando for o caso, no pagamento do consumo ou da compra de créditos, contribuições de caráter social, desde que autorizadas antecipadamente pelo CONSUMIDOR.
 
-6.7. Em caso de suspensão indevida do fornecimento de energia elétrica, o CONSUMIDOR deve receber a compensação estabelecida pela ANEEL.
+<a id="anexo1_it7.3"></a>7.3. O CONSUMIDOR pode cancelar, a qualquer tempo, a cobrança na fatura de contribuições e doações ou outros serviços por ele autorizados.
 
-6.8. A DISTRIBUIDORA deve informar os desligamentos programados com antecedência de pelo menos:
+### <a id="anexo1_cl8"></a>CLÁUSULA OITAVA: DO SERVIÇO DE ATENDIMENTO
 
-- 5 dias úteis, por documento escrito e individual, no caso de unidades consumidoras que prestem serviço essencial ou de pessoa cadastrada usuária de equipamentos de autonomia limitada, vitais à preservação da vida humana e dependentes de energia elétrica; - 72h, por meio da página da distribuidora na internet e por outros meios que permitam a adequada divulgação, nas demais situações.
+<a id="anexo1_it8.1"></a>8.1. O CONSUMIDOR pode requerer informações, solicitar serviços e encaminhar reclamações, elogios, sugestões e denúncias nos canais de atendimento disponibilizados pela DISTRIBUIDORA.
 
-CLÁUSULA SÉTIMA: DE OUTROS SERVIÇOS
+<a id="anexo1_it8.2"></a>8.2. A DISTRIBUIDORA deve disponibilizar ao CONSUMIDOR, no mínimo, os seguintes canais de atendimento, para que o CONSUMIDOR seja atendido sem ter que se deslocar do Município onde se encontra a sua unidade consumidora:
 
-7.1. A DISTRIBUIDORA pode executar serviços vinculados à prestação do serviço público, desde que o CONSUMIDOR, por sua livre escolha, opte por contratar.
+<a id="anexo1_it8.2.1"></a>8.2.1. presencial, com tempo máximo de espera na fila de 30 minutos, no endereço: (colocar endereço do posto mais próximo da UC ou página na internet em que os endereços estão disponíveis);
 
-7.2. A DISTRIBUIDORA pode incluir na fatura ou, quando for o caso, no pagamento do consumo ou da compra de créditos, contribuições de caráter social, desde que autorizadas antecipadamente pelo CONSUMIDOR.
+<a id="anexo1_it8.2.2"></a>8.2.2. telefônico: gratuito, inclusive para ligação de celular, disponível 24h por dia e 7 dias por semana, nos seguintes números: - Telefone para urgência/emergência: (número) - Telefone para demais atendimentos: (número)
 
-7.3. O CONSUMIDOR pode cancelar, a qualquer tempo, a cobrança na fatura de contribuições e doações ou outros serviços por ele autorizados.
+<a id="anexo1_it8.2.3"></a>8.2.3. atendimento por Agência Virtual na internet, na página: (página na internet da Agência Virtual)
 
-CLÁUSULA OITAVA: DO SERVIÇO DE ATENDIMENTO
+<a id="anexo1_it8.2.4"></a>8.2.4. plataforma "Consumidor.gov.br"
 
-8.1. O CONSUMIDOR pode requerer informações, solicitar serviços e encaminhar reclamações, elogios, sugestões e denúncias nos canais de atendimento disponibilizados pela DISTRIBUIDORA.
+<a id="anexo1_it8.2.5"></a>8.2.5. Ouvidoria, quando exigido pela ANEEL: (número de telefone, ou deixar em branco quando não oferecida)
 
-8.2. A DISTRIBUIDORA deve disponibilizar ao CONSUMIDOR, no mínimo, os seguintes canais de atendimento, para que o CONSUMIDOR seja atendido sem ter que se deslocar do Município onde se encontra a sua unidade consumidora:
+<a id="anexo1_it8.3"></a>8.3. O CONSUMIDOR deve receber um número de protocolo no início do atendimento, que deve ser disponibilizado por meio eletrônico em até 1 dia útil.
 
-8.2.1. presencial, com tempo máximo de espera na fila de 30 minutos, no endereço: (colocar endereço do posto mais próximo da UC ou página na internet em que os endereços estão disponíveis);
+<a id="anexo1_it8.4"></a>8.4. O CONSUMIDOR deve ser informado de forma objetiva sobre as providências adotadas quanto às suas solicitações e reclamações, de acordo com as condições e prazos de execução de cada situação, sempre que estabelecidos em normas e regulamentos.
 
-8.2.2. telefônico: gratuito, inclusive para ligação de celular, disponível 24h por dia e 7 dias por semana, nos seguintes números:
+<a id="anexo1_it8.4.1"></a>8.4.1. Em caso de indeferimento da reclamação, a DISTRIBUIDORA deve informar ao consumidor as razões detalhadas e os dispositivos legais e normativos que fundamentaram sua decisão.
 
-- Telefone para urgência/emergência: (número) - Telefone para demais atendimentos: (número)
+<a id="anexo1_it8.5"></a>8.5. A DISTRIBUIDORA deve solucionar as reclamações do CONSUMIDOR em até 5 dias úteis do protocolo, ressalvados os prazos de solução especiais estabelecidos na regulação da ANEEL.
 
-8.2.3. atendimento por Agência Virtual na internet, na página: (página na internet da Agência Virtual)
+<a id="anexo1_it8.5.1"></a>8.5.1. Caso seja necessária a realização de visita técnica à unidade consumidora, o prazo para solução da reclamação é de até 10 dias úteis;
 
-8.2.4. plataforma "Consumidor.gov.br"
+<a id="anexo1_it8.5.2"></a>8.5.2 Caso o problema não seja solucionado, o CONSUMIDOR deve entrar em contato com a ouvidoria da DISTRIBUIDORA, se existente;
 
-8.2.5. Ouvidoria, quando exigido pela ANEEL: (número de telefone, ou deixar em branco quando não oferecida)
+<a id="anexo1_it8.5.3"></a>8.5.3. A Ouvidoria da DISTRIBUIDORA deve comunicar as providências adotadas ao CONSUMIDOR, em até 10 dias úteis;
 
-8.3. O CONSUMIDOR deve receber um número de protocolo no início do atendimento, que deve ser disponibilizado por meio eletrônico em até 1 dia útil.
+<a id="anexo1_it8.5.4"></a>8.5.4. Se ainda assim o problema não tiver sido resolvido, ou não existir Ouvidoria, o CONSUMIDOR pode registrar sua reclamação: - na Agência Estadual Conveniada: (colocar nome e telefone se existente) ou, na inexistência desta, - na ANEEL, pelo aplicativo, telefone 167 ou na página https://www.aneel.gov.br
 
-8.4. O CONSUMIDOR deve ser informado de forma objetiva sobre as providências adotadas quanto às suas solicitações e reclamações, de acordo com as condições e prazos de execução de cada situação, sempre que estabelecidos em normas e regulamentos.
+<a id="anexo1_it8.6"></a>8.6. As reclamações do CONSUMIDOR sobre danos em equipamentos devem ser realizadas diretamente à DISTRIBUIDORA, em até 5 anos da ocorrência.
 
-8.4.1. Em caso de indeferimento da reclamação, a DISTRIBUIDORA deve informar ao consumidor as razões detalhadas e os dispositivos legais e normativos que fundamentaram sua decisão.
+<a id="anexo1_it8.6.1"></a>8.6.1. O ressarcimento dos danos, quando deferido, deve ser realizado por meio de pagamento em moeda corrente no prazo máximo estabelecido na regulação, ou deve ser realizado o conserto ou a substituição do equipamento danificado;
 
-8.5. A DISTRIBUIDORA deve solucionar as reclamações do CONSUMIDOR em até 5 dias úteis do protocolo, ressalvados os prazos de solução especiais estabelecidos na regulação da ANEEL.
+### <a id="anexo1_cl9"></a>CLÁUSULA NONA: DO ENCERRAMENTO CONTRATUAL
 
-8.5.1. Caso seja necessária a realização de visita técnica à unidade consumidora, o prazo para solução da reclamação é de até 10 dias úteis;
+<a id="anexo1_it9.1"></a>9.1. O encerramento contratual ocorre nas seguintes situações:
 
-8.5.2 Caso o problema não seja solucionado, o CONSUMIDOR deve entrar em contato com a ouvidoria da DISTRIBUIDORA, se existente;
+<a id="anexo1_it9.1.1"></a>9.1.1. solicitação do CONSUMIDOR, a qualquer tempo;
 
-8.5.3. A Ouvidoria da DISTRIBUIDORA deve comunicar as providências adotadas ao CONSUMIDOR, em até 10 dias úteis;
+<a id="anexo1_it9.1.2"></a>9.1.2. pedido de conexão ou de alteração de titularidade formulado por novo CONSUMIDOR para a mesma unidade consumidora;
 
-8.5.4. Se ainda assim o problema não tiver sido resolvido, ou não existir Ouvidoria, o CONSUMIDOR pode registrar sua reclamação:
+<a id="anexo1_it9.1.3"></a>9.1.3. término da vigência do contrato;
 
-- na Agência Estadual Conveniada: (colocar nome e telefone se existente) ou, na inexistência desta, - na ANEEL, pelo aplicativo, telefone 167 ou na página https://www.aneel.gov.br
+<a id="anexo1_it9.1.4"></a>9.1.4. a critério da DISTRIBUIDORA, no decurso do prazo de 2 ciclos completos de faturamento após a suspensão regular e ininterrupta do fornecimento.
 
-8.6. As reclamações do CONSUMIDOR sobre danos em equipamentos devem ser realizadas diretamente à DISTRIBUIDORA, em até 5 anos da ocorrência.
+### <a id="anexo1_cl10"></a>CLÁUSULA DÉCIMA: DISPOSIÇÕES GERAIS
 
-8.6.1. O ressarcimento dos danos, quando deferido, deve ser realizado por meio de pagamento em moeda corrente no prazo máximo estabelecido na regulação, ou deve ser realizado o conserto ou a substituição do equipamento danificado;
+<a id="anexo1_it10.1"></a>10.1. Além do disposto no presente Contrato aplicam-se às partes as normas da ANEEL, em especial a Resolução Normativa ANEEL nº 1.000/2021, que estabelece as Regras de Prestação do Serviço Público de Distribuição de Energia Elétrica e futuras alterações, a Lei nº 8.987/1995, o Código de Defesa do Consumidor, a Lei nº 13.460/2017 e, subsidiariamente, o Código Civil Brasileiro.
 
-CLÁUSULA NONA: DO ENCERRAMENTO CONTRATUAL
+<a id="anexo1_it10.2"></a>10.2. Este contrato poderá ser modificado por determinação da ANEEL ou, ainda, diante de alterações de leis, decretos ou atos normativos que regulamentam o serviço de distribuição de energia elétrica e que tenham reflexo na sua prestação.
 
-9.1. O encerramento contratual ocorre nas seguintes situações:
+<a id="anexo1_it10.3"></a>10.3. A falta ou atraso, por qualquer das Partes, no exercício de qualquer direito não implicará renúncia ou novação, nem afetará o subsequente exercício de tal direito.
 
-9.1.1. solicitação do CONSUMIDOR, a qualquer tempo;
+<a id="anexo1_it10.4"></a>10.4. Este contrato atualizado estará disponível no endereço eletrônico da ANEEL: www.aneel.gov.br e da DISTRIBUIDORA: ___________________
 
-9.1.2. pedido de conexão ou de alteração de titularidade formulado por novo CONSUMIDOR para a mesma unidade consumidora;
+### <a id="anexo1_cl11"></a>CLÁUSULA DÉCIMA PRIMEIRA: DO FORO
 
-9.1.3. término da vigência do contrato;
+<a id="anexo1_it11.1"></a>11.1. Fica eleito o Foro da Comarca onde estiver situada a unidade consumidora ou o domicílio do CONSUMIDOR para dirimir quaisquer questões oriundas deste Contrato, com expressa renúncia a qualquer outro, por mais privilegiado que seja.
 
-9.1.4. a critério da DISTRIBUIDORA, no decurso do prazo de 2 ciclos completos de faturamento após a suspensão regular e ininterrupta do fornecimento.
+## <a id="anexo2"></a>ANEXO II - REQUERIMENTO DE AUTORIZAÇÃO DE REDE PARTICULAR
 
-CLÁUSULA DÉCIMA: DISPOSIÇÕES GERAIS
+<a id="anexo2_texto1"></a> NOME DA EMPRESA_____________________________________ DATA ___.___.______
 
-10.1. Além do disposto no presente Contrato aplicam-se às partes as normas da ANEEL, em especial a Resolução Normativa ANEEL nº 1.000/2021, que estabelece as Regras de Prestação do Serviço Público de Distribuição de Energia Elétrica e futuras alterações, a Lei nº 8.987/1995, o Código de Defesa do Consumidor, a Lei nº 13.460/2017 e, subsidiariamente, o Código Civil Brasileiro.
+<a id="anexo2_texto2"></a> NOME DA OBRA ______________________________________________________________
 
-10.2. Este contrato poderá ser modificado por determinação da ANEEL ou, ainda, diante de alterações de leis, decretos ou atos normativos que regulamentam o serviço de distribuição de energia elétrica e que tenham reflexo na sua prestação.
+<a id="anexo2_it1"></a>1 - FINALIDADE
 
-10.3. A falta ou atraso, por qualquer das Partes, no exercício de qualquer direito não implicará renúncia ou novação, nem afetará o subsequente exercício de tal direito.
+<a id="anexo2_texto3"></a> Apresentar os documentos necessários para a autorização de posse, operação e manutenção de redes de energia elétrica de propriedade particular.
 
-10.4. Este contrato atualizado estará disponível no endereço eletrônico da ANEEL: www.aneel.gov.br e da DISTRIBUIDORA: ___________________
+<a id="anexo2_it2"></a>2 - CARACTERÍSTICAS GERAIS DA REDE DE DISTRIBUIÇÃO
 
-CLÁUSULA DÉCIMA PRIMEIRA: DO FORO
+<a id="anexo2_it2.1"></a>2.1 A rede elétrica tem origem na __________________de propriedade da ______________, tendo a função de suprir ___________________. Em seu trajeto, a rede elétrica passará pelo(s) Município(s) de____________________, localizado(s) no(s) Estado(s) de(o) ________________________.
 
-11.1. Fica eleito o Foro da Comarca onde estiver situada a unidade consumidora ou o domicílio do CONSUMIDOR para dirimir quaisquer questões oriundas deste Contrato, com expressa renúncia a qualquer outro, por mais privilegiado que seja.
+<a id="anexo2_it2.2"></a>2.2 A rede tem extensão de ______km, opera na tensão nominal de _____ kV entre fases, tem ___ circuito(s) monofásico(s), () trifásico(s) (), em disposição ___________, com ____ condutor(es) por fase. a 2.3 A rede tem ____ suportes de aço (), de concreto (), totalizando ________suportes/km.
 
-## ANEXO II - REQUERIMENTO DE AUTORIZAÇÃO DE REDE PARTICULAR
+<a id="anexo2_it2.4"></a>2.4 A rede elétrica atende exclusivamente ao imóvel onde está localizada? () sim () não
 
-NOME DA EMPRESA_____________________________________ DATA ___.___.______
+<a id="anexo2_it2.5"></a>2.5 A rede elétrica se encontra integralmente dentro do imóvel do interessado? () sim () não
 
-NOME DA OBRA ______________________________________________________________
+<a id="anexo2_it2.6"></a>2.6 A rede elétrica atravessa via pública? () sim () não
 
-1 - FINALIDADE
+<a id="anexo2_it2.7"></a>2.7 A rede elétrica atravessa imóveis de terceiros? () sim () não
 
-Apresentar os documentos necessários para a autorização de posse, operação e manutenção de redes de energia elétrica de propriedade particular.
+<a id="anexo2_texto4"></a> Caso afirmativo, anexar comprovação de concordância/autorização dos proprietários cujos imóveis são atravessados pela rede elétrica.
 
-2 - CARACTERÍSTICAS GERAIS DA REDE DE DISTRIBUIÇÃO
+<a id="anexo2_it3"></a>3. MATERIAL DA REDE DE DISTRIBUIÇÃO.
 
-2.1 A rede elétrica tem origem na __________________de propriedade da ______________, tendo a função de suprir ___________________. Em seu trajeto, a rede elétrica passará pelo(s) Município(s) de____________________, localizado(s) no(s) Estado(s) de(o) ________________________.
+<a id="anexo2_it3.1"></a>3.1 O condutor é de cobre () alumínio () ______ AWG (), MCM (), denominado "_____________", seção nominal _____ mm2, formação _____/__ fios, com peso de _____ kg/m.
 
-2.2 A rede tem extensão de ______km, opera na tensão nominal de _____ kV entre fases, tem ___ circuito(s) monofásico(s), () trifásico(s) (), em disposição ___________, com ____ condutor(es) por fase. a 2.3 A rede tem ____ suportes de aço (), de concreto (), totalizando ________suportes/km.
+<a id="anexo2_it3.2"></a>3.2 Os cabos pára-raios são do tipo ____, seção ______ mm2, carga de ruptura ______ kgf, com peso próprio de ______ kg/m.
 
-2.4 A rede elétrica atende exclusivamente ao imóvel onde está localizada? () sim () não
+<a id="anexo2_it3.3"></a>3.3 Os cabos contrapesos são do tipo cordoalha de aço galvanizado ______ seção _____ mm2, carga de ruptura _____ kgf, com peso próprio de _____ kg/m.
 
-2.5 A rede elétrica se encontra integralmente dentro do imóvel do interessado? () sim () não
+<a id="anexo2_it4"></a>4 - CONSIDERAÇÕES GERAIS
 
-2.6 A rede elétrica atravessa via pública? () sim () não
+<a id="anexo2_texto5"></a> NOME DO RESPONSÁVEL TÉCNICO ________________________________________________________
 
-2.7 A rede elétrica atravessa imóveis de terceiros? () sim () não
+<a id="anexo2_texto6"></a> Nº DO REGISTRO ______________________ REGIÃO ____________________
 
-Caso afirmativo, anexar comprovação de concordância/autorização dos proprietários cujos imóveis são atravessados pela rede elétrica.
+<a id="anexo2_texto7"></a> ASSINATURA _________________________________________________
 
-3. MATERIAL DA REDE DE DISTRIBUIÇÃO.
+## <a id="anexo3"></a>ANEXO III - REDE PARTICULAR - TERMO DE COMPROMISSO DE PASSAGEM E DE RESPONSABILIDADE POR DANOS
 
-3.1 O condutor é de cobre () alumínio () ______ AWG (), MCM (), denominado "_____________", seção nominal _____ mm2, formação _____/__ fios, com peso de _____ kg/m.
+<a id="anexo3_texto1"></a> ______________________________________________, com sede (), domiciliado () em __________________________, por meio do profissional abaixo-assinado e caracterizado como Responsável Técnico pela operação e manutenção da rede elétrica em tensão de distribuição ___________________________________, circuito simples (), duplo (), operando na tensão nominal de ___ kV entre fases, declara em cumprimento às normas vigentes da Agência Nacional de Energia Elétrica - ANEEL, ser o único responsável pela operação e manutenção da rede elétrica, perante o conselho profissional competente, ficando obrigado a manter Responsável Técnico, permanentemente. O proprietário será o único responsável pelos danos que causar ao meio ambiente e a terceiros em decorrência da operação, manutenção ou inspeção da linha de distribuição, para a(s) travessia(s) abaixo relacionada(s):
 
-3.2 Os cabos pára-raios são do tipo ____, seção ______ mm2, carga de ruptura ______ kgf, com peso próprio de ______ kg/m.
+<a id="anexo3_texto2"></a> _____________________________________________________________________________________________________________________________________________________ _____________________________________________________________________________________________________________________________________________________ _____________________________________________________________________________________________________________________________________________________
 
-3.3 Os cabos contrapesos são do tipo cordoalha de aço galvanizado ______ seção _____ mm2, carga de ruptura _____ kgf, com peso próprio de _____ kg/m.
+<a id="anexo3_texto3"></a> NOME DO RESPONSÁVEL TÉCNICO ______________________________________________________
 
-4 - CONSIDERAÇÕES GERAIS
+<a id="anexo3_texto4"></a> Nº DO REGISTRO ______________________ REGIÃO ____________________
 
-NOME DO RESPONSÁVEL TÉCNICO ________________________________________________________
+<a id="anexo3_texto5"></a> ASSINATURA _________________________________________________
 
-Nº DO REGISTRO ______________________ REGIÃO ____________________
+## <a id="anexo4"></a>ANEXO IV - PRAZOS PARA COMPENSAÇÃO EM CASO DE DESCUMPRIMENTO
 
-ASSINATURA _________________________________________________
-
-## ANEXO III - REDE PARTICULAR - TERMO DE COMPROMISSO DE PASSAGEM E DE RESPONSABILIDADE POR DANOS
-
-______________________________________________, com sede (), domiciliado () em __________________________, por meio do profissional abaixo-assinado e caracterizado como Responsável Técnico pela operação e manutenção da rede elétrica em tensão de distribuição ___________________________________, circuito simples (), duplo (), operando na tensão nominal de ___ kV entre fases, declara em cumprimento às normas vigentes da Agência Nacional de Energia Elétrica - ANEEL, ser o único responsável pela operação e manutenção da rede elétrica, perante o conselho profissional competente, ficando obrigado a manter Responsável Técnico, permanentemente. O proprietário será o único responsável pelos danos que causar ao meio ambiente e a terceiros em decorrência da operação, manutenção ou inspeção da linha de distribuição, para a(s) travessia(s) abaixo relacionada(s):
-
-_____________________________________________________________________________________________________________________________________________________ _____________________________________________________________________________________________________________________________________________________ _____________________________________________________________________________________________________________________________________________________
-
-NOME DO RESPONSÁVEL TÉCNICO ______________________________________________________
-
-Nº DO REGISTRO ______________________ REGIÃO ____________________
-
-ASSINATURA _________________________________________________
-
-## ANEXO IV - PRAZOS PARA COMPENSAÇÃO EM CASO DE DESCUMPRIMENTO
-
-TipoDispositivoPrazoDescrição1art. 6º.5 dias úteisrealizar as alterações cadastrais1art. 6º.10 dias úteisrealizar as alterações cadastrais, com visita técnica1art. 5630 diasfornecer o orçamento estimado1art. 76, § 5º10 dias úteisdisponibilizar cópia da solicitação feita ao ONS ou a outra distribuidora, bem como a resposta obtida (Redação acrescida pela Resolução Normativa nº 1098/2024)1art. 7810 dias úteisdisponibilizar estudos do orçamento1art. 13630 diasinformar as condições para a revisão da demanda contratada em projetos de eficiência energética1art. 222, I30 diasenquadramento na modalidade tarifária horária branca1art. 22330 diasretorno à modalidade tarifária convencional1art. 243, § 1º15 diasprovidenciar o reparo do meio utilizado para o acompanhamento da leitura de medição externa1art. 257, §4º5 dias úteisfornecer cópia do processo de defeito na medição1art. 393, § 3º5 dias úteisfornecer cópia da gravação da chamada telefônica1art. 418, p.único3 dias úteisinformar a relação dos registros do histórico das demandas1art. 43530 diasinformações relacionadas aos indicadores de continuidade, compensações e interrupções1art. 463, §8º5 dias úteisfornecer cópia do processo de levantamento cadastral de iluminação pública1art. 46430 diasdisponibilizar informações do sistema de informação geográfica1art. 598, §4º5 dias úteisfornecer cópia do processo de irregularidade1art. 6045 dias úteisfornecer cópia do processo de ressarcimento de danos2art. 51, I30 diasinformar o resultado da análise de projeto2art. 51, II10 dias úteisinformar o resultado da reanálise de projeto em caso de análise anterior incompleta2art. 86, §2º, I10 dias úteisdisponibilizar o projeto e demais informações em caso de antecipação de obra2art. 943 dias úteisencaminhar o relatório de vistoria em caso de reprovação2art. 112, caput 30 diascomunicar o resultado do comissionamento de obras2art. 112, §1º10 dias úteiscomunicar o resultado do comissionamento de obras no caso de informação anterior incompleta2art. 2035 dias úteisinformar o resultado da análise de classificação tarifária2art. 20310 dias úteisinformar o resultado da análise de classificação tarifária, caso haja necessidade de visita técnica2art. 25030 diasinspeção do sistema de medição de faturamento e demais providências2art. 2965 dias úteispara informar o resultado da análise de reconhecimento de sazonalidade2art. 29610 dias úteisinformar o resultado da análise de reconhecimento de sazonalidade, caso haja necessidade de visita técnica2art. 325, §3º15 diassolucionar reclamação de compensação de faturamento2art. 408, I5 dias úteissolução de reclamações, sem visita técnica, exceto as que possuam prazo próprio2art. 408, II10 dias úteissolução de reclamações, com visita técnica, exceto as que possuam prazo próprio2art. 40930 diasatendimento de solicitações que não disponham de prazo próprio2art. 421, § 1º, II10 dias úteiscomunicar as providências adotadas na Ouvidoria da distribuidora2art. 421, § 2ºprazo informadocomunicar as providências adotadas na Ouvidoria da distribuidora em caso de prorrogação do prazo2art. 438, §1º, I15 diasrealizar a inspeção técnica, a medição instantânea e demais providências em casos de reclamação de tensão2art. 438, §1º, II30 diasrealizar a medição pelo período de 168 horas e entregar o laudo técnico do resultado2art. 477, §2º30 diasfornecer informações sobre a arrecadação da contribuição para o custeio do serviço de iluminação pública2art. 477, §2º30 diasfornecer informações sobre a arrecadação da contribuição para o custeio, a expansão e a melhoria do serviço de iluminação pública e de sistemas de monitoramento para segurança e preservação de logradouros públicos (Redação dada pela Resolução Normativa nº 1115/2025)2art. 52530 diasavaliar reclamação sobre disponibilidade mensal insuficiente2art. 525, p.único60 diasadotar medidas corretivas em caso de disponibilidade mensal insuficiente2art. 543, III60 diasregularizar nível tensão, sistema MIGDI ou SIGFI2art. 613, I1 dia útilverificação ou retirada do equipamento danificado utilizado para o acondicionamento de alimentos perecíveis ou de medicamentos2art. 613, II10 diasverificação ou retirada do equipamento danificado2art. 617, I15 diasinformar o resultado da solicitação de ressarcimento feita em até 90 dias2art. 617, II30 diasinformar o resultado da solicitação de ressarcimento feita com mais de 90 dias2art. 61820 diasefetuar o ressarcimento em caso de deferimento3art. 49, § 4º10 dias úteisinstalação do padrão de entrada gratuito3art. 64, I15 diasfornecer o orçamento de conexão, conexão de unidades consumidoras, inclusive com micro GD em tensão menor que 69kV, sem obras3art. 64, II30 diasfornecer o orçamento de conexão, conexão de unidades consumidoras, inclusive com micro GD em tensão menor que 69kV, com obras3art. 64, III45 diasfornecer o orçamento de conexão, demais conexões3art. 845 dias úteisentregar os contratos e demais documentos3art. 88, I60 diasconcluir as obras de conexão, tensão menor que 2,3 kV3art. 88, II120 diasconcluir as obras de conexão, tensão maior ou igual a 2,3 kV e menor que 69 kV, até 1km3art. 88, III365 diasconcluir as obras em tensão menor que 69 kV3art. 88, §1ºcronogramaconcluir demais obras não previstas nos critérios anteriores3art. 9045 diasconexão - Lei nº 14.195, de 26 de agosto de 20213art. 91, I5 dias úteisvistoria e instalação de medição, conexão menor que 2,3 kV3art. 91, II10 dias úteisvistoria e instalação de medição, conexão maior ou igual a 2,3 kV e menor que 69 kV3art. 91, III15 dias úteisvistoria e instalação de medição, conexão maior ou igual a 69 kV3art. 96, §1ºcronogramaImplantação/adequação do sistema de medição no ACL3art. 96-A5 dias úteisResponder a CCEE no modelo simplificado para comercialização varejista.(Revogado pela Resolução Normativa nº 1174/2026) (Redação acrescida pela Resolução Normativa nº 1110/2024)3art. 97, II10 dias úteisaprovar o projeto de medição de central geradora, importador e exportador de energia3art. 97, IV10 dias úteiscomunicar a avaliação do relatório de comissionamento do sistema de medição3art. 138, §4º3 dias úteisalteração de titularidade, área urbana3art. 138, §4º5 dias úteisalteração de titularidade, área rural3art. 166, §3º, I10 dias úteisnotificar o consumidor em caso de migração(Revogado pela Resolução Normativa nº 1174/2026) (Redação acrescida pela Resolução Normativa nº 1081/2023)3art. 166-A5 dias úteisComunicar sobre a verificação dos requisitos técnicos e a existência de motivos que impeçam a migração.(Redação acrescida pela Resolução Normativa nº 1174/2026)3art. 252, II30 diassubstituir o medidor e demais equipamentos de medição após a data de constatação do defeito3art. 362, I4 horasreligação em caso de suspensão indevida3art. 362, II4 horasreligação de urgência em área urbana3art. 362, III8 horasreligação de urgência em área rural3art. 362, IV24 horasreligação normal em área urbana3art. 362, V48 horasreligação normal em área rural3art. 52710 dias úteisvistoria para conexão, sistema MIGDI ou SIGFI3art. 52810 dias úteisconexão, sistema MIGDI ou SIGFI3art. 533120 horasreligação, sistema MIGDI ou SIGFI3art. 53472 horasreligação em caso de suspensão indevida, sistema MIGDI ou SIGFI
-
-Atos que alteram, regulamentam ou revogam esta Resolução Normativa: Resolução Normativa nº 1174/2026 de 27/10/2026 - Norma em vigor Resolução Normativa nº 1162/2026 de 02/06/2026 - Norma em vigor Resolução Normativa nº 1150/2026 de 27/01/2026 - Norma em vigor Resolução Normativa nº 1148/2026 de 27/01/2026 - Norma em vigor Resolução Normativa nº 1147/2025 de 09/12/2025 - Norma em vigor Resolução Normativa nº 1137/2025 de 21/10/2025 - Norma em vigor Despacho nº 1731/2025 de 10/07/2025 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 497181 AND idambito = 4 LIMIT 1 Resolução Normativa nº 1115/2025 de 01/04/2025 - Norma em vigor Resolução Normativa nº 1110/2024 de 10/12/2024 - Norma em vigor Resolução Normativa nº 1101/2024 de 27/08/2024 - Norma em vigor Resolução Normativa nº 1098/2024 de 23/07/2024 - Norma em vigor Despacho nº 2006/2024 de 08/07/2024 - Norma em vigor Resolução Normativa nº 1095/2024 de 18/06/2024 - Norma em vigor Resolução Normativa nº 1081/2023 de 12/12/2023 - Norma em vigor Resolução Normativa nº 1082/2023 de 12/12/2023 - Norma em vigor Resolução Normativa nº 1059/2023 de 07/02/2023 - Norma em vigor Resolução Normativa nº 1057/2023 de 24/01/2023 - Norma em vigor Resolução Normativa nº 1047/2022 de 01/12/2022 - Norma em vigor Resolução Normativa nº 1042/2022 de 20/09/2022 - Norma em vigor Resolução Normativa nº 1025/2022 de 05/07/2022 - Norma em vigor Atos que são alterados, regulamentados ou revogados por esta Resolução Normativa: Resolução Normativa nº 694/2015 de 15/12/2015 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199288 AND idambito = 4 LIMIT 1 Resolução Normativa nº 768/2017 de 23/05/2017 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199305 AND idambito = 4 LIMIT 1 Resolução Normativa nº 742/2016 de 16/11/2016 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199287 AND idambito = 4 LIMIT 1 Resolução Normativa nº 741/2016 de 08/11/2016 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199279 AND idambito = 4 LIMIT 1 Resolução Normativa nº 733/2016 de 06/09/2016 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199282 AND idambito = 4 LIMIT 1 Resolução Normativa nº 725/2016 de 07/06/2016 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199278 AND idambito = 4 LIMIT 1 Resolução Normativa nº 724/2016 de 01/12/2016 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199189 AND idambito = 4 LIMIT 1 Resolução Normativa nº 717/2016 de 10/05/2016 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199285 AND idambito = 4 LIMIT 1 Resolução Normativa nº 714/2016 de 10/05/2016 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199303 AND idambito = 4 LIMIT 1 Resolução Normativa nº 771/2017 de 06/06/2017 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199276 AND idambito = 4 LIMIT 1 Resolução Normativa nº 671/2015 de 14/07/2015 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199292 AND idambito = 4 LIMIT 1 Resolução Normativa nº 670/2015 de 01/12/2015 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199188 AND idambito = 4 LIMIT 1 Resolução Normativa nº 663/2015 de 02/06/2015 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199299 AND idambito = 4 LIMIT 1 Resolução Normativa nº 657/2015 de 14/04/2015 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199295 AND idambito = 4 LIMIT 1 Resolução Normativa nº 629/2014 de 21/10/2014 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199301 AND idambito = 4 LIMIT 1 Resolução Normativa nº 626/2014 de 30/09/2014 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199250 AND idambito = 4 LIMIT 1 Resolução Normativa nº 620/2014 de 22/07/2014 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199245 AND idambito = 4 LIMIT 1 Resolução Normativa nº 863/2019 de 10/12/2019 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199277 AND idambito = 4 LIMIT 1 Resolução Normativa nº 431/2011 de 29/03/2011 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199266 AND idambito = 4 LIMIT 1 Resolução Normativa nº 953/2021 de 30/11/2021 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199290 AND idambito = 4 LIMIT 1 Resolução Normativa nº 936/2021 de 15/06/2021 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199275 AND idambito = 4 LIMIT 1 Resolução Autorizativa nº 10031/2021 de 25/05/2021 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199271 AND idambito = 4 LIMIT 1 Resolução Normativa nº 932/2021 de 27/04/2021 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199289 AND idambito = 4 LIMIT 1 Resolução Normativa nº 928/2021 de 26/03/2021 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199302 AND idambito = 4 LIMIT 1 Resolução Normativa nº 889/2020 de 30/06/2020 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199293 AND idambito = 4 LIMIT 1 Resolução Normativa nº 868/2019 de 17/12/2019 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199294 AND idambito = 4 LIMIT 1 Resolução Normativa nº 610/2014 de 01/12/2014 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199190 AND idambito = 4 LIMIT 1 Resolução Normativa nº 854/2019 de 13/08/2019 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199291 AND idambito = 4 LIMIT 1 Resolução Normativa nº 819/2018 de 19/06/2018 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199296 AND idambito = 4 LIMIT 1 Resolução Autorizativa nº 6825/2018 de 30/01/2018 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199256 AND idambito = 4 LIMIT 1 Resolução Normativa nº 800/2017 de 19/12/2017 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199280 AND idambito = 4 LIMIT 1 Resolução Normativa nº 794/2017 de 28/11/2017 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199298 AND idambito = 4 LIMIT 1 Resolução Autorizativa nº 6560/2017 de 15/08/2017 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199272 AND idambito = 4 LIMIT 1 Resolução Normativa nº 775/2017 de 27/06/2017 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199297 AND idambito = 4 LIMIT 1 Resolução Normativa nº 876/2020 de 10/03/2020 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199304 AND idambito = 4 LIMIT 1 Resolução Normativa nº 419/2010 de 30/11/2010 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199243 AND idambito = 4 LIMIT 1 Resolução Normativa nº 418/2010 de 23/11/2010 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199258 AND idambito = 4 LIMIT 1 Resolução Normativa nº 376/2009 de 25/08/2009 - Norma em vigor Resolução Normativa nº 359/2009 de 14/04/2009 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199252 AND idambito = 4 LIMIT 1 Resolução Normativa nº 244/2006 de 19/12/2006 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199246 AND idambito = 4 LIMIT 1 Resolução Normativa nº 229/2006 de 08/08/2006 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199254 AND idambito = 4 LIMIT 1 Resolução nº 145/2001 de 12/04/2001 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199306 AND idambito = 4 LIMIT 1 Resolução Normativa nº 846/2019 de 11/06/2019 - Norma em vigor Resolução Normativa nº 436/2011 de 24/05/2011 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199269 AND idambito = 4 LIMIT 1 Resolução Normativa nº 875/2020 de 10/03/2020 - Norma em vigor Resolução Normativa nº 583/2013 de 22/10/2013 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199251 AND idambito = 4 LIMIT 1 Resolução Normativa nº 482/2012 de 17/04/2012 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199257 AND idambito = 4 LIMIT 1 Resolução Normativa nº 888/2020 de 01/12/2020 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199191 AND idambito = 4 LIMIT 1 Resolução Normativa nº 823/2018 de 10/07/2018 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199281 AND idambito = 4 LIMIT 1 Resolução Normativa nº 901/2020 de 08/12/2020 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199286 AND idambito = 4 LIMIT 1 Resolução Normativa nº 470/2011 de 13/12/2011 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199259 AND idambito = 4 LIMIT 1 Resolução Normativa nº 497/2012 de 26/06/2012 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199255 AND idambito = 4 LIMIT 1 Resolução Normativa nº 593/2013 de 17/12/2013 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199300 AND idambito = 4 LIMIT 1 Resolução Normativa nº 587/2013 de 10/12/2013 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199248 AND idambito = 4 LIMIT 1 Resolução Normativa nº 581/2013 de 11/10/2013 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199270 AND idambito = 4 LIMIT 1 Resolução Normativa nº 569/2013 de 23/07/2013 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199247 AND idambito = 4 LIMIT 1 Resolução Normativa nº 563/2013 de 09/07/2013 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199260 AND idambito = 4 LIMIT 1 Resolução Normativa nº 547/2013 de 16/04/2013 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199265 AND idambito = 4 LIMIT 1 Resolução Normativa nº 516/2012 de 11/12/2012 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199262 AND idambito = 4 LIMIT 1 Resolução Normativa nº 506/2012 de 04/09/2012 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199263 AND idambito = 4 LIMIT 1 Resolução Normativa nº 414/2010 de 01/12/2010 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199217 AND idambito = 4 LIMIT 1 Resolução Normativa nº 493/2012 de 05/06/2012 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199244 AND idambito = 4 LIMIT 1 Resolução Normativa nº 479/2012 de 03/04/2012 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199268 AND idambito = 4 LIMIT 1 Resolução Normativa nº 473/2012 de 24/01/2012 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199253 AND idambito = 4 LIMIT 1 Resolução Normativa nº 472/2012 de 24/01/2012 - Norma em vigor Resolução Normativa nº 464/2011 de 22/11/2011 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199267 AND idambito = 4 LIMIT 1 Resolução Normativa nº 449/2011 de 20/09/2011 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199264 AND idambito = 4 LIMIT 1 Resolução Normativa nº 448/2011 de 06/09/2011 - Norma revogada SELECT status_consolidacao FROM leismeta WHERE idlei = 199242 AND idambito = 4 LIMIT 1
+| Tipo | Dispositivo | Prazo | Descrição | Nota |
+|---|---|---|---|---|
+| 1 | art. 6º. | 5 dias úteis | realizar as alterações cadastrais |  |
+| 1 | art. 6º. | 10 dias úteis | realizar as alterações cadastrais, com visita técnica |  |
+| 1 | art. 56 | 30 dias | fornecer o orçamento estimado |  |
+| 1 | art. 76, § 5º | 10 dias úteis | disponibilizar cópia da solicitação feita ao ONS ou a outra distribuidora, bem como a resposta obtida | Redação acrescida pela Resolução Normativa nº 1098/2024 |
+| 1 | art. 78 | 10 dias úteis | disponibilizar estudos do orçamento |  |
+| 1 | art. 136 | 30 dias | informar as condições para a revisão da demanda contratada em projetos de eficiência energética |  |
+| 1 | art. 222, I | 30 dias | enquadramento na modalidade tarifária horária branca |  |
+| 1 | art. 223 | 30 dias | retorno à modalidade tarifária convencional |  |
+| 1 | art. 243, § 1º | 15 dias | providenciar o reparo do meio utilizado para o acompanhamento da leitura de medição externa |  |
+| 1 | art. 257, §4º | 5 dias úteis | fornecer cópia do processo de defeito na medição |  |
+| 1 | art. 393, § 3º | 5 dias úteis | fornecer cópia da gravação da chamada telefônica |  |
+| 1 | art. 418, p.único | 3 dias úteis | informar a relação dos registros do histórico das demandas |  |
+| 1 | art. 435 | 30 dias | informações relacionadas aos indicadores de continuidade, compensações e interrupções |  |
+| 1 | art. 463, §8º | 5 dias úteis | fornecer cópia do processo de levantamento cadastral de iluminação pública |  |
+| 1 | art. 464 | 30 dias | disponibilizar informações do sistema de informação geográfica |  |
+| 1 | art. 598, §4º | 5 dias úteis | fornecer cópia do processo de irregularidade |  |
+| 1 | art. 604 | 5 dias úteis | fornecer cópia do processo de ressarcimento de danos |  |
+| 2 | art. 51, I | 30 dias | informar o resultado da análise de projeto |  |
+| 2 | art. 51, II | 10 dias úteis | informar o resultado da reanálise de projeto em caso de análise anterior incompleta |  |
+| 2 | art. 86, §2º, I | 10 dias úteis | disponibilizar o projeto e demais informações em caso de antecipação de obra |  |
+| 2 | art. 94 | 3 dias úteis | encaminhar o relatório de vistoria em caso de reprovação |  |
+| 2 | art. 112, caput | 30 dias | comunicar o resultado do comissionamento de obras |  |
+| 2 | art. 112, §1º | 10 dias úteis | comunicar o resultado do comissionamento de obras no caso de informação anterior incompleta |  |
+| 2 | art. 203 | 5 dias úteis | informar o resultado da análise de classificação tarifária |  |
+| 2 | art. 203 | 10 dias úteis | informar o resultado da análise de classificação tarifária, caso haja necessidade de visita técnica |  |
+| 2 | art. 250 | 30 dias | inspeção do sistema de medição de faturamento e demais providências |  |
+| 2 | art. 296 | 5 dias úteis | para informar o resultado da análise de reconhecimento de sazonalidade |  |
+| 2 | art. 296 | 10 dias úteis | informar o resultado da análise de reconhecimento de sazonalidade, caso haja necessidade de visita técnica |  |
+| 2 | art. 325, §3º | 15 dias | solucionar reclamação de compensação de faturamento |  |
+| 2 | art. 408, I | 5 dias úteis | solução de reclamações, sem visita técnica, exceto as que possuam prazo próprio |  |
+| 2 | art. 408, II | 10 dias úteis | solução de reclamações, com visita técnica, exceto as que possuam prazo próprio |  |
+| 2 | art. 409 | 30 dias | atendimento de solicitações que não disponham de prazo próprio |  |
+| 2 | art. 421, § 1º, II | 10 dias úteis | comunicar as providências adotadas na Ouvidoria da distribuidora |  |
+| 2 | art. 421, § 2º | prazo informado | comunicar as providências adotadas na Ouvidoria da distribuidora em caso de prorrogação do prazo |  |
+| 2 | art. 438, §1º, I | 15 dias | realizar a inspeção técnica, a medição instantânea e demais providências em casos de reclamação de tensão |  |
+| 2 | art. 438, §1º, II | 30 dias | realizar a medição pelo período de 168 horas e entregar o laudo técnico do resultado |  |
+| 2 | art. 477, §2º | 30 dias | fornecer informações sobre a arrecadação da contribuição para o custeio do serviço de iluminação pública |  |
+| 2 | art. 477, §2º | 30 dias | fornecer informações sobre a arrecadação da contribuição para o custeio, a expansão e a melhoria do serviço de iluminação pública e de sistemas de monitoramento para segurança e preservação de logradouros públicos | Redação dada pela Resolução Normativa nº 1115/2025 |
+| 2 | art. 525 | 30 dias | avaliar reclamação sobre disponibilidade mensal insuficiente |  |
+| 2 | art. 525, p.único | 60 dias | adotar medidas corretivas em caso de disponibilidade mensal insuficiente |  |
+| 2 | art. 543, III | 60 dias | regularizar nível tensão, sistema MIGDI ou SIGFI |  |
+| 2 | art. 613, I | 1 dia útil | verificação ou retirada do equipamento danificado utilizado para o acondicionamento de alimentos perecíveis ou de medicamentos |  |
+| 2 | art. 613, II | 10 dias | verificação ou retirada do equipamento danificado |  |
+| 2 | art. 617, I | 15 dias | informar o resultado da solicitação de ressarcimento feita em até 90 dias |  |
+| 2 | art. 617, II | 30 dias | informar o resultado da solicitação de ressarcimento feita com mais de 90 dias |  |
+| 2 | art. 618 | 20 dias | efetuar o ressarcimento em caso de deferimento |  |
+| 3 | art. 49, § 4º | 10 dias úteis | instalação do padrão de entrada gratuito |  |
+| 3 | art. 64, I | 15 dias | fornecer o orçamento de conexão, conexão de unidades consumidoras, inclusive com micro GD em tensão menor que 69kV, sem obras |  |
+| 3 | art. 64, II | 30 dias | fornecer o orçamento de conexão, conexão de unidades consumidoras, inclusive com micro GD em tensão menor que 69kV, com obras |  |
+| 3 | art. 64, III | 45 dias | fornecer o orçamento de conexão, demais conexões |  |
+| 3 | art. 84 | 5 dias úteis | entregar os contratos e demais documentos |  |
+| 3 | art. 88, I | 60 dias | concluir as obras de conexão, tensão menor que 2,3 kV |  |
+| 3 | art. 88, II | 120 dias | concluir as obras de conexão, tensão maior ou igual a 2,3 kV e menor que 69 kV, até 1km |  |
+| 3 | art. 88, III | 365 dias | concluir as obras em tensão menor que 69 kV |  |
+| 3 | art. 88, §1º | cronograma | concluir demais obras não previstas nos critérios anteriores |  |
+| 3 | art. 90 | 45 dias | conexão - Lei nº 14.195, de 26 de agosto de 2021 |  |
+| 3 | art. 91, I | 5 dias úteis | vistoria e instalação de medição, conexão menor que 2,3 kV |  |
+| 3 | art. 91, II | 10 dias úteis | vistoria e instalação de medição, conexão maior ou igual a 2,3 kV e menor que 69 kV |  |
+| 3 | art. 91, III | 15 dias úteis | vistoria e instalação de medição, conexão maior ou igual a 69 kV |  |
+| 3 | art. 96, §1º | cronograma | Implantação/adequação do sistema de medição no ACL |  |
+| 3 | art. 96-A | 5 dias úteis | Responder a CCEE no modelo simplificado para comercialização varejista. | Revogado pela Resolução Normativa nº 1174/2026 |
+| 3 | art. 97, II | 10 dias úteis | aprovar o projeto de medição de central geradora, importador e exportador de energia |  |
+| 3 | art. 97, IV | 10 dias úteis | comunicar a avaliação do relatório de comissionamento do sistema de medição |  |
+| 3 | art. 138, §4º | 3 dias úteis | alteração de titularidade, área urbana |  |
+| 3 | art. 138, §4º | 5 dias úteis | alteração de titularidade, área rural |  |
+| 3 | art. 166, §3º, I | 10 dias úteis | notificar o consumidor em caso de migração | Revogado pela Resolução Normativa nº 1174/2026 |
+| 3 | art. 166-A | 5 dias úteis | Comunicar sobre a verificação dos requisitos técnicos e a existência de motivos que impeçam a migração. | Redação acrescida pela Resolução Normativa nº 1174/2026 |
+| 3 | art. 252, II | 30 dias | substituir o medidor e demais equipamentos de medição após a data de constatação do defeito |  |
+| 3 | art. 362, I | 4 horas | religação em caso de suspensão indevida |  |
+| 3 | art. 362, II | 4 horas | religação de urgência em área urbana |  |
+| 3 | art. 362, III | 8 horas | religação de urgência em área rural |  |
+| 3 | art. 362, IV | 24 horas | religação normal em área urbana |  |
+| 3 | art. 362, V | 48 horas | religação normal em área rural |  |
+| 3 | art. 527 | 10 dias úteis | vistoria para conexão, sistema MIGDI ou SIGFI |  |
+| 3 | art. 528 | 10 dias úteis | conexão, sistema MIGDI ou SIGFI |  |
+| 3 | art. 533 | 120 horas | religação, sistema MIGDI ou SIGFI |  |
+| 3 | art. 534 | 72 horas | religação em caso de suspensão indevida, sistema MIGDI ou SIGFI |  |

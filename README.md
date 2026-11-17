@@ -46,9 +46,13 @@ O que a extração faz:
 
 - separa a norma em dispositivos (artigo, parágrafo, inciso, alínea, item), com ids estáveis no estilo `art48-A_par2_inc3_alia` e a estrutura (título, capítulo, seção) de cada um;
 - guarda o histórico de redações: texto riscado no site vira redação substituída; as notas "Redação dada", "Redação acrescida" e "Revogado" viram o ato alterador (tipo, número, ano, data e link) e as datas de vigência, marcadas como "conferir vigência";
+- reconhece renumerações (parágrafo único que passou a § 1º), filhos suprimidos pela nova redação do dispositivo pai e revogações que valem para um grupo inteiro;
+- separa o texto entre aspas que altera outras normas, a assinatura e as notas de publicação (fecho);
+- usa a data do artigo de vigência ("Esta Resolução entra em vigor em ...") para a redação original;
+- estrutura os anexos (cláusulas, itens, histórico de redações) e as tabelas, ligando cada linha ao dispositivo citado;
 - gera o Markdown vigente: só a redação em vigor, revogados como marcador e nota de redação abaixo do dispositivo.
 
-Dispositivos cuja redação antiga não tem correspondente com o mesmo rótulo (renumerações) ficam com a situação `conferir` no canônico.
+O que a extração não resolve sozinha vai para `dados/revisao/<norma>.md`, com o motivo e as redações de cada caso.
 
 ### Captura sem computador local (funcionalidade futura)
 
