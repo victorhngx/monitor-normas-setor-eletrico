@@ -2,7 +2,12 @@
 
 Monitoramento de normas do setor elétrico brasileiro. A ferramenta acompanha as normas nas fontes oficiais, avisa quando alguma é alterada, mostra o que mudou entre versões e converte o texto em Markdown estruturado, pronto para uso em sistemas de busca e IA (RAG).
 
-Projeto em construção: ainda não há código. O planejamento está em [`docs/`](docs/).
+Projeto em construção. O planejamento está em [`docs/`](docs/).
+
+Resultados da REN 1.000/2021:
+
+- texto canônico: [`dados/canonico/ren-1000-2021.json`](dados/canonico/ren-1000-2021.json)
+- Markdown vigente: [`dados/markdown/ren-1000-2021/vigente.md`](dados/markdown/ren-1000-2021/vigente.md)
 
 ## Normas e fontes
 
@@ -20,15 +25,34 @@ As normas monitoradas ficam em [`catalogo.toml`](catalogo.toml). Para validar o 
 
 O planejamento das próximas normas está em [`docs/catalogo-normas.md`](docs/catalogo-normas.md).
 
-## Captura
+## Captura e extração (leis.org)
+
+No computador local, com o Google Chrome instalado:
 
 ```powershell
-.venv\Scripts\python -m monitor_normas.captura
+.venv\Scripts\python -m pip install -e ".[navegador]"
+.venv\Scripts\python -m monitor_normas.captura_navegador
 ```
 
-Baixa as normas ativas do catálogo para `dados/brutos/` (fora do Git) e calcula o SHA-256 de cada uma. O acesso é sempre identificado (User-Agent do projeto) e, quando a fonte fornece uma credencial de acesso, ela é enviada como cabeçalho, lida da variável `LEIS_ORG_CABECALHO_ACESSO` no formato `Nome-Do-Cabecalho: valor`. Se a fonte responder com bloqueio ou verificação anti-robô, a captura termina com o código 2, sem tentar contornar.
+Abre o Chrome normal (não controlado por automação), com um perfil próprio do projeto, na página de cada norma ativa do leis.org. Se o site pedir a verificação, conclua-a na janela; o script só acompanha o título da aba e, quando a norma carrega, lê a página. Em seguida salva o HTML em `dados/brutos/` (fora do Git) e roda a extração, que atualiza o canônico e o Markdown quando o conteúdo da norma muda.
 
-No GitHub Actions, o workflow `Captura` roda em dias úteis às 7h (e manualmente), desde que o secret `LEIS_ORG_CABECALHO_ACESSO` esteja configurado. O conteúdo baixado fica disponível por 7 dias como artefato da execução, sem entrar no repositório.
+A extração também pode ser rodada sozinha, sobre o HTML mais recente já capturado:
+
+```powershell
+.venv\Scripts\python -m monitor_normas.extracao_leis_org
+```
+
+O que a extração faz:
+
+- separa a norma em dispositivos (artigo, parágrafo, inciso, alínea, item), com ids estáveis no estilo `art48-A_par2_inc3_alia` e a estrutura (título, capítulo, seção) de cada um;
+- guarda o histórico de redações: texto riscado no site vira redação substituída; as notas "Redação dada", "Redação acrescida" e "Revogado" viram o ato alterador (tipo, número, ano, data e link) e as datas de vigência, marcadas como "conferir vigência";
+- gera o Markdown vigente: só a redação em vigor, revogados como marcador e nota de redação abaixo do dispositivo.
+
+Dispositivos cuja redação antiga não tem correspondente com o mesmo rótulo (renumerações) ficam com a situação `conferir` no canônico.
+
+### Captura sem computador local (funcionalidade futura)
+
+`monitor_normas.captura` e o workflow `Captura` acessam a fonte com identificação própria e enviam uma credencial de acesso (`LEIS_ORG_CABECALHO_ACESSO`, no formato `Nome-Do-Cabecalho: valor`) quando houver. Sem liberação do leis.org, a fonte responde com a verificação anti-robô e a captura termina com o código 2, sem tentar contornar. O workflow está só com execução manual até o acesso ser liberado.
 
 ## Como funciona
 
@@ -38,7 +62,7 @@ No GitHub Actions, o workflow `Captura` roda em dias úteis às 7h (e manualment
 
 As diferenças entre versões são calculadas sobre o texto canônico. Assim, uma mudança no formato do Markdown não é confundida com uma mudança na norma.
 
-Uma rotina diária no GitHub Actions vai verificar as fontes e abrir uma issue quando houver alteração. Uma página no GitHub Pages vai reunir as normas, os downloads e as últimas mudanças.
+Uma página no GitHub Pages vai reunir as normas, os downloads e as últimas mudanças. A verificação diária automática no GitHub Actions depende da liberação de acesso pelo leis.org (ver [`docs/roadmap.md`](docs/roadmap.md)).
 
 ## Desenvolvimento
 
