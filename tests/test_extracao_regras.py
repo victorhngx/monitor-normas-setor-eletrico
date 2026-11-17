@@ -248,7 +248,7 @@ def test_relatorio_de_revisao(tmp_path):
         pasta_canonico=tmp_path / "canonico",
         pasta_markdown=tmp_path / "md",
         pasta_revisao=tmp_path / "revisao",
-        pasta_rag=tmp_path / "rag",
+        pasta_chat=tmp_path / "chat",
         pasta_correcoes=tmp_path / "correcoes",
     )
     texto = resultado["revisao"].read_text(encoding="utf-8")

@@ -1,6 +1,6 @@
 # monitor-normas-setor-eletrico
 
-Monitoramento de normas do setor elétrico brasileiro. A ferramenta acompanha as normas nas fontes oficiais, avisa quando alguma é alterada, mostra o que mudou entre versões e converte o texto em Markdown estruturado, pronto para uso em sistemas de busca e IA (RAG).
+Monitoramento de normas do setor elétrico brasileiro. A ferramenta acompanha as normas nas fontes oficiais, avisa quando alguma é alterada, mostra o que mudou entre versões e converte o texto em Markdown estruturado, inclusive um arquivo único para anexar a uma conversa com IA, com o histórico de redações e as datas de cada alteração.
 
 Projeto em construção. O planejamento está em [`docs/`](docs/).
 
@@ -51,7 +51,7 @@ O que a extração faz:
 - usa a data do artigo de vigência ("Esta Resolução entra em vigor em ...") para a redação original;
 - estrutura os anexos (cláusulas, itens, histórico de redações) e as tabelas, ligando cada linha ao dispositivo citado;
 - gera o Markdown vigente: só a redação em vigor, com a citação de cada dispositivo (ex.: `[art. 6º, § 1º]`, `[art. 6º, caput]`), revogados como marcador e nota de redação abaixo do dispositivo;
-- gera os trechos para consulta por IA (`dados/rag/<norma>.jsonl`): um por redação de cada dispositivo, com a citação completa, o caput e os dispositivos pais como contexto, a situação e o período de vigência.
+- gera o arquivo para chat (`dados/chat/<norma>.md`): um único Markdown para anexar a uma conversa com IA, com guia de leitura, lista dos atos que alteraram a norma e o texto completo, em que cada dispositivo traz a redação atual com a data da alteração e as redações anteriores, revogadas ou suprimidas com o período em que valeram.
 
 O que a extração não resolve sozinha vai para `dados/revisao/<norma>.md`, com o motivo e as redações de cada caso.
 

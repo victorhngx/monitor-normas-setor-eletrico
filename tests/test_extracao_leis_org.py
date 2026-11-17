@@ -188,7 +188,7 @@ def test_processar_grava_e_nao_regrava_sem_mudanca(tmp_path):
         "pasta_canonico": tmp_path / "canonico",
         "pasta_markdown": tmp_path / "md",
         "pasta_revisao": tmp_path / "revisao",
-        "pasta_rag": tmp_path / "rag",
+        "pasta_chat": tmp_path / "chat",
         "pasta_correcoes": tmp_path / "correcoes",
     }
 

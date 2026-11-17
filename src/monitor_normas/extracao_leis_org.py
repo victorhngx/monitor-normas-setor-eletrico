@@ -28,6 +28,8 @@ Regras de histórico (D018):
 Saídas (D004, D006, D007):
 - dados/canonico/<id>.json: um registro por dispositivo, com o histórico de redações;
 - dados/markdown/<id>/vigente.md: texto vigente, revogados como marcador;
+- dados/chat/<id>.md: arquivo único para anexar a uma conversa com IA, com guia de
+  leitura, atos alteradores e histórico de redações (D021);
 - dados/revisao/<id>.md: casos para conferência manual.
 
 Uso: python -m monitor_normas.extracao_leis_org [arquivo.html] [--norma ID]
@@ -44,15 +46,16 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 
 from monitor_normas.catalogo import carregar_catalogo
+from monitor_normas.chat import PADRAO_CHAT, gerar_chat, linhas_cabecalho
+from monitor_normas.citacao import citacao_curta
 from monitor_normas.correcoes import PASTA_CORRECOES, ErroCorrecoes, carregar_correcoes
-from monitor_normas.rag import citacao_curta, gerar_jsonl
 
 PADRAO_MARKDOWN = "0.3"
 PASTA_BRUTOS = Path("dados/brutos")
 PASTA_CANONICO = Path("dados/canonico")
 PASTA_MARKDOWN = Path("dados/markdown")
 PASTA_REVISAO = Path("dados/revisao")
-PASTA_RAG = Path("dados/rag")
+PASTA_CHAT = Path("dados/chat")
 
 # marcadores internos (área de uso privado do Unicode, não aparecem em textos reais)
 TIT, TIT_F = "", ""
@@ -1106,14 +1109,8 @@ def gerar_markdown(canonico: dict, norma_id: str, fonte: dict) -> str:
         f"# {canonico['titulo'] or norma_id}",
         "",
     ]
-    for linha in canonico["cabecalho"]:
-        titulo = canonico["titulo"] or ""
-        if titulo and linha.startswith(titulo):
-            linha = linha[len(titulo) :]
-        # links de download do site não fazem parte do texto da norma
-        linha = re.sub(r"Download\s.*?(?=Download\s|\(Vide|$)", "", linha).strip()
-        if linha and linha != "(*)":
-            linhas += [linha, ""]
+    for linha in linhas_cabecalho(canonico):
+        linhas += [linha, ""]
 
     estrutura_atual: list[str] = []
     revogados: set[str] = set()
@@ -1199,9 +1196,9 @@ def processar(
     pasta_markdown: Path = PASTA_MARKDOWN,
     pasta_revisao: Path = PASTA_REVISAO,
     pasta_correcoes: Path = PASTA_CORRECOES,
-    pasta_rag: Path = PASTA_RAG,
+    pasta_chat: Path = PASTA_CHAT,
 ) -> dict:
-    """Extrai o HTML salvo e grava o canônico, o Markdown e a revisão, se o conteúdo mudou."""
+    """Extrai o HTML salvo e grava o canônico, o Markdown, o arquivo para chat e a revisão."""
     html = Path(arquivo_html).read_text(encoding="utf-8")
     canonico = extrair(html, carregar_correcoes(norma_id, pasta_correcoes))
     canonico["hash_canonico"] = hash_canonico(canonico)
@@ -1219,15 +1216,18 @@ def processar(
     arquivo_canonico = Path(pasta_canonico) / f"{norma_id}.json"
     arquivo_markdown = Path(pasta_markdown) / norma_id / "vigente.md"
     arquivo_revisao = Path(pasta_revisao) / f"{norma_id}.md"
-    arquivo_rag = Path(pasta_rag) / f"{norma_id}.jsonl"
+    arquivo_chat = Path(pasta_chat) / f"{norma_id}.md"
     anterior = None
     if arquivo_canonico.exists():
         anterior = json.loads(arquivo_canonico.read_text(encoding="utf-8")).get("hash_canonico")
     mudou = anterior != canonico["hash_canonico"]
-    # saída nova ou padrão do Markdown mudou: regrava mesmo sem mudança no conteúdo
-    faltando = not all(a.exists() for a in (arquivo_markdown, arquivo_revisao, arquivo_rag))
-    padrao_antigo = arquivo_markdown.exists() and (
+    # saída nova ou padrão mudou: regrava mesmo sem mudança no conteúdo
+    faltando = not all(a.exists() for a in (arquivo_markdown, arquivo_revisao, arquivo_chat))
+    padrao_antigo = (
         f'padrao: "{PADRAO_MARKDOWN}"' not in arquivo_markdown.read_text(encoding="utf-8")
+        or f"padrão {PADRAO_CHAT}," not in arquivo_chat.read_text(encoding="utf-8")
+        if not faltando
+        else False
     )
 
     if mudou or faltando or padrao_antigo:
@@ -1240,15 +1240,15 @@ def processar(
         arquivo_markdown.write_text(gerar_markdown(canonico, norma_id, fonte), encoding="utf-8")
         arquivo_revisao.parent.mkdir(parents=True, exist_ok=True)
         arquivo_revisao.write_text(gerar_revisao(canonico, norma_id), encoding="utf-8")
-        arquivo_rag.parent.mkdir(parents=True, exist_ok=True)
-        arquivo_rag.write_text(gerar_jsonl(canonico, norma_id), encoding="utf-8")
+        arquivo_chat.parent.mkdir(parents=True, exist_ok=True)
+        arquivo_chat.write_text(gerar_chat(canonico, norma_id, fonte), encoding="utf-8")
 
     return {
         "mudou": mudou,
         "canonico": arquivo_canonico,
         "markdown": arquivo_markdown,
         "revisao": arquivo_revisao,
-        "rag": arquivo_rag,
+        "chat": arquivo_chat,
         "estatisticas": canonico["estatisticas"],
     }
 
@@ -1286,7 +1286,7 @@ def main(argv: list[str] | None = None) -> int:
     print(f"  Canônico: {resultado['canonico']}")
     print(f"  Markdown: {resultado['markdown']}")
     print(f"  Revisão: {resultado['revisao']}")
-    print(f"  Trechos RAG: {resultado['rag']}")
+    print(f"  Arquivo para chat: {resultado['chat']}")
     print("  Estatísticas: " + json.dumps(resultado["estatisticas"], ensure_ascii=False))
     return 0
 

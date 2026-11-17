@@ -5,7 +5,7 @@
 | 0. Fundação | Repo público, README, docs/, testes (pytest), estilo (ruff), trava de privacidade (gitleaks + bloqueio de PDF/HTML brutos), proteção do main, merge automático | Concluída |
 | 1. Catálogo | `catalogo.toml` (norma, link, fonte, formato, se está ativa) → lista de links | Concluída |
 | 2. Captura | Baixar REN 1.000 do leis.org; impressão digital (hash) para detectar mudança | Concluída pelo Chrome do computador local (D017); captura sem computador local é funcionalidade futura |
-| 3. Canônico + Markdown RAG | Texto canônico (JSON por dispositivo, com redações e vigência) → Markdown vigente | Concluída para a REN 1.000 (D017, D018), com anexos e tabelas estruturados |
+| 3. Canônico + Markdown | Texto canônico (JSON por dispositivo, com redações e vigência) → Markdown vigente e arquivo para chat | Concluída para a REN 1.000 (D017, D018, D021), com anexos e tabelas estruturados |
 | 4. Diff | Comparação entre versões do canônico; relatório por dispositivo (alterado/incluído/revogado) | Planejada |
 | 5. Monitoramento | GitHub Actions diário (dias úteis, 7h) + issue automática quando houver mudança | Planejada |
 | 6. Histórico | Reconstrução de redações anteriores (a partir do texto compilado) + Markdown "em data X" | Planejada |
