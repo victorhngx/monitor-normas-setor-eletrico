@@ -161,13 +161,17 @@ def test_markdown_vigente(canonico):
     md = gerar_markdown(canonico, "ren-1000-2021", {"url": "https://leis.org/x"})
 
     assert md.startswith("---\nnorma: ren-1000-2021\n")
-    assert 'padrao: "0.2"' in md
+    assert 'padrao: "0.3"' in md
     assert "# RESOLUÇÃO NORMATIVA ANEEL Nº 1.000, DE 7 DE DEZEMBRO DE 2021\n" in md
     assert "## TÍTULO I - PARTE GERAL" in md
-    assert '<a id="art1_par1_inc4"></a>IV - agente exportador;\n' in md
+    assert '<a id="art1_par1_inc4"></a>[art. 1º, § 1º, inciso IV] IV - agente exportador;\n' in md
+    assert "[art. 1º, caput] Esta Resolução estabelece as regras." in md
     assert "> Redação dada pela Resolução Normativa nº 1162/2026" in md
     assert "agente exportador; e" not in md
-    assert '<a id="art59_par2"></a>§ 2º (Revogado pela Resolução Normativa nº 1059/2023)' in md
+    assert (
+        '<a id="art59_par2"></a>[art. 59, § 2º] § 2º '
+        "(Revogado pela Resolução Normativa nº 1059/2023)" in md
+    )
     assert "formulário" not in md
     assert "Download" not in md
 
@@ -184,6 +188,8 @@ def test_processar_grava_e_nao_regrava_sem_mudanca(tmp_path):
         "pasta_canonico": tmp_path / "canonico",
         "pasta_markdown": tmp_path / "md",
         "pasta_revisao": tmp_path / "revisao",
+        "pasta_rag": tmp_path / "rag",
+        "pasta_correcoes": tmp_path / "correcoes",
     }
 
     primeiro = processar(html, "ren-1000-2021", "https://leis.org/x", **pastas)

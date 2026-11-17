@@ -45,12 +45,14 @@ from bs4 import BeautifulSoup
 
 from monitor_normas.catalogo import carregar_catalogo
 from monitor_normas.correcoes import PASTA_CORRECOES, ErroCorrecoes, carregar_correcoes
+from monitor_normas.rag import citacao_curta, gerar_jsonl
 
-PADRAO_MARKDOWN = "0.2"
+PADRAO_MARKDOWN = "0.3"
 PASTA_BRUTOS = Path("dados/brutos")
 PASTA_CANONICO = Path("dados/canonico")
 PASTA_MARKDOWN = Path("dados/markdown")
 PASTA_REVISAO = Path("dados/revisao")
+PASTA_RAG = Path("dados/rag")
 
 # marcadores internos (área de uso privado do Unicode, não aparecem em textos reais)
 TIT, TIT_F = "", ""
@@ -1060,22 +1062,25 @@ def _markdown_dispositivo(d: dict) -> list[str]:
     ):
         return []
     ancora = f'<a id="{d["id"]}"></a>'
+    cit = f"[{citacao_curta(d)}]"
     linhas: list[str] = []
     if d["situacao"] == "revogado":
         nota = d["revogado_por"]["nota"]
         prefixo = "###### " if d["tipo"] == "artigo" else ""
         rotulo = d["rotulo"] or d["redacoes"][-1]["texto"][:60]
-        return [f"{prefixo}{ancora}{rotulo} ({nota})", ""]
+        if d["tipo"] == "artigo":
+            return [f"{prefixo}{ancora}{rotulo} ({nota})", ""]
+        return [f"{ancora}{cit} {rotulo} ({nota})", ""]
     if d["tipo"] == "artigo":
         linhas += [f"###### {ancora}{d['rotulo']}", ""]
         if d["texto"]:
-            linhas += [d["texto"], ""]
+            linhas += [f"{cit} {d['texto']}", ""]
     elif d["tipo"] == "clausula":
         linhas += [f"### {ancora}{d['texto']}", ""]
     elif d["tipo"] == "texto" and not d["redacoes"]:
         linhas += [d["texto"], ""]
     else:
-        linhas += [f"{ancora}{d['rotulo']} {d['texto'] or ''}".strip(), ""]
+        linhas += [f"{ancora}{cit} {d['rotulo']} {d['texto'] or ''}".replace("  ", " ").strip(), ""]
     vigente = d["redacoes"][-1] if d["redacoes"] else {}
     if vigente.get("nota"):
         linhas += [f"> {vigente['nota']}", ""]
@@ -1194,6 +1199,7 @@ def processar(
     pasta_markdown: Path = PASTA_MARKDOWN,
     pasta_revisao: Path = PASTA_REVISAO,
     pasta_correcoes: Path = PASTA_CORRECOES,
+    pasta_rag: Path = PASTA_RAG,
 ) -> dict:
     """Extrai o HTML salvo e grava o canônico, o Markdown e a revisão, se o conteúdo mudou."""
     html = Path(arquivo_html).read_text(encoding="utf-8")
@@ -1213,12 +1219,18 @@ def processar(
     arquivo_canonico = Path(pasta_canonico) / f"{norma_id}.json"
     arquivo_markdown = Path(pasta_markdown) / norma_id / "vigente.md"
     arquivo_revisao = Path(pasta_revisao) / f"{norma_id}.md"
+    arquivo_rag = Path(pasta_rag) / f"{norma_id}.jsonl"
     anterior = None
     if arquivo_canonico.exists():
         anterior = json.loads(arquivo_canonico.read_text(encoding="utf-8")).get("hash_canonico")
     mudou = anterior != canonico["hash_canonico"]
+    # saída nova ou padrão do Markdown mudou: regrava mesmo sem mudança no conteúdo
+    faltando = not all(a.exists() for a in (arquivo_markdown, arquivo_revisao, arquivo_rag))
+    padrao_antigo = arquivo_markdown.exists() and (
+        f'padrao: "{PADRAO_MARKDOWN}"' not in arquivo_markdown.read_text(encoding="utf-8")
+    )
 
-    if mudou:
+    if mudou or faltando or padrao_antigo:
         documento = {"norma": norma_id, "fonte": fonte, **canonico}
         arquivo_canonico.parent.mkdir(parents=True, exist_ok=True)
         arquivo_canonico.write_text(
@@ -1228,12 +1240,15 @@ def processar(
         arquivo_markdown.write_text(gerar_markdown(canonico, norma_id, fonte), encoding="utf-8")
         arquivo_revisao.parent.mkdir(parents=True, exist_ok=True)
         arquivo_revisao.write_text(gerar_revisao(canonico, norma_id), encoding="utf-8")
+        arquivo_rag.parent.mkdir(parents=True, exist_ok=True)
+        arquivo_rag.write_text(gerar_jsonl(canonico, norma_id), encoding="utf-8")
 
     return {
         "mudou": mudou,
         "canonico": arquivo_canonico,
         "markdown": arquivo_markdown,
         "revisao": arquivo_revisao,
+        "rag": arquivo_rag,
         "estatisticas": canonico["estatisticas"],
     }
 
@@ -1271,6 +1286,7 @@ def main(argv: list[str] | None = None) -> int:
     print(f"  Canônico: {resultado['canonico']}")
     print(f"  Markdown: {resultado['markdown']}")
     print(f"  Revisão: {resultado['revisao']}")
+    print(f"  Trechos RAG: {resultado['rag']}")
     print("  Estatísticas: " + json.dumps(resultado["estatisticas"], ensure_ascii=False))
     return 0
 
