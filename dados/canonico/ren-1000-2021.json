@@ -96278,10 +96278,10 @@
         "Seção VII - Disposições Transitórias"
       ],
       "situacao": "vigente",
-      "texto": "até 31 de dezembro de 2022: para as demais distribuidoras não enquadradas no inciso I do § 1º § 2º Durante a realização da busca disposta no caput , a distribuidora deve:",
+      "texto": "até 31 de dezembro de 2022: para as demais distribuidoras não enquadradas no inciso I do § 1º",
       "redacoes": [
         {
-          "texto": "até 31 de dezembro de 2022: para as demais distribuidoras não enquadradas no inciso I do § 1º § 2º Durante a realização da busca disposta no caput , a distribuidora deve:",
+          "texto": "até 31 de dezembro de 2022: para as demais distribuidoras não enquadradas no inciso I do § 1º",
           "situacao": "vigente",
           "vigente_de": "2022-01-03",
           "fonte_data": "artigo de vigencia da norma",
@@ -96291,7 +96291,28 @@
       "revogado_por": null
     },
     {
-      "id": "art666_par1_inc1_2",
+      "id": "art666_par2",
+      "tipo": "paragrafo",
+      "rotulo": "§ 2º",
+      "estrutura": [
+        "TÍTULO III - DISPOSIÇÕES FINAIS E TRANSITÓRIAS",
+        "Seção VII - Disposições Transitórias"
+      ],
+      "situacao": "vigente",
+      "texto": "Durante a realização da busca disposta no caput , a distribuidora deve:",
+      "redacoes": [
+        {
+          "texto": "Durante a realização da busca disposta no caput , a distribuidora deve:",
+          "situacao": "vigente",
+          "vigente_de": "2022-01-03",
+          "fonte_data": "artigo de vigencia da norma",
+          "vigente_ate": null
+        }
+      ],
+      "revogado_por": null
+    },
+    {
+      "id": "art666_par2_inc1",
       "tipo": "inciso",
       "rotulo": "I -",
       "estrutura": [
@@ -96312,7 +96333,7 @@
       "revogado_por": null
     },
     {
-      "id": "art666_par1_inc2_2",
+      "id": "art666_par2_inc2",
       "tipo": "inciso",
       "rotulo": "II -",
       "estrutura": [
@@ -98205,18 +98226,27 @@
         "TÍTULO III - DISPOSIÇÕES FINAIS E TRANSITÓRIAS",
         "Seção VIII - Disposições Finais"
       ],
-      "situacao": "conferir",
+      "situacao": "revogado",
       "texto": null,
       "redacoes": [
         {
           "texto": "A Resolução Normativa nº 482, de 17 de abril de 2012, passa a vigorar com as seguintes alterações:",
-          "situacao": "substituida",
+          "situacao": "revogada",
           "vigente_de": "2022-01-03",
           "fonte_data": "artigo de vigencia da norma",
-          "vigente_ate": null
+          "vigente_ate": "2023-02-07"
         }
       ],
-      "revogado_por": null,
+      "revogado_por": {
+        "nota": "Revogado pela Resolução Normativa nº 1059/2023",
+        "ato": {
+          "url": "https://leis.org/institucionais/br/aneel/lei/resolucao-normativa/2023/1059/resolucao-normativa-n-1059-2023-aprimora-as-regras-para-a-conexao-e-o-faturamento-de-centrais-de-microgeracao-e-minigeracao-distribuida-em-sistemas-de-distribuicao-de-energia-eletrica-bem-como-as-regras-do-sistema-de-compensacao-de-energia-eletrica-altera-as-resolucoes-normativas-n-920-de-23-de-fevereiro-de-2021-956-de-7-de-dezembro-de-2021-1000-de-7-de-dezembro-de-2021-e-da-outras-providencias",
+          "tipo": "REN",
+          "ano": "2023",
+          "numero": "1059",
+          "data": "2023-02-07"
+        }
+      },
       "citacao": [
         "\"Art. 3º Na solicitação de fornecimento inicial ou aumento de potência disponibilizada de unidade consumidora com microgeração ou minigeração distribuída aplicam-se os procedimentos, prazos e condições estabelecidos nas Regras de Prestação do Serviço Público de Distribuição de Energia Elétrica e no Módulo 3 do PRODIST.\" (NR)",
         "\"Art. 4º - A É vedada a divisão de central geradora em unidades de menor porte para se enquadrar nos limites de potência para microgeração ou minigeração distribuída, devendo a distribuidora identificar esses casos, solicitar a readequação da instalação e, caso não atendido, negar a adesão ao Sistema de Compensação de Energia Elétrica.\" (NR)",
@@ -98230,7 +98260,7 @@
         "\"Art. 10. A distribuidora deverá iniciar o sistema de compensação de energia elétrica após realizar a vistoria e instalar ou adequar o sistema de medição, conforme procedimentos e prazos estabelecidos nas Regras de Prestação do Serviço Público de Distribuição de Energia Elétrica.\" (NR)",
         "\"Art. 11. A distribuidora deve exigir do consumidor o ressarcimento de indenizações no caso de danos ao sistema elétrico de distribuição e danos a equipamentos elétricos de outros consumidores comprovadamente ocasionado por microgeração ou minigeração distribuída, conforme Regras de Prestação do Serviço Público de Distribuição de Energia Elétrica.\" (NR)",
         "\"Art. 12. A distribuidora deve suspender imediatamente o fornecimento no caso de o consumidor gerar energia elétrica na sua unidade consumidora sem observar as normas e padrões da distribuidora local, conforme Regras de Prestação do Serviço Público de Distribuição de Energia Elétrica. .... \" (NR)",
-        "\"Art. 13-B. Aplicam-se às unidades consumidoras participantes do sistema de compensação de energia, de forma complementar, as disposições das Regras de Prestação do Serviço Público de Distribuição de Energia Elétrica e do PRODIST. \" (NR) (Revogado pela Resolução Normativa nº 1059/2023)"
+        "\"Art. 13-B. Aplicam-se às unidades consumidoras participantes do sistema de compensação de energia, de forma complementar, as disposições das Regras de Prestação do Serviço Público de Distribuição de Energia Elétrica e do PRODIST. \" (NR)"
       ]
     },
     {
@@ -104076,46 +104106,41 @@
       "ementa": "Altera o art. 224 da Resolução Normativa ANEEL nº 414, de 09 de setembro de 2010."
     }
   ],
+  "correcoes": [
+    {
+      "tipo": "quebra",
+      "antes_de": "§ 2º Durante a realização da busca",
+      "motivo": "No site, o § 2º do art. 666 vem colado ao fim do inciso II do § 1º, sem quebra de linha.",
+      "aplicada": 1
+    }
+  ],
   "revisao": [
-    {
-      "id": "art666_par1_inc1_2",
-      "motivo": "rótulo repetido sem nota de nova redação; 'art666_par1_inc1' já existia no mesmo artigo e este recebeu sufixo"
-    },
-    {
-      "id": "art666_par1_inc2_2",
-      "motivo": "rótulo repetido sem nota de nova redação; 'art666_par1_inc2' já existia no mesmo artigo e este recebeu sufixo"
-    },
     {
       "id": "art668_inc3_alid_2",
       "motivo": "rótulo repetido sem nota de nova redação; 'art668_inc3_alid' já existia no mesmo artigo e este recebeu sufixo"
-    },
-    {
-      "id": "art672",
-      "motivo": "redação tachada sem nova redação, sem nota de revogação e sem dispositivo pai reescrito"
     }
   ],
   "estatisticas": {
     "por_tipo": {
       "artigo": 730,
-      "paragrafo": 1177,
+      "paragrafo": 1178,
       "inciso": 1989,
       "alinea": 376,
       "texto": 35
     },
     "por_situacao": {
-      "vigente": 4205,
-      "revogado": 86,
-      "suprimido": 15,
-      "conferir": 1
+      "vigente": 4206,
+      "revogado": 87,
+      "suprimido": 15
     },
-    "revogados": 86,
+    "revogados": 87,
     "suprimidos": 15,
     "renumerados": 4,
-    "a_conferir": 1,
+    "a_conferir": 0,
     "notas": {
       "redação dada": 170,
       "redação acrescida": 224,
-      "revogad": 86
+      "revogad": 87
     },
     "anexos": {
       "anexo1": 104,
@@ -104124,7 +104149,7 @@
       "anexo4": 0
     },
     "tabelas": 2,
-    "para_revisao": 4
+    "para_revisao": 1
   },
-  "hash_canonico": "c008feeb9125e029582314ba5ac06043f4b299d69def8fd47c59383474f4c22b"
+  "hash_canonico": "cf2bc5a486b337c1b4b701af95f3124bcf2230c7e9afe4f4fe0d4160e6af8e45"
 }

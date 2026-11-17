@@ -54,6 +54,8 @@ O que a extração faz:
 
 O que a extração não resolve sozinha vai para `dados/revisao/<norma>.md`, com o motivo e as redações de cada caso.
 
+Falhas do texto no site que a extração não tem como deduzir (por exemplo, uma quebra de linha que falta) são corrigidas à mão em `correcoes/<norma>.toml`, com o motivo de cada correção. Elas são aplicadas em toda extração.
+
 ### Captura sem computador local (funcionalidade futura)
 
 `monitor_normas.captura` e o workflow `Captura` acessam a fonte com identificação própria e enviam uma credencial de acesso (`LEIS_ORG_CABECALHO_ACESSO`, no formato `Nome-Do-Cabecalho: valor`) quando houver. Sem liberação do leis.org, a fonte responde com a verificação anti-robô e a captura termina com o código 2, sem tentar contornar. O workflow está só com execução manual até o acesso ser liberado.

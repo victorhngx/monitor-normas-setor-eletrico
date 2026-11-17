@@ -44,6 +44,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 
 from monitor_normas.catalogo import carregar_catalogo
+from monitor_normas.correcoes import PASTA_CORRECOES, ErroCorrecoes, carregar_correcoes
 
 PADRAO_MARKDOWN = "0.2"
 PASTA_BRUTOS = Path("dados/brutos")
@@ -202,7 +203,7 @@ def _atos_vinculados(conteiner) -> list[dict]:
     return lista
 
 
-def _blocos(html: str) -> dict:
+def _blocos(html: str, correcoes: list[dict] | None = None) -> dict:
     """Transforma a norma em blocos de texto (um por dispositivo) com marcadores."""
     sopa = BeautifulSoup(html, "html.parser")
     conteiner = sopa.find("div", id="law-content", class_="aneel-content") or sopa.find(
@@ -281,11 +282,26 @@ def _blocos(html: str) -> dict:
             brutos[-1] += " " + linha
         novo = False
 
+    # correções manuais: quebra que falta no site (D019)
+    normalizados = [re.sub(r"\s+", " ", bruto).strip() for bruto in brutos]
+    for correcao in correcoes or []:
+        if correcao["tipo"] != "quebra":
+            continue
+        alvo = re.sub(r"\s+", " ", correcao["antes_de"]).strip()
+        divididos = []
+        for bloco in normalizados:
+            posicao = bloco.find(alvo)
+            if posicao > 0:
+                divididos += [bloco[:posicao].rstrip(), bloco[posicao:]]
+                correcao["aplicada"] = correcao.get("aplicada", 0) + 1
+            else:
+                divididos.append(bloco)
+        normalizados = divididos
+
     # O tachado pode abrir numa linha sem texto (ex.: <s><br>Art. 160 ...) e
     # continuar pelos blocos seguintes: a marcação é propagada até fechar.
     blocos, aberto = [], False
-    for bruto in brutos:
-        bloco = re.sub(r"\s+", " ", bruto).strip()
+    for bloco in normalizados:
         if not bloco:
             continue
         if aberto and not bloco.startswith(RIS):
@@ -539,6 +555,13 @@ class _Montador:
         if self.citando and not bloco.lstrip(RIS).startswith(ART):
             # texto entre aspas que altera outra norma: fica com o artigo que o transcreve
             artigo = next(e for e in reversed(self.grupo) if e["tipo"] == "artigo")
+            riscado, texto, resto = _partes_riscado(bloco)
+            _, notas_resto = _separar_notas(resto, self.atos)
+            revogacao = next((n for n in notas_resto if _tipo_nota(n) == "revogad"), None)
+            if riscado and revogacao and artigo["riscado"]:
+                # "(Revogado pela ...)" depois do texto citado tachado vale para o artigo
+                artigo["revogacao"] = revogacao
+                bloco = texto
             artigo.setdefault("citacao", []).append(_limpar(bloco))
             return
         self.citando = False
@@ -911,10 +934,23 @@ def _vigencia(dispositivos: list[dict], data_norma: str | None) -> dict | None:
     return None
 
 
-def extrair(html: str) -> dict:
-    """Extrai a norma do HTML do leis.org e devolve o texto canônico (sem metadados de fonte)."""
-    lido = _blocos(html)
+def extrair(html: str, correcoes: list[dict] | None = None) -> dict:
+    """Extrai a norma do HTML do leis.org e devolve o texto canônico (sem metadados de fonte).
+
+    `correcoes`: correções manuais da norma (ver `monitor_normas.correcoes`).
+    """
+    correcoes = [dict(c) for c in correcoes or []]
+    lido = _blocos(html, correcoes)
     montador = _Montador(lido["atos"], lido["tabelas"])
+    for correcao in correcoes:
+        if correcao.get("aplicada", 0) != 1:
+            montador.revisao.append(
+                {
+                    "id": "correcao",
+                    "motivo": f"correção manual aplicada {correcao.get('aplicada', 0)} vez(es), "
+                    f"esperado 1: {correcao['antes_de']!r}",
+                }
+            )
     for bloco in lido["blocos"]:
         montador.processar(bloco)
     montador._resolver()
@@ -957,6 +993,10 @@ def extrair(html: str) -> dict:
         "fecho": fecho,
         "anexos": montador.anexos,
         "atos_vinculados": lido["vinculados"],
+        "correcoes": [
+            {k: c[k] for k in ("tipo", "antes_de", "motivo")} | {"aplicada": c.get("aplicada", 0)}
+            for c in correcoes
+        ],
         "revisao": montador.revisao,
         "estatisticas": {
             "por_tipo": tipos,
@@ -982,6 +1022,7 @@ CHAVES_CONTEUDO = (
     "fecho",
     "anexos",
     "atos_vinculados",
+    "correcoes",
 )
 
 
@@ -1152,10 +1193,11 @@ def processar(
     pasta_canonico: Path = PASTA_CANONICO,
     pasta_markdown: Path = PASTA_MARKDOWN,
     pasta_revisao: Path = PASTA_REVISAO,
+    pasta_correcoes: Path = PASTA_CORRECOES,
 ) -> dict:
     """Extrai o HTML salvo e grava o canônico, o Markdown e a revisão, se o conteúdo mudou."""
     html = Path(arquivo_html).read_text(encoding="utf-8")
-    canonico = extrair(html)
+    canonico = extrair(html, carregar_correcoes(norma_id, pasta_correcoes))
     canonico["hash_canonico"] = hash_canonico(canonico)
     capturado = re.match(r"(\d{8}T\d{6})", Path(arquivo_html).name)
     fonte = {
@@ -1220,7 +1262,7 @@ def main(argv: list[str] | None = None) -> int:
 
     try:
         resultado = processar(arquivo, norma.id, norma.url)
-    except ErroExtracao as erro:
+    except (ErroExtracao, ErroCorrecoes) as erro:
         print(f"ERRO {norma.id}: {erro}")
         return 1
 
