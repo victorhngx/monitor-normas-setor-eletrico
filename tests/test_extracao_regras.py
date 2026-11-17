@@ -227,10 +227,10 @@ def test_atos_vinculados_saem_do_texto(canonico):
 def test_markdown_com_regras(canonico):
     canonico["hash_canonico"] = hash_canonico(canonico)
     md = gerar_markdown(canonico, "ren-1000-2021", {"url": "https://leis.org/x"})
-    assert '<a id="art6_par1"></a>§ 1º A distribuidora deve cadastrar de imediato.' in md
+    assert '<a id="art6_par1"></a>[art. 6º, § 1º] § 1º A distribuidora deve cadastrar' in md
     assert "Parágrafo único" not in md
     assert "a proporcionalização deve considerar a demanda" not in md
-    assert '<a id="art133_par4"></a>§ 4º (Revogado pela' in md
+    assert '<a id="art133_par4"></a>[art. 133, § 4º] § 4º (Revogado pela' in md
     assert 'id="art133_par4_inc1"' not in md
     assert "ANDRÉ PEPITONE DA NÓBREGA" in md
     assert '## <a id="anexo1"></a>ANEXO I - CONTRATO DE ADESÃO - GRUPO B' in md
@@ -248,6 +248,8 @@ def test_relatorio_de_revisao(tmp_path):
         pasta_canonico=tmp_path / "canonico",
         pasta_markdown=tmp_path / "md",
         pasta_revisao=tmp_path / "revisao",
+        pasta_rag=tmp_path / "rag",
+        pasta_correcoes=tmp_path / "correcoes",
     )
     texto = resultado["revisao"].read_text(encoding="utf-8")
     assert texto.startswith("# Revisão da extração: ren-1000-2021")

@@ -1,12 +1,13 @@
-# Padrão Markdown para RAG — RASCUNHO v0.2
+# Padrão Markdown para RAG — RASCUNHO v0.3
 
-Status: rascunho em uso na REN 1.000 (v0.2, D018).
+Status: rascunho em uso na REN 1.000 (v0.3, D018 e D020).
 
 ## Camadas
 1. **Captura**: conteúdo baixado da fonte (não versionado).
 2. **Texto canônico** (`dados/canonico/<norma>.json`): estrutura da norma por dispositivo, com histórico de redações.
 3. **Markdown** (`dados/markdown/<norma>/...`): gerado a partir do canônico.
 4. **Revisão** (`dados/revisao/<norma>.md`): casos que a extração não resolveu sozinha ou resolveu por inferência.
+5. **Trechos para RAG** (`dados/rag/<norma>.jsonl`): um registro por redação de cada dispositivo (ver abaixo).
 
 ## Texto canônico
 Cada dispositivo tem:
@@ -22,7 +23,7 @@ Também no canônico: `vigencia` (data lida do artigo "Esta Resolução entra em
 ## Markdown — versão vigente
 - Cabeçalho YAML: `norma`, `titulo`, `fonte_url`, `data_captura`, `padrao`, `hash_canonico`.
 - Títulos Markdown seguindo a hierarquia (Título/Capítulo/Seção → `##`/`###`/`####`; artigo como `######`).
-- Cada dispositivo começa com seu rótulo oficial (Art. 12, § 1º, I, a) e tem âncora com o `id`.
+- Cada dispositivo tem âncora com o `id`, a citação curta entre colchetes e o rótulo oficial: `[art. 6º, § 1º] § 1º texto`. O texto do artigo vem como `[art. 6º, caput] texto`; incisos ligados direto ao artigo são do caput (`[art. 2º, caput, inciso I-A]`).
 - Revogado: `Art. 45 (Revogado pela REN nº X/AAAA)` sem texto antigo; os filhos de um dispositivo revogado não são repetidos.
 - Suprimido e `conferir`: não aparecem (ficam no canônico e, no caso de `conferir`, no relatório de revisão).
 - Nota de redação mantida abaixo do dispositivo: `> Redação dada pela REN nº X/AAAA`.
@@ -30,8 +31,17 @@ Também no canônico: `vigencia` (data lida do artigo "Esta Resolução entra em
 - Tabelas em formato Markdown, com a coluna "Nota" quando alguma linha tiver nota de redação.
 - Fecho (assinatura e notas de publicação) depois do último artigo; anexos depois, com `##` para o anexo e `###` para cláusulas.
 
+## Trechos para RAG (JSONL)
+Um registro por linha, um por redação de cada dispositivo e um por linha das tabelas dos anexos. Campos:
+- `id` (`art6_par1#2`: dispositivo e número da redação), `dispositivo`, `norma`, `citacao` ("art. 6º, § 1º, da REN nº 1.000/2021"), `tipo`, `rotulo`, `estrutura`;
+- `contexto`: caput e dispositivos pais, cada um com a redação válida na data de início da redação do trecho;
+- `texto`, `situacao` (vigente, substituida, revogada, suprimida), `vigente_de`, `vigente_ate`, `fonte_data`, `nota`, `ato`, `ids_anteriores`;
+- `conteudo`: texto pronto para indexar, com a norma e a estrutura, a citação, a situação com o período, o contexto e o texto do dispositivo.
+
+Para consultar o que valia numa data, filtrar `vigente_de <= data < vigente_ate` (ou `vigente_ate` vazio).
+
 ## Markdown — histórico / "em data X"
-- Cada trecho leva metadados `vigente_de`, `vigente_ate`, `alterado_por` para filtro temporal na RAG.
+- Planejado: texto da norma como estava numa data escolhida, a partir do canônico.
 
 ## Versionamento do padrão
 Mudanças neste padrão incrementam `padrao` e geram PR próprio regenerando todos os Markdowns.

@@ -50,7 +50,8 @@ O que a extração faz:
 - separa o texto entre aspas que altera outras normas, a assinatura e as notas de publicação (fecho);
 - usa a data do artigo de vigência ("Esta Resolução entra em vigor em ...") para a redação original;
 - estrutura os anexos (cláusulas, itens, histórico de redações) e as tabelas, ligando cada linha ao dispositivo citado;
-- gera o Markdown vigente: só a redação em vigor, revogados como marcador e nota de redação abaixo do dispositivo.
+- gera o Markdown vigente: só a redação em vigor, com a citação de cada dispositivo (ex.: `[art. 6º, § 1º]`, `[art. 6º, caput]`), revogados como marcador e nota de redação abaixo do dispositivo;
+- gera os trechos para consulta por IA (`dados/rag/<norma>.jsonl`): um por redação de cada dispositivo, com a citação completa, o caput e os dispositivos pais como contexto, a situação e o período de vigência.
 
 O que a extração não resolve sozinha vai para `dados/revisao/<norma>.md`, com o motivo e as redações de cada caso.
 
