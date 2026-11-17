@@ -8,9 +8,18 @@ version = "0.1.0"
 description = "Monitoramento de normas do setor elétrico, com conversão para Markdown e comparação entre versões."
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "beautifulsoup4>=4.15",
+    "markdownify>=1.2",
+    # base de fusos horários (o Windows não traz uma)
+    "tzdata; sys_platform == 'win32'",
+]
 
 [project.optional-dependencies]
+# captura pelo navegador do computador local
+navegador = [
+    "playwright>=1.65",
+]
 dev = [
     "pytest>=9.2",
     # versão fixa: novas versões do ruff mudam regras e quebrariam a checagem sem aviso

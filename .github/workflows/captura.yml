@@ -1,8 +1,8 @@
 name: Captura
 
+# Só execução manual por enquanto. O agendamento (dias úteis, 7h em Brasília:
+# cron "0 10 * * 1-5") volta quando o leis.org liberar o acesso automatizado.
 on:
-  schedule:
-    - cron: "0 10 * * 1-5" # dias úteis, 7h em Brasília
   workflow_dispatch:
 
 permissions:
