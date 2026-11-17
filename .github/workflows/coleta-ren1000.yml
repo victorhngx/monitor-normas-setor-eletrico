@@ -1,0 +1,316 @@
+name: Coleta REN 1000 - Leis.org
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 9 * * *"
+  push:
+    branches: [teste-coleta-leis]
+
+permissions:
+  contents: read
+
+jobs:
+  coleta:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright beautifulsoup4 markdownify
+
+      - name: Instalar Chromium
+        run: python -m playwright install --with-deps chromium
+
+      - name: Acessar e extrair REN 1000
+        run: |
+          mkdir -p "REN 1000"
+
+          python - <<'PY'
+          import os
+          import re
+          import json
+          import traceback
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+
+          from bs4 import BeautifulSoup
+          from markdownify import markdownify as md
+          from playwright.sync_api import sync_playwright
+
+          URL = (
+              "https://leis.org/institucionais/br/aneel/lei/"
+              "resolucao-normativa/2021/1000/"
+              "resolucao-normativa-n-1000-2021-"
+              "estabelece-as-regras-de-prestacao-do-"
+              "servico-publico-de-distribuicao-de-"
+              "energia-eletrica-revoga-as-resolucoes-"
+              "normativas-aneel-n-414-de-9-de-"
+              "setembro-de-2010-n-470-de-13-de-"
+              "dezembro-de-2011-n-901-de-8-de-"
+              "dezembro-de-2020-e-da-outras-providencias"
+          )
+
+          DESTINO = "REN 1000"
+
+          data = datetime.now(
+              ZoneInfo("America/Sao_Paulo")
+          ).strftime("%Y-%m-%d")
+
+          print("=" * 70)
+          print("REN 1000 - CAPTURA E ESTRUTURAÇÃO")
+          print("=" * 70)
+
+          try:
+              with sync_playwright() as p:
+
+                  browser = p.chromium.launch(
+                      headless=True
+                  )
+
+                  context = browser.new_context(
+                      locale="pt-BR",
+                      timezone_id="America/Sao_Paulo"
+                  )
+
+                  page = context.new_page()
+
+                  print("\nAcessando leis.org...")
+
+                  response = page.goto(
+                      URL,
+                      wait_until="domcontentloaded",
+                      timeout=90000
+                  )
+
+                  if response:
+                      print("HTTP:", response.status)
+
+                  page.wait_for_timeout(5000)
+
+                  html = page.content()
+
+                  caminho_html = os.path.join(
+                      DESTINO,
+                      f"REN1000_BRUTO_{data}.html"
+                  )
+
+                  with open(
+                      caminho_html, "w", encoding="utf-8"
+                  ) as f:
+                      f.write(html)
+
+                  titulo = page.title()
+                  texto_pagina = page.locator("body").inner_text(
+                      timeout=10000
+                  )
+
+                  print("Título:", titulo)
+
+                  # Identifica bloqueios sem tentar contornar
+                  indicadores = [
+                      "just a moment",
+                      "verify you are human",
+                      "checking your browser",
+                      "attention required",
+                      "cf-chl"
+                  ]
+
+                  bloqueio = any(
+                      termo in (titulo + " " + texto_pagina[:5000]).lower()
+                      for termo in indicadores
+                  )
+
+                  if bloqueio:
+                      raise Exception(
+                          "Cloudflare apresentou um desafio. "
+                          "A coleta não foi realizada."
+                      )
+
+                  print("\nLocalizando conteúdo da legislação...")
+
+                  elemento = page.locator("#law-content")
+
+                  elemento.wait_for(
+                      state="attached",
+                      timeout=30000
+                  )
+
+                  html = page.content()
+
+                  with open(
+                      caminho_html, "w", encoding="utf-8"
+                  ) as f:
+                      f.write(html)
+
+                  soup = BeautifulSoup(
+                      html, "html.parser"
+                  )
+
+                  law_content = soup.find(
+                      "div", id="law-content"
+                  )
+
+                  if law_content is None:
+                      raise Exception(
+                          'Div id="law-content" não encontrada.'
+                      )
+
+                  print("Conteúdo localizado!")
+
+                  # Remove textos riscados
+
+                  for tag_name in ["del", "s", "strike"]:
+                      for tag in law_content.find_all(tag_name):
+                          tag.decompose()
+
+                  for tag in law_content.find_all(True):
+
+                      style = str(
+                          tag.attrs.get("style", "")
+                      ).lower()
+
+                      classes = " ".join(
+                          tag.attrs.get("class", [])
+                      ).lower()
+
+                      texto_attrs = style + " " + classes
+
+                      if any(
+                          termo in texto_attrs
+                          for termo in [
+                              "line-through",
+                              "strikethrough",
+                              "text-decoration",
+                              "revogado",
+                              "tachado"
+                          ]
+                      ):
+                          tag.decompose()
+
+                  # Markdown
+
+                  markdown = md(
+                      str(law_content),
+                      heading_style="ATX"
+                  )
+
+                  caminho_md = os.path.join(
+                      DESTINO,
+                      f"REN1000_{data}.md"
+                  )
+
+                  with open(
+                      caminho_md, "w", encoding="utf-8"
+                  ) as f:
+                      f.write(markdown)
+
+                  print("Markdown gerado!")
+
+                  # Texto limpo
+
+                  texto = law_content.get_text(
+                      "\n", strip=True
+                  )
+
+                  texto = re.sub(r"\r", "", texto)
+                  texto = re.sub(r"\n{2,}", "\n\n", texto)
+
+                  # Estruturação dos artigos
+
+                  padrao_artigo = re.compile(
+                      r"(Art\.\s*\d+º?.*?)(?=\nArt\.\s*\d+º?|\Z)",
+                      re.DOTALL
+                  )
+
+                  artigos_encontrados = (
+                      padrao_artigo.findall(texto)
+                  )
+
+                  artigos_json = []
+
+                  for artigo_texto in artigos_encontrados:
+
+                      artigo_texto = artigo_texto.strip()
+
+                      numero_match = re.search(
+                          r"Art\.\s*(\d+)",
+                          artigo_texto
+                      )
+
+                      numero_artigo = (
+                          numero_match.group(1)
+                          if numero_match else None
+                      )
+
+                      paragrafos = re.findall(
+                          r"§\s*\d+º?.*?(?=\n§|\n[A-ZIVX]+|\Z)",
+                          artigo_texto,
+                          re.DOTALL
+                      )
+
+                      incisos = re.findall(
+                          r"\n([IVXLCDM]+[\-\–].*?)(?=\n[IVXLCDM]+[\-\–]|\n§|\Z)",
+                          artigo_texto,
+                          re.DOTALL
+                      )
+
+                      artigos_json.append({
+                          "artigo": numero_artigo,
+                          "texto": artigo_texto,
+                          "paragrafos": paragrafos,
+                          "incisos": incisos
+                      })
+
+                  # JSON
+
+                  caminho_json = os.path.join(
+                      DESTINO,
+                      f"REN1000_ESTRUTURADO_{data}.json"
+                  )
+
+                  with open(
+                      caminho_json, "w", encoding="utf-8"
+                  ) as f:
+                      json.dump(
+                          artigos_json,
+                          f,
+                          ensure_ascii=False,
+                          indent=4
+                      )
+
+                  browser.close()
+
+                  print("\n" + "=" * 70)
+                  print("COLETA CONCLUÍDA")
+                  print("=" * 70)
+
+                  print("Artigos encontrados:", len(artigos_json))
+                  print("HTML:", caminho_html)
+                  print("Markdown:", caminho_md)
+                  print("JSON:", caminho_json)
+
+          except Exception:
+              print("\nFALHA NA COLETA:")
+              traceback.print_exc()
+              raise
+          PY
+
+      - name: Salvar arquivos gerados
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: REN-1000-${{ github.run_number }}
+          path: REN 1000/
+          if-no-files-found: warn
+          retention-days: 30
