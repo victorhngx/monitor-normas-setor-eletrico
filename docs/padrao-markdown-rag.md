@@ -1,13 +1,13 @@
-# Padrão Markdown para RAG — RASCUNHO v0.3
+# Padrão Markdown — RASCUNHO v0.3
 
-Status: rascunho em uso na REN 1.000 (v0.3, D018 e D020).
+Status: rascunho em uso na REN 1.000 (Markdown vigente v0.3, D018 e D020; arquivo para chat v1.0, D021).
 
 ## Camadas
 1. **Captura**: conteúdo baixado da fonte (não versionado).
 2. **Texto canônico** (`dados/canonico/<norma>.json`): estrutura da norma por dispositivo, com histórico de redações.
 3. **Markdown** (`dados/markdown/<norma>/...`): gerado a partir do canônico.
 4. **Revisão** (`dados/revisao/<norma>.md`): casos que a extração não resolveu sozinha ou resolveu por inferência.
-5. **Trechos para RAG** (`dados/rag/<norma>.jsonl`): um registro por redação de cada dispositivo (ver abaixo).
+5. **Arquivo para chat** (`dados/chat/<norma>.md`): arquivo único para anexar a uma conversa com IA (ver abaixo).
 
 ## Texto canônico
 Cada dispositivo tem:
@@ -31,14 +31,20 @@ Também no canônico: `vigencia` (data lida do artigo "Esta Resolução entra em
 - Tabelas em formato Markdown, com a coluna "Nota" quando alguma linha tiver nota de redação.
 - Fecho (assinatura e notas de publicação) depois do último artigo; anexos depois, com `##` para o anexo e `###` para cláusulas.
 
-## Trechos para RAG (JSONL)
-Um registro por linha, um por redação de cada dispositivo e um por linha das tabelas dos anexos. Campos:
-- `id` (`art6_par1#2`: dispositivo e número da redação), `dispositivo`, `norma`, `citacao` ("art. 6º, § 1º, da REN nº 1.000/2021"), `tipo`, `rotulo`, `estrutura`;
-- `contexto`: caput e dispositivos pais, cada um com a redação válida na data de início da redação do trecho;
-- `texto`, `situacao` (vigente, substituida, revogada, suprimida), `vigente_de`, `vigente_ate`, `fonte_data`, `nota`, `ato`, `ids_anteriores`;
-- `conteudo`: texto pronto para indexar, com a norma e a estrutura, a citação, a situação com o período, o contexto e o texto do dispositivo.
+## Arquivo para chat (padrão 1.0)
+Um único Markdown para anexar a uma conversa com IA, gerado a partir do canônico, sem âncoras nem colchetes de citação. Ordem:
+1. Título e dados da fonte: link, data da captura, última alteração incorporada, data da norma e início de vigência, padrão e hash do conteúdo.
+2. "Como ler este arquivo": convenções, passo a passo para responder sobre uma data de referência, cuidados com as datas (data do ato alterador não é necessariamente a de vigência; prazos de transição; redação alterada sem indicação do ato; notas do preâmbulo; equações em imagem), forma de citação e observações sobre a fonte (correções manuais e rótulos repetidos).
+3. "Atos que alteraram a norma": atos citados nas notas do texto, em ordem cronológica, com data e ementa. Depois, outros atos posteriores listados pela fonte e as normas anteriores relacionadas.
+4. "Texto da norma": preâmbulo, estrutura em títulos Markdown (`###` em diante), dispositivos, fecho e anexos.
 
-Para consultar o que valia numa data, filtrar `vigente_de <= data < vigente_ate` (ou `vigente_ate` vazio).
+Cada dispositivo:
+- vigente sem alteração: `§ 2º texto` (artigo em negrito: `**Art. 6º** texto`);
+- com nova redação: `§ 1º texto (Redação dada pela Resolução Normativa nº 1042/2022, de 20/09/2022)` e, logo abaixo, cada redação anterior: `> Redação original, vigente de 03/01/2022 até 20/09/2022: Parágrafo único. texto`;
+- revogado: `§ 4º [REVOGADO: Revogado pela ..., a partir de dd/mm/aaaa]` e o texto revogado em linha `>` com o período; os filhos revogados junto vêm só como `> I - texto`;
+- suprimido: `I - [SUPRIMIDO: Suprimido pela nova redação do § 1º (...), a partir de dd/mm/aaaa]` e o texto em linha `>` com o período;
+- rótulo repetido na fonte: `d) [rótulo repetido na fonte] texto`;
+- texto entre aspas que altera outra norma e tabelas logo abaixo do dispositivo; nas tabelas, a coluna "Nota" traz a data do ato.
 
 ## Markdown — histórico / "em data X"
 - Planejado: texto da norma como estava numa data escolhida, a partir do canônico.
