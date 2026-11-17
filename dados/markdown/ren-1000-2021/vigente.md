@@ -4,7 +4,7 @@ titulo: "RESOLUÇÃO NORMATIVA ANEEL Nº 1.000, DE 7 DE DEZEMBRO DE 2021"
 fonte_url: https://leis.org/aneel/lei/resolucao-normativa/2021/1000/resolucao-normativa-n-1000-2021-estabelece-as-regras-de-prestacao-do-servico-publico-de-distribuicao-de-energia-eletrica-revoga-as-resolucoes-normativas-aneel-n-414-de-9-de-setembro-de-2010-n-470-de-13-de-dezembro-de-2011-n-901-de-8-de-dezembro-de-2020-e-da-outras/
 data_captura: 2026-11-17T09:56:43
 padrao: "0.2"
-hash_canonico: c008feeb9125e029582314ba5ac06043f4b299d69def8fd47c59383474f4c22b
+hash_canonico: cf2bc5a486b337c1b4b701af95f3124bcf2230c7e9afe4f4fe0d4160e6af8e45
 ---
 
 # RESOLUÇÃO NORMATIVA ANEEL Nº 1.000, DE 7 DE DEZEMBRO DE 2021
@@ -10755,11 +10755,13 @@ A distribuidora deve realizar a busca das famílias do CadÚnico e do BPC que es
 
 <a id="art666_par1_inc1"></a>I - até 30 de junho de 2022: para a concessionária com até 120.000 unidades consumidoras e para as permissionárias; e
 
-<a id="art666_par1_inc2"></a>II - até 31 de dezembro de 2022: para as demais distribuidoras não enquadradas no inciso I do § 1º § 2º Durante a realização da busca disposta no caput , a distribuidora deve:
+<a id="art666_par1_inc2"></a>II - até 31 de dezembro de 2022: para as demais distribuidoras não enquadradas no inciso I do § 1º
 
-<a id="art666_par1_inc1_2"></a>I - coletar informações que permitam associar o cadastro da família no CadÚnico e no BPC à unidade consumidora utilizada pela família, quando for o caso; e
+<a id="art666_par2"></a>§ 2º Durante a realização da busca disposta no caput , a distribuidora deve:
 
-<a id="art666_par1_inc2_2"></a>II - realizar ampla campanha de divulgação voltada à classe residencial que ainda não receba a TSEE, de modo a esclarecer que em caso de cadastramento no CadÚnico e/ou no BPC a família deve entrar em contato com a distribuidora.
+<a id="art666_par2_inc1"></a>I - coletar informações que permitam associar o cadastro da família no CadÚnico e no BPC à unidade consumidora utilizada pela família, quando for o caso; e
+
+<a id="art666_par2_inc2"></a>II - realizar ampla campanha de divulgação voltada à classe residencial que ainda não receba a TSEE, de modo a esclarecer que em caso de cadastramento no CadÚnico e/ou no BPC a família deve entrar em contato com a distribuidora.
 
 <a id="art666_par3"></a>§ 3º A distribuidora deve realizar a campanha do § 2º em sua página na internet, nas redes sociais, por meio de mensagens eletrônicas e outros meios de comunicação.
 
@@ -10964,6 +10966,8 @@ A regra disposta no §2º do art. 655-I deve ser aplicada nos ciclos de faturame
 > Redação acrescida pela Resolução Normativa nº 1059/2023
 
 ### Seção VIII - Disposições Finais
+
+###### <a id="art672"></a>Art. 672 (Revogado pela Resolução Normativa nº 1059/2023)
 
 ###### <a id="art673"></a>Art. 673.
 

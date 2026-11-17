@@ -1,0 +1,8 @@
+# Correções manuais de falhas do texto no leis.org (D019).
+# Cada correção é aplicada em toda extração; se deixar de encaixar,
+# a extração avisa em dados/revisao/ren-1000-2021.md.
+
+[[correcao]]
+tipo = "quebra"
+antes_de = "§ 2º Durante a realização da busca"
+motivo = "No site, o § 2º do art. 666 vem colado ao fim do inciso II do § 1º, sem quebra de linha."

@@ -15,11 +15,11 @@ Fases 0 (Fundação) e 1 (Catálogo) concluídas. Fases 2 (Captura) e 3 (Canôni
 - Issue #11 "Captura automática com acesso autorizado": módulo `monitor_normas.captura` e workflow `Captura` (só execução manual), prontos para quando o leis.org liberar o acesso (D016).
 - Issue #13 "Captura pelo navegador do notebook e extração": `monitor_normas.captura_navegador` e `monitor_normas.extracao_leis_org`; primeira extração da REN 1.000 em `dados/canonico/` e `dados/markdown/` (D017).
 - Issue #15 "Corrigir a extração da REN 1.000 e estruturar os anexos": regras de renumeração, supressão, revogação de grupo, incisos com letra, citações de alteração, vigência original, fecho, anexos e tabelas; relatório de revisão em `dados/revisao/` (D018).
+- Issue #17 "Correções manuais e revogação do art. 672": arquivo `correcoes/ren-1000-2021.toml` (art. 666) e nota de revogação depois de texto citado (D019).
 
-Extração da REN 1.000 (captura de 17/11/2026, regras D018): 730 artigos, 1.177 parágrafos, 1.989 incisos, 376 alíneas; 86 revogados (45 deles do art. 486, revogado por inteiro pela REN 1.098/2024), 15 suprimidos, 4 renumerações (arts. 6, 68, 105 e 180), 174 dispositivos com histórico de redações; vigência original 03/01/2022 (art. 679). Anexos: I (104 itens), II (20), III (5) e IV (tabela com 77 linhas, todas ligadas ao dispositivo citado). 4 casos no relatório de revisão.
+Extração da REN 1.000 (captura de 17/11/2026, regras D018 e D019): 730 artigos, 1.178 parágrafos, 1.989 incisos, 376 alíneas; 87 revogados (45 deles do art. 486, revogado por inteiro pela REN 1.098/2024), 15 suprimidos, 4 renumerações (arts. 6, 68, 105 e 180); vigência original 03/01/2022 (art. 679). Anexos: I (104 itens), II (20), III (5) e IV (tabela com 77 linhas, todas ligadas ao dispositivo citado). Nenhum dispositivo "conferir"; o relatório de revisão só traz a alínea "d" repetida do art. 668, III, mantida fiel à fonte.
 
 ## Próximo passo
-- Conferir os 4 casos de `dados/revisao/ren-1000-2021.md`: art. 666 (o § 2º vem colado ao inciso II do § 1º no site), art. 668, III, alínea "d" repetida, e art. 672 (tachado no site sem nota de revogação).
 - Plano para uso em IA/RAG: citação completa e rótulo "caput" no Markdown; arquivo de trechos para RAG com datas de vigência; Markdown "em data X"; tabela de vigência por ato alterador e suspensões (ex.: Despacho 2.006/2024 sobre o art. 323, II).
 - Fase 4 (Diff): comparar duas versões do canônico e gerar o relatório por dispositivo.
 
