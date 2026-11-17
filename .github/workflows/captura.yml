@@ -1,0 +1,50 @@
+name: Captura
+
+on:
+  schedule:
+    - cron: "0 10 * * 1-5" # dias úteis, 7h em Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  captura:
+    runs-on: ubuntu-latest
+    env:
+      LEIS_ORG_CABECALHO_ACESSO: ${{ secrets.LEIS_ORG_CABECALHO_ACESSO }}
+    steps:
+      - name: Verificar acesso autorizado ao leis.org
+        id: acesso
+        run: |
+          if [ -z "$LEIS_ORG_CABECALHO_ACESSO" ]; then
+            echo "::notice::Acesso autorizado ao leis.org ainda não configurado (secret LEIS_ORG_CABECALHO_ACESSO). Captura não executada."
+            echo "configurado=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "configurado=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v5
+        if: steps.acesso.outputs.configurado == 'true'
+
+      - uses: actions/setup-python@v6
+        if: steps.acesso.outputs.configurado == 'true'
+        with:
+          python-version: "3.12"
+
+      - name: Instalar o projeto
+        if: steps.acesso.outputs.configurado == 'true'
+        run: python -m pip install -e .
+
+      - name: Capturar normas do catálogo
+        if: steps.acesso.outputs.configurado == 'true'
+        run: python -m monitor_normas.captura
+
+      - name: Guardar o conteúdo capturado (7 dias, fora do repositório)
+        if: always() && steps.acesso.outputs.configurado == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: captura
+          path: dados/brutos/
+          retention-days: 7
+          if-no-files-found: ignore

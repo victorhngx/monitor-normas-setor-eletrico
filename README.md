@@ -20,6 +20,16 @@ As normas monitoradas ficam em [`catalogo.toml`](catalogo.toml). Para validar o 
 
 O planejamento das próximas normas está em [`docs/catalogo-normas.md`](docs/catalogo-normas.md).
 
+## Captura
+
+```powershell
+.venv\Scripts\python -m monitor_normas.captura
+```
+
+Baixa as normas ativas do catálogo para `dados/brutos/` (fora do Git) e calcula o SHA-256 de cada uma. O acesso é sempre identificado (User-Agent do projeto) e, quando a fonte fornece uma credencial de acesso, ela é enviada como cabeçalho, lida da variável `LEIS_ORG_CABECALHO_ACESSO` no formato `Nome-Do-Cabecalho: valor`. Se a fonte responder com bloqueio ou verificação anti-robô, a captura termina com o código 2, sem tentar contornar.
+
+No GitHub Actions, o workflow `Captura` roda em dias úteis às 7h (e manualmente), desde que o secret `LEIS_ORG_CABECALHO_ACESSO` esteja configurado. O conteúdo baixado fica disponível por 7 dias como artefato da execução, sem entrar no repositório.
+
 ## Como funciona
 
 1. **Captura**: o conteúdo é baixado da fonte. PDFs e HTMLs originais não são guardados no repositório.
