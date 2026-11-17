@@ -140,9 +140,12 @@ def test_alineas_separadas_por_quebra_simples(canonico):
 
 
 def test_anexo_fica_separado(canonico):
-    assert canonico["anexos"] == [
-        {"titulo": "ANEXO I - CONTRATO", "texto": ["Cláusula do contrato."]}
-    ]
+    (anexo,) = canonico["anexos"]
+    assert anexo["id"] == "anexo1"
+    assert anexo["rotulo"] == "ANEXO I"
+    assert anexo["titulo"] == "CONTRATO"
+    assert [d["texto"] for d in anexo["dispositivos"]] == ["Cláusula do contrato."]
+    assert all(not d["id"].startswith("anexo") for d in canonico["dispositivos"])
 
 
 def test_estatisticas(canonico):
@@ -158,7 +161,7 @@ def test_markdown_vigente(canonico):
     md = gerar_markdown(canonico, "ren-1000-2021", {"url": "https://leis.org/x"})
 
     assert md.startswith("---\nnorma: ren-1000-2021\n")
-    assert 'padrao: "0.1"' in md
+    assert 'padrao: "0.2"' in md
     assert "# RESOLUÇÃO NORMATIVA ANEEL Nº 1.000, DE 7 DE DEZEMBRO DE 2021\n" in md
     assert "## TÍTULO I - PARTE GERAL" in md
     assert '<a id="art1_par1_inc4"></a>IV - agente exportador;\n' in md
@@ -177,7 +180,11 @@ def test_sem_conteudo_da_norma():
 def test_processar_grava_e_nao_regrava_sem_mudanca(tmp_path):
     html = tmp_path / "20261117T093644-abc.html"
     html.write_text(HTML, encoding="utf-8")
-    pastas = {"pasta_canonico": tmp_path / "canonico", "pasta_markdown": tmp_path / "md"}
+    pastas = {
+        "pasta_canonico": tmp_path / "canonico",
+        "pasta_markdown": tmp_path / "md",
+        "pasta_revisao": tmp_path / "revisao",
+    }
 
     primeiro = processar(html, "ren-1000-2021", "https://leis.org/x", **pastas)
     assert primeiro["mudou"]
