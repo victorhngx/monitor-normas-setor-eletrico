@@ -1,6 +1,6 @@
 # Status atual
 
-**Atualizado em:** 17/11/2026
+**Atualizado em:** 19/11/2026
 
 > Atualizar este arquivo ao fim de cada issue/sessão de trabalho.
 
@@ -18,10 +18,14 @@ Fases 0 (Fundação) e 1 (Catálogo) concluídas. Fases 2 (Captura) e 3 (Canôni
 - Issue #17 "Correções manuais e revogação do art. 672": arquivo `correcoes/ren-1000-2021.toml` (art. 666) e nota de revogação depois de texto citado (D019).
 - Issue #19 "Citação completa e trechos para RAG": citação e "caput" no Markdown (padrão 0.3) e `dados/rag/ren-1000-2021.jsonl` com 4.696 trechos, um por redação de cada dispositivo e por linha de tabela (D020).
 - Issue #21 "Arquivo da norma para uso em chat": `dados/chat/ren-1000-2021.md`, arquivo único com guia de leitura, atos alteradores e o texto com o histórico de redações e as datas; os trechos JSONL deixaram de ser gerados (D021).
+- Issue #23 "Captura dos atos que alteram a norma": `monitor_normas.captura_atos`, com 20 atos posteriores à REN 1.000 listados; capturadas as RENs 1.148/2026, 1.174/2026 e 1.059/2023 (D022).
 
 Extração da REN 1.000 (captura de 17/11/2026, regras D018 e D019): 730 artigos, 1.178 parágrafos, 1.989 incisos, 376 alíneas; 87 revogados (45 deles do art. 486, revogado por inteiro pela REN 1.098/2024), 15 suprimidos, 4 renumerações (arts. 6, 68, 105 e 180); vigência original 03/01/2022 (art. 679). Anexos: I (104 itens), II (20), III (5) e IV (tabela com 77 linhas, todas ligadas ao dispositivo citado). Nenhum dispositivo "conferir"; o relatório de revisão só traz a alínea "d" repetida do art. 668, III, mantida fiel à fonte.
 
 ## Próximo passo
+- Capturar os 17 atos restantes (`python -m monitor_normas.captura_atos`).
+- Etapa B (D022): extração dos atos e leitura da vigência. Casos já vistos: data fixa (REN 1.148: 1º/01/2027), data de publicação (REN 1.059) e efeitos escalonados por dispositivo (REN 1.174: "produz efeitos em 180 dias quanto ao art. ...").
+- Etapa C (D022): alterações e redações futuras, com aviso no texto vigente e no arquivo para chat.
 - Testar o arquivo para chat em conversas reais (perguntas sobre datas passadas) e ajustar o guia de leitura se preciso.
 - Markdown "em data X": texto da norma como estava numa data escolhida (talvez desnecessário com o arquivo para chat).
 - Tabela de vigência por ato alterador e suspensões (ex.: Despacho 2.006/2024 sobre o art. 323, II).

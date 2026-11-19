@@ -14,6 +14,24 @@
 
 A ordem pode mudar conforme decisões registradas em `decisoes.md`.
 
+## Estrutura alvo (D022)
+
+Objetivo final: página (GitHub Pages) com as normas mais importantes do setor elétrico, cada uma com texto vigente, texto com histórico completo para uso em chat de IA, texto em uma data escolhida, diff das alterações e aviso de alterações aprovadas com vigência futura. Atualização feita por scripts, com o mínimo de intervenção manual e sem IA na rotina.
+
+Base comum: um registro dos atos que alteram cada norma, com a data em que cada alteração passa a valer, lida do próprio ato. Todas as saídas saem dessa base.
+
+| Etapa | Entrega | Status |
+|---|---|---|
+| A. Captura dos atos alteradores | `monitor_normas.captura_atos`: páginas dos atos listados pela norma, em `dados/brutos/atos/` | Concluída (issue #23); testada com RENs 1.148/2026, 1.174/2026 e 1.059/2023 |
+| B. Extração dos atos e vigência | Canônico de cada ato; vigência lida da cláusula "entra em vigor" (data fixa, data de publicação, efeitos escalonados por dispositivo); datas do histórico da norma corrigidas pela vigência | Planejada |
+| C. Alterações e redações futuras | Leitura dos blocos "passa a vigorar com as seguintes alterações" (NR, acréscimo, revogação); redações futuras na linha do tempo; aviso de alteração aprovada no texto vigente e no arquivo para chat; conferência quando o site incorporar o ato | Planejada |
+| D. Diff | Por ato (antes e depois de cada dispositivo alterado) e entre duas datas | Planejada (fase 4) |
+| E. Página | GitHub Pages com texto vigente, histórico, seletor de data, diffs e downloads | Planejada (fase 8) |
+| F. Aviso de atos novos | A cada captura, ato novo na lista da norma abre issue | Planejada (fase 5) |
+| G. PRODIST / PRORET | Mesmo modelo, com cada versão de módulo como um "ato" | Planejada (fase 7) |
+
+Intervenção manual prevista: concluir a verificação do site na captura, olhar os casos do relatório de revisão e aprovar os PRs.
+
 ## Funcionalidades futuras
 
 | Funcionalidade | Depende de | Situação |

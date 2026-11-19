@@ -36,6 +36,16 @@ No computador local, com o Google Chrome instalado:
 
 Abre o Chrome normal (não controlado por automação), com um perfil próprio do projeto, na página de cada norma ativa do leis.org. Se o site pedir a verificação, conclua-a na janela; o script só acompanha o título da aba e, quando a norma carrega, lê a página. Em seguida salva o HTML em `dados/brutos/` (fora do Git) e roda a extração, que atualiza o canônico e o Markdown quando o conteúdo da norma muda.
 
+Depois da norma, os atos que a alteram (resoluções e despachos listados no quadro "Atos que alteram, regulamentam ou revogam" do site) podem ser capturados da mesma forma:
+
+```powershell
+.venv\Scripts\python -m monitor_normas.captura_atos --listar
+.venv\Scripts\python -m monitor_normas.captura_atos
+.venv\Scripts\python -m monitor_normas.captura_atos --ato ren-1148-2026
+```
+
+`--listar` mostra os atos posteriores à norma e se já foram capturados; sem opções, captura os pendentes, um por aba, com uma pausa entre eles; `--ato` captura um ato específico. Os HTMLs ficam em `dados/brutos/atos/<ato>/`, fora do Git. Eles serão usados para ler a vigência de cada ato e as alterações que ele faz na norma, inclusive as que ainda não entraram em vigor.
+
 A extração também pode ser rodada sozinha, sobre o HTML mais recente já capturado:
 
 ```powershell
