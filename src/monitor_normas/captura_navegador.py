@@ -35,7 +35,7 @@ from zoneinfo import ZoneInfo
 
 from bs4 import BeautifulSoup
 
-from monitor_normas.catalogo import Norma, carregar_catalogo
+from monitor_normas.catalogo import carregar_catalogo
 from monitor_normas.extracao_leis_org import ErroExtracao, processar
 
 PASTA_SAIDA = Path("dados/brutos")
@@ -89,7 +89,7 @@ def listar_abas(porta: int = PORTA) -> list[dict]:
 
 
 def aguardar_pagina(dominio: str, espera_minutos: float, porta: int = PORTA) -> dict:
-    """Espera a aba do domínio carregar a página de fato (sem tela de verificação)."""
+    """Espera a aba cuja URL contém `dominio` carregar a página de fato (sem verificação)."""
     limite = time.monotonic() + espera_minutos * 60
     avisou = False
     while time.monotonic() < limite:
@@ -106,6 +106,14 @@ def aguardar_pagina(dominio: str, espera_minutos: float, porta: int = PORTA) -> 
                 avisou = True
         time.sleep(2)
     raise ErroNavegador(f"a página de {dominio} não carregou em {espera_minutos:g} minuto(s)")
+
+
+def fechar_aba(aba: dict, porta: int = PORTA) -> None:
+    """Fecha a aba pela porta de depuração (para não confundir com a próxima)."""
+    try:
+        urllib.request.urlopen(f"http://localhost:{porta}/json/close/{aba['id']}", timeout=5)
+    except OSError:
+        pass
 
 
 def ler_html(dominio: str, porta: int = PORTA) -> tuple[str, str]:
@@ -183,10 +191,10 @@ def analisar_estrutura(html: str) -> dict:
     }
 
 
-def salvar(html: str, norma: Norma, pasta: Path, momento: datetime) -> tuple[Path, Path]:
-    """Salva o HTML e o relatório de estrutura; devolve os dois caminhos."""
+def salvar(html: str, ident: str, pasta: Path, momento: datetime) -> tuple[Path, Path]:
+    """Salva o HTML e o relatório de estrutura em <pasta>/<ident>/; devolve os dois caminhos."""
     sha256 = hashlib.sha256(html.encode("utf-8")).hexdigest()
-    base = Path(pasta) / norma.id / f"{momento:%Y%m%dT%H%M%S}-{sha256[:12]}"
+    base = Path(pasta) / ident / f"{momento:%Y%m%dT%H%M%S}-{sha256[:12]}"
     base.parent.mkdir(parents=True, exist_ok=True)
     arquivo_html = base.with_suffix(".html")
     arquivo_html.write_text(html, encoding="utf-8")
@@ -212,7 +220,7 @@ def main(argv: list[str] | None = None) -> int:
             aba = aguardar_pagina("leis.org", args.espera_minutos)
             print(f"Página carregada: {aba.get('title')}")
             url, html = ler_html("leis.org")
-            arquivo_html, arquivo_estrutura = salvar(html, norma, args.saida, datetime.now(FUSO))
+            arquivo_html, arquivo_estrutura = salvar(html, norma.id, args.saida, datetime.now(FUSO))
             resultado = processar(arquivo_html, norma.id, norma.url)
         except (ErroNavegador, ErroExtracao) as erro:
             print(f"ERRO {norma.id}: {erro}")
